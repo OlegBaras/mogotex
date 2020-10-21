@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./App.css";
 import { I18nProvider, LOCALES } from "./i18n";
-import { FormattedMessage } from "react-intl";
+//import { FormattedMessage } from "react-intl";
 import Nav from "./components/Nav";
 import Home from "./components/Home";
 import About from "./components/About";
