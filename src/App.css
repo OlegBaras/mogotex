@@ -109,7 +109,7 @@ nav {
 
 .fabrics {
   height: 80vh;
-  border: 1px solid red;
+
   width: 100%;
   display: flex;
   justify-content: space-around;
