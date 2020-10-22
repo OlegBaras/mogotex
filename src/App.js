@@ -20,11 +20,14 @@ function App() {
           <Nav />
           <div className="languageSelector">
             <button onClick={() => setLocale(LOCALES.LITHUANIAN)}>
-              {" "}
-              🇱🇹 LT
+              <span>🇱🇹</span> LT
             </button>
-            <button onClick={() => setLocale(LOCALES.ENGLISH)}> 🇬🇧 EN</button>
-            <button onClick={() => setLocale(LOCALES.RUSSIAN)}> 🇷🇺 RU</button>
+            <button onClick={() => setLocale(LOCALES.ENGLISH)}>
+              <span>🇬🇧</span> EN
+            </button>
+            <button onClick={() => setLocale(LOCALES.RUSSIAN)}>
+              <span>🇷🇺</span> RU
+            </button>
           </div>
           <Switch>
             <Route path="/" exact component={Home} />

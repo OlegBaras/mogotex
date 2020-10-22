@@ -8,6 +8,7 @@
   display: flex;
   flex-direction: column;
   position: relative;
+  height: 100vh;
 }
 
 nav {
@@ -64,8 +65,8 @@ nav {
 
 .home {
   background: white;
-
-  height: 90vh;
+  border: 1px solid red;
+  height: 80vh;
   display: flex;
   justify-content: center;
 }
@@ -93,11 +94,14 @@ nav {
 }
 
 .about {
-  height: 90vh;
-  width: 100%;
+  border: 1px solid red;
+
+  height: 80vh;
+  width: 70%;
   display: flex;
   justify-content: center;
   align-items: center;
+  align-self: center;
 }
 
 .about-text {
@@ -107,14 +111,16 @@ nav {
 }
 
 .fabrics {
+  border: 1px solid red;
+
   background: white;
-  height: 90vh;
-  width: 90%;
-  left: 5%;
+  height: 80vh;
+  width: 70%;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  position: relative;
+  align-self: center;
+  /* position: relative; */
 }
 .fabrics label {
   color: black;
