@@ -7,6 +7,7 @@ function Nav() {
   const navStyle = {
     color: "white",
   };
+
   return (
     <nav>
       <img src={logo} alt="" />
@@ -42,12 +43,6 @@ function Nav() {
           </li>
         </Link>
       </ul>
-      <div className="lang-menu">
-        {/* <button className="selected-language">
-          <img src="https://www.countryflags.io/gb/flat/32.png" alt=""/>
-          Lithuanian
-        </button> */}
-      </div>
     </nav>
   );
 }

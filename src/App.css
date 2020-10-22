@@ -5,11 +5,13 @@
 }
 
 .App {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
   position: relative;
 }
 
 nav {
+  /* position: relative; */
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -17,12 +19,35 @@ nav {
   background: rgb(255, 255, 255);
   color: black;
   border-bottom-style: dotted;
+  width: 100%;
+}
+
+.languageSelector {
+  position: relative;
+  display: flex;
+  /* justify-content: center; */
+  align-self: flex-end;
+}
+.languageSelector button {
+  margin-right: 1rem;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}
+.languageSelector button:focus {
+  outline: none;
+  box-shadow: none;
+}
+.languageSelector button:hover {
+  /* TO DO */
+  /* add some animation keyframes */
 }
 
 .nav-links {
   width: 40%;
+
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   list-style: none;
 }
@@ -68,9 +93,6 @@ nav {
 }
 
 .about {
-  background: white;
-
-  position: absolute;
   height: 90vh;
   width: 100%;
   display: flex;

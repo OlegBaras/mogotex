@@ -17,12 +17,15 @@ function App() {
     <Router>
       <I18nProvider locale={locale}>
         <div className="App">
-          <div className="languageSelector">
-            <button onClick={() => setLocale(LOCALES.LITHUANIAN)}>LT</button>
-            <button onClick={() => setLocale(LOCALES.ENGLISH)}>EN</button>
-            <button onClick={() => setLocale(LOCALES.RUSSIAN)}>RU</button>
-          </div>
           <Nav />
+          <div className="languageSelector">
+            <button onClick={() => setLocale(LOCALES.LITHUANIAN)}>
+              {" "}
+              🇱🇹 LT
+            </button>
+            <button onClick={() => setLocale(LOCALES.ENGLISH)}> 🇬🇧 EN</button>
+            <button onClick={() => setLocale(LOCALES.RUSSIAN)}> 🇷🇺 RU</button>
+          </div>
           <Switch>
             <Route path="/" exact component={Home} />
             <Route path="/about" component={About} />
