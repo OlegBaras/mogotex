@@ -2,9 +2,9 @@ import { LOCALES } from "../locales";
 
 export default {
   [LOCALES.RUSSIAN]: {
-    about: "APIE MUS",
-    fabrics: " AUDINIAI",
-    contacts: "KONTAKTAI",
+    about: "О КОМПАНИИ",
+    fabrics: "ТКАНИ",
+    contacts: "КОНТАКТЫ",
     "nav-home": "Главная",
     "nav-about": "О компании",
     "nav-fabrics": "Ткани",
