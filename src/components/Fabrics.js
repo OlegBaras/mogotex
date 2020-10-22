@@ -1,11 +1,13 @@
 import React from "react";
-
+import WorkClothes from "./WorkClothes";
+import TableCloths from "./TableCloths";
 function Fabrics() {
   return (
     <div className="fabrics">
-      <div className="Darbo">
-        <label>Darbo rūbams ir poilsiui</label>
-        <p>3c17 sudėtis, svoris, spalvų galerija</p>
+      <WorkClothes />
+      <TableCloths />
+      {/* <label>Darbo rūbams ir poilsiui</label> */}
+      {/* <p>3c17 sudėtis, svoris, spalvų galerija</p>
         <p>4c5 sudėtis, svoris, spalvų galerija</p>
         <p>06c13 sudėtis, svoris, spalvų galerija</p>
         <p>00c65 sudėtis, svoris, spalvų galerija</p>
@@ -13,8 +15,8 @@ function Fabrics() {
         <p>05c8 sudėtis, svoris, spalvų galerija</p>
         <p>8tc15 sudėtis, svoris, spalvų galerija</p>
         <p>4c5 sudėtis, svoris, spalvų galerija</p>
-        <p>4c5 + KMF raštų galerija</p>
-      </div>
+        <p>4c5 + KMF raštų galerija</p> */}
+      {/* 
       <div className="Staltiesiniai">
         <label>Staltiesiniai</label>
         <p>04c47 sudėtis, svoris, spalvų galerija</p>
@@ -22,7 +24,7 @@ function Fabrics() {
         <p>08c6 sudėtis, svoris, spalvų galerija</p>
         <p>10c2 sudėtis, svoris, spalvų galerija</p>
         <p>13c5 sudėtis, svoris, spalvų galerija</p>
-      </div>
+      </div> */}
       <div className="Filtrams">
         <label>Filtrams</label>
         <p>03c35 sudėtis, svoris</p>
