@@ -10,7 +10,10 @@ function Nav() {
 
   return (
     <nav>
-      <img src={logo} alt="" />
+      <Link style={navStyle} to="/">
+        <img src={logo} alt="" />
+      </Link>
+
       <ul className="nav-links">
         <Link style={navStyle} to="/">
           <li>
