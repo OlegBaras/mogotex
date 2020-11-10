@@ -17,13 +17,15 @@ function WorkClothes() {
           <th>art.3c17</th>
           <th>cot23/pes77</th>
           <th>139 g/m²</th>
-          <th>sudėtis, svoris, spalvų galerija</th>
+          <th></th>
         </tr>
         <tr>
           <th>art.4c5</th>
           <th>cot51/pes49</th>
           <th>210 g/m²</th>
-          <th>sudėtis, svoris, spalvų galerija</th>
+          <th>
+            <a href="ColourCard">sudėtis, svoris, spalvų galerija</a>
+          </th>
         </tr>
         <tr>
           <th>art.06c13</th>

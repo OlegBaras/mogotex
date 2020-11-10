@@ -19,14 +19,32 @@ function App() {
         <div className="App">
           <Nav />
           <div className="languageSelector">
-            <button onClick={() => setLocale(LOCALES.LITHUANIAN)}>
-              <span>🇱🇹</span> LT
+            <button
+              className="languageButton"
+              onClick={() => setLocale(LOCALES.LITHUANIAN)}
+            >
+              <span role="img" aria-label="LT">
+                🇱🇹
+              </span>
+              LT
             </button>
-            <button onClick={() => setLocale(LOCALES.ENGLISH)}>
-              <span>🇬🇧</span> EN
+            <button
+              className="languageButton"
+              onClick={() => setLocale(LOCALES.ENGLISH)}
+            >
+              <span role="img" aria-label="GB">
+                🇬🇧
+              </span>{" "}
+              EN
             </button>
-            <button onClick={() => setLocale(LOCALES.RUSSIAN)}>
-              <span>🇷🇺</span> RU
+            <button
+              className="languageButton"
+              onClick={() => setLocale(LOCALES.RUSSIAN)}
+            >
+              <span role="img" aria-label="RU">
+                🇷🇺
+              </span>{" "}
+              RU
             </button>
           </div>
           <Switch>

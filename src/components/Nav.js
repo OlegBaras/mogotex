@@ -46,6 +46,11 @@ function Nav() {
           </li>
         </Link>
       </ul>
+      <div className="burger">
+        <div className="line1"></div>
+        <div className="line2"></div>
+        <div className="line3s"></div>
+      </div>
     </nav>
   );
 }
