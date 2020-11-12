@@ -8,7 +8,7 @@ function Fabrics() {
       <WorkClothes />
       <TableCloths />
 
-      <div className="Filtrams">
+      <div className="filters">
         <label>Filtrams</label>
         <p>03c35 sudėtis, svoris</p>
         <p>5c30 sudėtis, svoris</p>

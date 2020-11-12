@@ -1,69 +1,102 @@
-import React from "react";
+import React, { useState } from "react";
+import Modal from "./Modal";
 
 function WorkClothes() {
+  const [selectedItem, setSelectedsItem] = useState();
+  const products = [
+    {
+      id: 1,
+      vendorCode: "art.3c17",
+      comp: "cot23/pess77",
+      weight: "139 g/m²",
+      colors: ["yellow", "red", "green"],
+    },
+    {
+      id: 2,
+      vendorCode: "art.4c5",
+      comp: "cot51/pes49",
+      weight: "210 g/m²",
+      colors: ["red", "green"],
+    },
+    {
+      id: 3,
+      vendorCode: "art.06c13",
+      comp: "cot33/pes67",
+      weight: "248 g/m²",
+      colors: ["yellow", "red", "green"],
+    },
+    {
+      id: 4,
+      vendorCode: "art.00c65",
+      comp: "cot76/pes24",
+      weight: "254 g/m²",
+      colors: ["yellow", "red", "green"],
+    },
+    {
+      id: 5,
+      vendorCode: "art.09c6",
+      comp: "cot50/pes50",
+      weight: "224 g/m²",
+      colors: ["yellow", "red", "green"],
+    },
+    {
+      id: 6,
+      vendorCode: "art.05c8",
+      comp: "pes100",
+      weight: "141 g/m²",
+      colors: ["yellow", "red", "green"],
+    },
+    {
+      id: 7,
+      vendorCode: "art.8tc15",
+      comp: "pes100",
+      weight: "133 g/m²",
+      colors: ["yellow", "red", "green"],
+    },
+    {
+      id: 8,
+      vendorCode: "art.4c5 + KMF",
+      comp: "cot51/pes49",
+      weight: "210 g/m²",
+      colors: ["yellow", "red", "green"],
+    },
+    // { id: 2, vendorCode: "efgh", color: "red" },
+    // { id: 3, vendorCode: "ijkl", color: "blue" },
+  ];
+
+  const selectProductHandler = (product) => {
+    setSelectedsItem(product);
+    openModal(selectedItem);
+  };
+
+  const openModal = (product) => {
+    console.log(product);
+  };
   return (
     <div className="workclothes">
-      <div className="DarboRubams">
-        <label>Darbo rūbams ir poilsiui</label>
+      {/* <div className="DarboRubams"> */}
+      <label>Darbo rūbams ir poilsiui</label>
+      <div className="button-links">
+        <label>
+          <label>Vendor Code </label>
+          <label>Comp</label>
+          <label>Weight</label>
+          <label>Colors</label>
+        </label>
+        {products.map((product) => (
+          <button
+            onClick={() => selectProductHandler(product)}
+            key={product.id}
+            className="product-button"
+          >
+            <span>{product.vendorCode}</span>
+            <span>{product.comp}</span>
+            <span>{product.weight}</span>
+            <span>{product.colors[0]}</span>
+          </button>
+        ))}
       </div>
-      <table className="content-table">
-        <tr>
-          <th></th>
-          <th>Sudėtis,%</th>
-          <th>Svoris</th>
-        </tr>
-        <tr></tr>
-        <tr>
-          <th>art.3c17</th>
-          <th>cot23/pes77</th>
-          <th>139 g/m²</th>
-          <th></th>
-        </tr>
-        <tr>
-          <th>art.4c5</th>
-          <th>cot51/pes49</th>
-          <th>210 g/m²</th>
-          <th>
-            <a href="ColourCard">sudėtis, svoris, spalvų galerija</a>
-          </th>
-        </tr>
-        <tr>
-          <th>art.06c13</th>
-          <th>cot33/pes67</th>
-          <th>248 g/m²</th>
-          <th>sudėtis, svoris, spalvų galerija</th>
-        </tr>
-        <tr>
-          <th>art.00c65</th>
-          <th>cot76/pes24</th>
-          <th>254 g/m²</th>
-          <th>sudėtis, svoris, spalvų galerija</th>
-        </tr>
-        <tr>
-          <th>art.09c6</th>
-          <th>cot50/pes50</th>
-          <th>224 g/m²</th>
-          <th>sudėtis, svoris, spalvų galerija</th>
-        </tr>
-        <tr>
-          <th>art.05c8</th>
-          <th>pes100</th>
-          <th>141 g/m²</th>
-          <th>sudėtis, svoris, spalvų galerija</th>
-        </tr>
-        <tr>
-          <th>art.8tc15</th>
-          <th>pes100</th>
-          <th>133 g/m²</th>
-          <th>sudėtis, svoris, spalvų galerija</th>
-        </tr>
-        <tr>
-          <th>art.4c5 + KMF</th>
-          <th>cot51/pes49</th>
-          <th>210 g/m²</th>
-          <th>sudėtis, svoris, spalvų galerija</th>
-        </tr>
-      </table>
+      <Modal />
     </div>
   );
 }
