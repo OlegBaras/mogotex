@@ -270,3 +270,22 @@ th {
   justify-content: center;
   align-items: center;
 }
+
+.active-modal {
+  position: absolute;
+  background: pink;
+  /* border: 2px solid red; */
+}
+
+.active-modal:focus {
+  border-style: none;
+  outline: none;
+}
+
+.CardColor {
+  height: 70%;
+  width: 100%;
+  /* background: green; */
+}
+.CardInfo {
+}

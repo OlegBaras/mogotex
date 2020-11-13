@@ -9,7 +9,8 @@ const customStyles = {
     bottom: "auto",
     marginRight: "-50%",
     transform: "translate(-50%, -50%)",
-    width: "90%",
+    width: "50%",
+    height: "70%",
   },
 };
 
@@ -22,14 +23,14 @@ function WorkClothes() {
       vendorCode: "art.3c17",
       comp: "cot23/pess77",
       weight: "139 g/m²",
-      colors: ["yellow", "red", "green"],
+      colors: ["#FFFF00", "#FF0000", "#00ff00"],
     },
     {
       id: 2,
       vendorCode: "art.4c5",
       comp: "cot51/pes49",
       weight: "210 g/m²",
-      colors: ["red", "green"],
+      colors: ["red", "green", "blue"],
     },
     {
       id: 3,
@@ -71,14 +72,16 @@ function WorkClothes() {
       vendorCode: "art.4c5 + KMF",
       comp: "cot51/pes49",
       weight: "210 g/m²",
-      colors: ["yellow", "red", "green"],
+      colors: ["orange", "lightblue", "pink"],
     },
   ];
 
-  let subtitle;
+  //let subtitle;
+  let CardColor;
 
   const [modalIsOpen, setIsOpen] = useState(false);
-  const [currentProduct, setCurrentProduct] = useState(null);
+  const [currentProduct, setCurrentProduct] = useState(products[0]);
+  const [color, setColor] = useState("");
 
   const openModal = (product) => {
     setIsOpen(true);
@@ -86,12 +89,19 @@ function WorkClothes() {
   };
 
   const afterOpenModal = () => {
-    subtitle.style.color = "green";
+    //  subtitle.style.color = "green";
     console.log(currentProduct.id);
+    setColor(currentProduct.colors[0]);
   };
 
   const closeModal = () => {
     setIsOpen(false);
+    setColor(null);
+  };
+
+  const changeCardColor = (color) => {
+    setColor(color);
+    console.log(color);
   };
 
   return (
@@ -118,13 +128,36 @@ function WorkClothes() {
         ))}
       </div>
       <Modal
+        className="active-modal"
         isOpen={modalIsOpen}
         onAfterOpen={afterOpenModal}
         onRequestClose={closeModal}
         style={customStyles}
         contentLabel="Example Modal"
+        currentProduct={currentProduct}
       >
-        <h2 ref={(_subtitle) => (subtitle = _subtitle)}>Hello</h2>
+        <div className="CardColor" style={{ backgroundColor: color }}>
+          {color}
+        </div>
+        <div className="CardInfo">
+          <div className="CardColorSelection">
+            {currentProduct.colors.map((color) => (
+              <button
+                onClick={() => {
+                  changeCardColor(color);
+                }}
+                key={currentProduct.id}
+              >
+                {color}
+              </button>
+            ))}
+          </div>
+          <div className="CardColorText">
+            <h1>{currentProduct.vendorCode}</h1>
+            <h2>{currentProduct.weight}</h2>
+            <h2>{currentProduct.comp}</h2>
+          </div>
+        </div>
       </Modal>
     </div>
   );
