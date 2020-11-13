@@ -1,8 +1,21 @@
 import React, { useState } from "react";
-import Modal from "./Modal";
+import Modal from "react-modal";
+
+const customStyles = {
+  content: {
+    top: "50%",
+    left: "50%",
+    right: "auto",
+    bottom: "auto",
+    marginRight: "-50%",
+    transform: "translate(-50%, -50%)",
+    width: "90%",
+  },
+};
+
+Modal.setAppElement("#root");
 
 function WorkClothes() {
-  const [selectedItem, setSelectedsItem] = useState();
   const products = [
     {
       id: 1,
@@ -60,21 +73,29 @@ function WorkClothes() {
       weight: "210 g/m²",
       colors: ["yellow", "red", "green"],
     },
-    // { id: 2, vendorCode: "efgh", color: "red" },
-    // { id: 3, vendorCode: "ijkl", color: "blue" },
   ];
 
-  const selectProductHandler = (product) => {
-    setSelectedsItem(product);
-    openModal(selectedItem);
-  };
+  let subtitle;
+
+  const [modalIsOpen, setIsOpen] = useState(false);
+  const [currentProduct, setCurrentProduct] = useState(null);
 
   const openModal = (product) => {
-    console.log(product);
+    setIsOpen(true);
+    setCurrentProduct(product);
   };
+
+  const afterOpenModal = () => {
+    subtitle.style.color = "green";
+    console.log(currentProduct.id);
+  };
+
+  const closeModal = () => {
+    setIsOpen(false);
+  };
+
   return (
     <div className="workclothes">
-      {/* <div className="DarboRubams"> */}
       <label>Darbo rūbams ir poilsiui</label>
       <div className="button-links">
         <label>
@@ -85,7 +106,7 @@ function WorkClothes() {
         </label>
         {products.map((product) => (
           <button
-            onClick={() => selectProductHandler(product)}
+            onClick={() => openModal(product)}
             key={product.id}
             className="product-button"
           >
@@ -96,7 +117,15 @@ function WorkClothes() {
           </button>
         ))}
       </div>
-      <Modal />
+      <Modal
+        isOpen={modalIsOpen}
+        onAfterOpen={afterOpenModal}
+        onRequestClose={closeModal}
+        style={customStyles}
+        contentLabel="Example Modal"
+      >
+        <h2 ref={(_subtitle) => (subtitle = _subtitle)}>Hello</h2>
+      </Modal>
     </div>
   );
 }
