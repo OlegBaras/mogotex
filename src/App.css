@@ -33,14 +33,15 @@ label {
 
 .product-button {
   display: flex;
-  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
+  justify-content: space-around;
   background-color: rgb(101, 216, 101);
   border-radius: 10px;
   border: none;
   border-style: none;
   border-bottom: 2px solid rgb(109, 109, 109);
   cursor: pointer;
-  transition: all 0.4s ease;
+  transition: all 0.5s ease;
 }
 button:focus {
   outline: 0;
@@ -154,7 +155,7 @@ nav {
   display: flex;
   justify-content: space-evenly;
   align-items: flex-start;
-  padding-top: 10rem;
+  padding-top: 2rem;
   padding-right: 2rem;
   padding-left: 2rem;
 }
@@ -288,4 +289,11 @@ th {
   /* background: green; */
 }
 .CardInfo {
+  text-align: center;
+}
+.CardColorSelection {
+  background-color: lightblue;
+  height: 2rem;
+  display: flex;
+  justify-content: space-between;
 }

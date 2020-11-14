@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import Modal from "react-modal";
+import colorIcon from "../colorIcon.png";
+import { v4 as uuidv4 } from "uuid";
 
 const customStyles = {
   content: {
@@ -23,7 +25,24 @@ function WorkClothes() {
       vendorCode: "art.3c17",
       comp: "cot23/pess77",
       weight: "139 g/m²",
-      colors: ["#FFFF00", "#FF0000", "#00ff00"],
+      colors: [
+        "#FFDA29",
+        "#998978",
+        "#58423F",
+        "#8B4963",
+        "#BB4F72",
+        "#E982A0",
+        "#BE132D",
+        "#525A5B",
+        "#08589D",
+        "#8C9092", //?
+        "#8D8F8F", //?
+        "#2E2F36",
+        "#42ADD5",
+        "#81BBA1",
+        "#7CB7A3",
+        "#4D826C",
+      ],
     },
     {
       id: 2,
@@ -69,7 +88,7 @@ function WorkClothes() {
     },
     {
       id: 8,
-      vendorCode: "art.4c5 + KMF",
+      vendorCode: "art.4c5+KMF",
       comp: "cot51/pes49",
       weight: "210 g/m²",
       colors: ["orange", "lightblue", "pink"],
@@ -90,7 +109,7 @@ function WorkClothes() {
 
   const afterOpenModal = () => {
     //  subtitle.style.color = "green";
-    console.log(currentProduct.id);
+    //console.log(currentProduct.id);
     setColor(currentProduct.colors[0]);
   };
 
@@ -101,7 +120,7 @@ function WorkClothes() {
 
   const changeCardColor = (color) => {
     setColor(color);
-    console.log(color);
+    //console.log(color);
   };
 
   return (
@@ -117,13 +136,15 @@ function WorkClothes() {
         {products.map((product) => (
           <button
             onClick={() => openModal(product)}
-            key={product.id}
+            key={uuidv4()}
             className="product-button"
           >
             <span>{product.vendorCode}</span>
             <span>{product.comp}</span>
             <span>{product.weight}</span>
-            <span>{product.colors[0]}</span>
+            <span>
+              <img src={colorIcon}></img>
+            </span>
           </button>
         ))}
       </div>
@@ -145,8 +166,9 @@ function WorkClothes() {
               <button
                 onClick={() => {
                   changeCardColor(color);
+                  console.log(color);
                 }}
-                key={currentProduct.id}
+                key={uuidv4()}
               >
                 {color}
               </button>
