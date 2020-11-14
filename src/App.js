@@ -12,7 +12,7 @@ import Contacts from "./components/Contacts";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
-  const [locale, setLocale] = useState(LOCALES.ENGLISH);
+  const [locale, setLocale] = useState(LOCALES.LITHUANIAN);
   return (
     <Router>
       <I18nProvider locale={locale}>

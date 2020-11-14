@@ -2,10 +2,9 @@ import React, { useState } from "react";
 import Modal from "react-modal";
 import colorIcon from "../colorIcon.png";
 import { v4 as uuidv4 } from "uuid";
+import { FormattedMessage } from "react-intl";
 
 function WorkClothes() {
-  const [shadow, setShadow] = useState("");
-
   const customStyles = {
     content: {
       top: "50%",
@@ -29,8 +28,28 @@ function WorkClothes() {
     {
       id: 1,
       vendorCode: "art.3c17",
-      comp: "cot23/pess77",
-      weight: "139 g/m²",
+      comp: (
+        <span>
+          <span>
+            <FormattedMessage id="cot" />
+          </span>
+          <span>23/</span>
+          <span>
+            <FormattedMessage id="pes" />
+          </span>
+          <span>77</span>
+        </span>
+      ),
+      // comp: "cot23/pess77",
+      weight: (
+        <span>
+          <span>139</span>
+          <span>
+            <FormattedMessage id="g/m²" />
+          </span>
+        </span>
+      ),
+      //"139 g/m²",
       colors: [
         "#FFDA29",
         "#998978",
@@ -136,7 +155,7 @@ function WorkClothes() {
   ];
 
   //let subtitle;
-  let CardColor;
+  // let CardColor;
 
   const [modalIsOpen, setIsOpen] = useState(false);
   const [currentProduct, setCurrentProduct] = useState(products[0]);
@@ -165,14 +184,25 @@ function WorkClothes() {
 
   return (
     <div className="workclothes">
-      <label>Darbo rūbams ir poilsiui</label>
+      <div>
+        <FormattedMessage id="workClothes" />
+      </div>
+
       <div className="button-links">
-        <label>
-          <label>Vendor Code </label>
-          <label>Comp</label>
-          <label>Weight</label>
-          <label>Colors</label>
-        </label>
+        <div className="button-links-tags">
+          <p>
+            <FormattedMessage id="vendor-code" />
+          </p>
+          <p>
+            <FormattedMessage id="Comp" />
+          </p>
+          <p>
+            <FormattedMessage id="Weight" />
+          </p>
+          <p>
+            <FormattedMessage id="Colors" />
+          </p>
+        </div>
         {products.map((product) => (
           <button
             onClick={() => openModal(product)}
@@ -183,7 +213,7 @@ function WorkClothes() {
             <span>{product.comp}</span>
             <span>{product.weight}</span>
             <span>
-              <img src={colorIcon}></img>
+              <img alt="icon" src={colorIcon}></img>
             </span>
           </button>
         ))}

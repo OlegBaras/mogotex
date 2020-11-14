@@ -22,26 +22,39 @@
 .button-links {
   display: flex;
   flex-direction: column;
-  background: rgb(235, 234, 232);
+  /* background: rgb(235, 234, 232); */
   border-radius: 20px;
 }
-label {
-  /* border: 2px solid green; */
+/* label {
+  border: 2px solid green;
   display: flex;
   justify-content: space-around;
+} */
+.button-links-tags {
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+p {
+  font-size: medium;
 }
 
 .product-button {
   display: flex;
   /* justify-content: space-evenly; */
   justify-content: space-around;
-  background-color: rgb(101, 216, 101);
+  align-items: center;
+  background-color: rgb(224, 242, 224);
   border-radius: 10px;
   border: none;
   border-style: none;
   border-bottom: 2px solid rgb(109, 109, 109);
   cursor: pointer;
   transition: all 0.5s ease;
+  height: 3rem;
+  width: 30rem;
 }
 button:focus {
   outline: 0;
@@ -50,7 +63,7 @@ button:focus {
   background-color: white;
 }
 span {
-  margin: 1rem;
+  /* margin: 0.1rem; */
 }
 nav {
   /* position: relative; */
@@ -205,44 +218,6 @@ th {
   font-family: "Times New Roman", Times, serif;
 }
 
-@media screen and (max-width: 768px) {
-  body {
-    /* display: none; */
-  }
-
-  nav {
-    /* position: relative; */
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    min-height: 10vh;
-    /* background: rgb(255, 255, 255); */
-    color: black;
-    width: 100%;
-  }
-
-  .nav-links {
-    position: absolute;
-    right: 15px;
-    width: 60%;
-  }
-
-  .home-links {
-    width: 90%;
-  }
-
-  .fabrics {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    /* border: 2px solid red; */
-    height: 100%;
-    width: 100%;
-    padding-top: 0;
-  }
-}
-
 .modal-bg {
   position: fixed;
   top: 0;
@@ -295,8 +270,12 @@ th {
   border-radius: 10px;
 }
 .CardInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
   height: 30%;
-  text-align: center;
+  /* text-align: center; */
 }
 .CardColorSelection {
   /* background-color: lightblue; */
@@ -308,12 +287,11 @@ th {
 }
 
 .CardColorText {
-  /* border: 2px solid red; */
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
-  height: 10rem;
   justify-content: center;
+  align-items: center;
+  font-size: small;
 }
 
 .color-button {
@@ -321,11 +299,71 @@ th {
   cursor: pointer;
   height: 2rem;
   border: none;
-  border-radius: 0 0 5px 5px;
+  border-radius: 10px;
+  margin-top: 0.5rem;
+  margin-left: 1rem;
 }
 .color-button:focus {
   outline-style: none;
 }
 .color-button:hover {
   height: 3rem;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    /* display: none; */
+  }
+
+  nav {
+    /* position: relative; */
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    min-height: 10vh;
+    /* background: rgb(255, 255, 255); */
+    color: black;
+    width: 100%;
+  }
+
+  .nav-links {
+    position: absolute;
+    right: 15px;
+    width: 60%;
+  }
+
+  .home-links {
+    width: 90%;
+  }
+
+  .fabrics {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 4rem;
+    width: 100%;
+    padding-top: 0;
+  }
+
+  .CardColor {
+    height: 60%;
+  }
+  .CardInfo {
+    height: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: small;
+    /* height: 30vh; */
+    /* text-align: center; */
+  }
+
+  .CardColorText {
+    font-size: x-small;
+    display: flex;
+    align-items: center;
+  }
 }
