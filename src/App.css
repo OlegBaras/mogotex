@@ -308,7 +308,7 @@ th {
 }
 
 .CardColorText {
-  border: 2px solid red;
+  /* border: 2px solid red; */
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
