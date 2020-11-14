@@ -4,7 +4,7 @@ function TableCloths() {
   return (
     <div className="table-cloths">
       <label>Staltiesiniai</label>
-      {/* <table className="content-table">
+      <table className="content-table">
         <tr>
           <th></th>
           <th>Svoris</th>
@@ -40,7 +40,7 @@ function TableCloths() {
           <th>lin23/pes77</th>
           <th>spalvų galerija</th>
         </tr>
-      </table> */}
+      </table>
     </div>
   );
 }
