@@ -3,22 +3,28 @@ import Modal from "react-modal";
 import colorIcon from "../colorIcon.png";
 import { v4 as uuidv4 } from "uuid";
 
-const customStyles = {
-  content: {
-    top: "50%",
-    left: "50%",
-    right: "auto",
-    bottom: "auto",
-    marginRight: "-50%",
-    transform: "translate(-50%, -50%)",
-    width: "50%",
-    height: "70%",
-  },
-};
-
-Modal.setAppElement("#root");
-
 function WorkClothes() {
+  const [shadow, setShadow] = useState("");
+
+  const customStyles = {
+    content: {
+      top: "50%",
+      left: "50%",
+      right: "auto",
+      bottom: "auto",
+      marginRight: "-50%",
+      transform: "translate(-50%, -50%)",
+      width: "70%",
+      height: "70%",
+      borderRadius: "10px",
+    },
+    overlay: {
+      backgroundColor: "lightgrey",
+    },
+  };
+
+  Modal.setAppElement("#root");
+
   const products = [
     {
       id: 1,
@@ -164,9 +170,11 @@ function WorkClothes() {
           <div className="CardColorSelection">
             {currentProduct.colors.map((color) => (
               <button
+                className="color-button"
+                style={{ background: `${color}` }}
                 onClick={() => {
                   changeCardColor(color);
-                  console.log(color);
+                  console.log(`"${color}"`);
                 }}
                 key={uuidv4()}
               >
@@ -174,10 +182,10 @@ function WorkClothes() {
               </button>
             ))}
           </div>
-          <div className="CardColorText">
-            <h1>{currentProduct.vendorCode}</h1>
-            <h2>{currentProduct.weight}</h2>
-            <h2>{currentProduct.comp}</h2>
+          <div className="CardColorText" style={{ color: `${color}` }}>
+            <h1>Vendor Code: {currentProduct.vendorCode}</h1>
+            <h2>weight: {currentProduct.weight}</h2>
+            <h2>comp: {currentProduct.comp}</h2>
           </div>
         </div>
       </Modal>
