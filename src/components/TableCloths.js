@@ -18,7 +18,8 @@ function TableCloths() {
       borderRadius: "10px",
     },
     overlay: {
-      backgroundColor: "lightgrey",
+      // backgroundColor: "#A9A9A9",
+      backgroundColor: "white",
     },
   };
 
@@ -56,7 +57,16 @@ function TableCloths() {
           </span>
         </span>
       ),
-      colors: ["#", "#", "#", "#"],
+      colors: [
+        "#F0EDE2",
+        "#F5ECD0",
+        "#F4ECC2",
+        "#FDD19C",
+        "#E3BC8E",
+        "#C86656",
+        "#12674A",
+        "#363756",
+      ],
     },
     {
       id: 2,
@@ -122,7 +132,14 @@ function TableCloths() {
           </span>
         </span>
       ),
-      colors: ["#", "#", "#", "#"],
+      colors: [
+        "#F0EDE2",
+        "#F5ECD0",
+        "#E4C49D",
+        "#5C4939",
+        "#9E1030",
+        "#C9D3DC",
+      ],
     },
     {
       id: 4,
@@ -136,7 +153,7 @@ function TableCloths() {
           <span>
             <FormattedMessage id="pes" />
           </span>
-          <span>7160</span>
+          <span>77</span>
         </span>
       ),
       weight: (
@@ -186,7 +203,7 @@ function TableCloths() {
 
   return (
     <div className="table-cloths">
-      <div>
+      <div className="title">
         <FormattedMessage id="tableCloths" />
       </div>
       <div className="button-links">

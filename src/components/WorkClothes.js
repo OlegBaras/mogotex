@@ -18,7 +18,8 @@ function WorkClothes() {
       borderRadius: "10px",
     },
     overlay: {
-      backgroundColor: "lightgrey",
+      // backgroundColor: "#A9A9A9",
+      backgroundColor: "white",
     },
   };
 
@@ -184,7 +185,7 @@ function WorkClothes() {
 
   return (
     <div className="workclothes">
-      <div>
+      <div className="title">
         <FormattedMessage id="workClothes" />
       </div>
 

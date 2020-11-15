@@ -22,15 +22,12 @@
 .button-links {
   display: flex;
   flex-direction: column;
-  /* background: rgb(235, 234, 232); */
   border-radius: 20px;
 }
-/* label {
-  border: 2px solid green;
-  display: flex;
-  justify-content: space-around;
-} */
+
 .button-links-tags {
+  font-weight: bold;
+  color: rgb(140, 161, 140);
   width: 100%;
   height: 3rem;
   display: flex;
@@ -39,6 +36,11 @@
 }
 p {
   font-size: medium;
+}
+.title {
+  font-weight: bold;
+  color: rgb(140, 161, 140);
+  font-size: large;
 }
 
 .product-button {
