@@ -272,7 +272,7 @@ nav {
 .CardInfo {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   height: 30%;
   /* text-align: center; */
@@ -287,6 +287,7 @@ nav {
 }
 
 .CardColorText {
+  margin-top: 4rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -307,7 +308,8 @@ nav {
   outline-style: none;
 }
 .color-button:hover {
-  height: 3rem;
+  /* height: 3rem; */
+  transform: scale(1.5);
 }
 
 @media screen and (max-width: 768px) {
