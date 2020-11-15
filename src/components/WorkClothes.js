@@ -248,8 +248,18 @@ function WorkClothes() {
             ))}
           </div>
           <div className="CardColorText" style={{ color: `${color}` }}>
-            <h1>Vendor Code: {currentProduct.vendorCode}</h1>
-            <h2>weight: {currentProduct.weight}</h2>
+            <h1>
+              <span>
+                <FormattedMessage id="vendor-code" />
+              </span>
+              : {currentProduct.vendorCode}
+            </h1>
+            <h2>
+              <span>
+                <FormattedMessage id="Weight" />
+              </span>
+              : {currentProduct.weight}
+            </h2>
             <h2>comp: {currentProduct.comp}</h2>
           </div>
         </div>

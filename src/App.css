@@ -74,11 +74,12 @@ nav {
   align-items: center;
   min-height: 10vh;
   /* background: rgb(255, 255, 255); */
-  color: black;
   /* border-bottom-style: dotted; */
-  border-radius: 10px;
+  /* border-radius: 10px; */
   width: 100%;
-  box-shadow: 2px 2px 50px rgb(193, 193, 193);
+  /* shaddow for nav */
+  /* box-shadow: 2px 2px 50px rgb(140, 161, 140); */
+  border-bottom: 2px solid black;
 }
 
 .languageSelector {
@@ -86,6 +87,8 @@ nav {
   display: flex;
   /* justify-content: center; */
   align-self: flex-end;
+  transform: translateX(-2rem);
+  transform: translateY(-1.5rem);
 }
 .languageSelector button {
   margin-right: 1rem;
@@ -109,10 +112,13 @@ nav {
 }
 .nav-links li {
   font-family: "Times New Roman", Times, serif;
-
+  font-weight: bold;
   color: black;
   display: inline-block;
   text-decoration: none;
+}
+.nav-links li:hover {
+  color: rgb(140, 161, 140);
 }
 
 .home {
@@ -210,14 +216,6 @@ nav {
 }
 .contacts p {
   margin-top: 2rem;
-}
-
-.table-cloths table,
-tr,
-th {
-  border-bottom: 1px solid black;
-  border-collapse: collapse;
-  font-family: "Times New Roman", Times, serif;
 }
 
 .modal-bg {
