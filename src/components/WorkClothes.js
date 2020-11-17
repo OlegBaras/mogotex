@@ -7,14 +7,14 @@ import { FormattedMessage } from "react-intl";
 function WorkClothes() {
   const customStyles = {
     content: {
-      top: "50%",
+      top: "40%",
       left: "50%",
       right: "auto",
       bottom: "auto",
       marginRight: "-50%",
       transform: "translate(-50%, -50%)",
-      width: "70%",
-      height: "70%",
+      width: "60%",
+      height: "60%",
       borderRadius: "10px",
     },
     overlay: {
@@ -228,39 +228,41 @@ function WorkClothes() {
         contentLabel="Example Modal"
         currentProduct={currentProduct}
       >
-        <div className="CardColor" style={{ backgroundColor: color }}>
-          {color}
-        </div>
-        <div className="CardInfo">
-          <div className="CardColorSelection">
-            {currentProduct.colors.map((color) => (
-              <button
-                className="color-button"
-                style={{ background: `${color}` }}
-                onClick={() => {
-                  changeCardColor(color);
-                  console.log(`"${color}"`);
-                }}
-                key={uuidv4()}
-              >
-                {color}
-              </button>
-            ))}
-          </div>
-          <div className="CardColorText" style={{ color: `${color}` }}>
-            <h1>
-              <span>
-                <FormattedMessage id="vendor-code" />
-              </span>
-              : {currentProduct.vendorCode}
-            </h1>
-            <h2>
-              <span>
-                <FormattedMessage id="Weight" />
-              </span>
-              : {currentProduct.weight}
-            </h2>
-            <h2>comp: {currentProduct.comp}</h2>
+        <div>
+          <div className="CardInfo">
+            <div className="CardColor" style={{ backgroundColor: color }}>
+              {color}
+            </div>
+            <div className="CardColorSelection">
+              {currentProduct.colors.map((color) => (
+                <button
+                  className="color-button"
+                  style={{ background: `${color}` }}
+                  onClick={() => {
+                    changeCardColor(color);
+                    console.log(`"${color}"`);
+                  }}
+                  key={uuidv4()}
+                >
+                  {color}
+                </button>
+              ))}
+            </div>
+            <div className="CardColorText" style={{ color: `${color}` }}>
+              <h1>
+                <span>
+                  <FormattedMessage id="vendor-code" />
+                </span>
+                : {currentProduct.vendorCode}
+              </h1>
+              <h2>
+                <span>
+                  <FormattedMessage id="Weight" />
+                </span>
+                : {currentProduct.weight}
+              </h2>
+              <h2>comp: {currentProduct.comp}</h2>
+            </div>
           </div>
         </div>
       </Modal>

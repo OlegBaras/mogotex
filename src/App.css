@@ -242,44 +242,39 @@ nav {
 .active-modal {
   position: absolute;
   background: white;
-  /* border: 2px solid lightgray; */
-  /* box-shadow: 5px 10px #e8e1e1; */
 }
 
 .active-modal:focus {
   border-style: none;
   outline: none;
 }
-
-.CardColor {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 70%;
-  width: 100%;
-  background: transparent;
-  font-weight: bold;
-  border-radius: 10px;
-}
 .CardInfo {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  height: 30%;
-  /* text-align: center; */
+  flex-wrap: wrap;
+}
+
+.CardColor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  width: 100%;
+  background: transparent;
+  font-weight: bold;
+  border-radius: 10px;
 }
 .CardColorSelection {
-  /* background-color: lightblue; */
-  height: 2rem;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  font-size: 1;
 }
 
 .CardColorText {
-  margin-top: 4rem;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -330,10 +325,10 @@ nav {
     width: 90%;
   }
 
-  .CardColor {
+  /* .CardColor {
     height: 60%;
-  }
-  .CardInfo {
+  } */
+  /* .CardInfo {
     height: 35vh;
     display: flex;
     flex-wrap: wrap;
@@ -341,7 +336,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     font-size: small;
-  }
+  } */
 
   .CardColorText {
     font-size: x-small;
