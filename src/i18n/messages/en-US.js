@@ -12,7 +12,7 @@ export default {
     tableCloths: "Table Cloths",
     "nav-contacts": "Contacts",
     "about-message":
-      " about us  about us  about us  about us  about us  about us  about us  about us  about us ",
+      "Mogotex Baltic LTD was founded in 2000. The company is a representative of the largest Belarusian textile manufacturer JSC Mogotex in the Baltic countries. The range of products on offer includes a large selection of fabrics for workwear in various industries, construction, medicine, recreation, and law enforcement agencies. We also offer fabrics for home textiles and other.",
     "vendor-code": "Vendor Code",
     Comp: "Composition %",
     Weight: "Weight",

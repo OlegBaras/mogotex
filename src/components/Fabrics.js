@@ -8,11 +8,11 @@ function Fabrics() {
       <WorkClothes />
       <TableCloths />
 
-      <div className="filters">
+      {/* <div className="filters">
         <label>Filtrams</label>
         <p>03c35 sudėtis, svoris</p>
         <p>5c30 sudėtis, svoris</p>
-      </div>
+      </div> */}
     </div>
   );
 }

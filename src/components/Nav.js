@@ -2,7 +2,7 @@ import React from "react";
 import { FormattedMessage } from "react-intl";
 import { Link } from "react-router-dom";
 import logo from "../logo.jpg";
-
+// import logo from "../logo1.svg";
 function Nav() {
   const navStyle = {
     color: "white",

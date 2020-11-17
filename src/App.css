@@ -169,22 +169,16 @@ nav {
 }
 
 .fabrics {
-  /* height: 80vh; */
   height: 100%;
-
   width: 100%;
   display: flex;
   justify-content: space-evenly;
-  align-items: flex-start;
-  padding-top: 2rem;
-  padding-right: 2rem;
-  padding-left: 2rem;
+  flex-wrap: wrap;
 }
 .fabrics label {
   color: black;
   font-family: "Times New Roman", Times, serif;
   margin-bottom: 2rem;
-  display: flex;
 }
 
 .workclothes {
@@ -193,8 +187,7 @@ nav {
   flex-direction: column;
   align-items: center;
   justify-items: flex-start;
-  /* position: relative; */
-  margin-right: 2rem;
+  border-bottom: 20px solid transparent;
 }
 
 .table-cloths {
@@ -203,7 +196,6 @@ nav {
   align-items: center;
   flex-direction: column;
   font-family: "Times New Roman", Times, serif;
-  margin-right: 2rem;
 }
 .contacts {
   /* background: white; */
@@ -338,29 +330,17 @@ nav {
     width: 90%;
   }
 
-  .fabrics {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-left: 4rem;
-    width: 100%;
-    padding-top: 0;
-  }
-
   .CardColor {
     height: 60%;
   }
   .CardInfo {
-    height: 40%;
+    height: 35vh;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     font-size: small;
-    /* height: 30vh; */
-    /* text-align: center; */
   }
 
   .CardColorText {
