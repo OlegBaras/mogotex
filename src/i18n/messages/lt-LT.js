@@ -12,8 +12,8 @@ export default {
     tableCloths: "Staltiesiniai",
     "nav-contacts": "Kontaktai",
     "about-message":
-      "UAB „Mogotex Baltic“ buvo įkurta 2000 m. Bendrovė yra didžiausio Baltarusijos tekstilės gamintojo „Mogotex“ atstovė Baltijos šalyse. Siūlomų produktų asortimente yra didelis audinių, skirtų įvairioms pramonės šakoms, statyboms, medicinai, poilsiui ir teisėsaugos institucijoms, darbo drabužiams pasirinkimas. Taip pat siūlome namų tekstilės audinius ir kt.",
-    "vendor-code": "Pardavėjo Kodas",
+      "UAB „Mogotex Baltic“ buvo įkurta 2000 m. Bendrovė yra didžiausio Baltarusijos tekstilės gamintojo „Mogotex“ atstovė Baltijos šalyse. Siūlomų produktų asortimente yra didelis audinių, skirtų įvairioms pramonės šakoms, statyboms, medicinai, poilsiui ir jėgos struktūroms, darbo drabužiams pasirinkimas. Taip pat siūlome namų tekstilės audinius ir kt.",
+    "vendor-code": "Prekės artikulas",
     Comp: "Sudėtis %",
     Weight: "Svoris",
     Colors: "Spalvos",

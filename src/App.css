@@ -239,6 +239,21 @@ nav {
   align-items: center;
 }
 
+.close {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  border-radius: 10px;
+}
+.close-button {
+  background: transparent;
+  border: none;
+  outline-style: none;
+  font-weight: bold;
+  font-size: x-large;
+  cursor: pointer;
+  transform: translateX(10px);
+}
 .active-modal {
   position: absolute;
   background: white;
@@ -281,7 +296,12 @@ nav {
   align-items: center;
   font-size: small;
 }
-
+.color-label {
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
 .color-button {
   color: rgb(0, 0, 0);
   cursor: pointer;

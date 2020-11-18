@@ -28,7 +28,7 @@ function WorkClothes() {
   const products = [
     {
       id: 1,
-      vendorCode: "art.3c17",
+      vendorCode: "3c17",
       comp: (
         <span>
           <span>
@@ -41,7 +41,6 @@ function WorkClothes() {
           <span>77</span>
         </span>
       ),
-      // comp: "cot23/pess77",
       weight: (
         <span>
           <span>139</span>
@@ -50,108 +49,124 @@ function WorkClothes() {
           </span>
         </span>
       ),
-      //"139 g/m²",
       colors: [
-        "#FFDA29",
-        "#998978",
-        "#58423F",
-        "#8B4963",
-        "#BB4F72",
-        "#E982A0",
-        "#BE132D",
-        "#525A5B",
-        "#08589D",
-        "#8D8F8F",
-        "#2E2F36",
-        "#42ADD5",
-        "#81BBA1",
-        "#7CB7A3",
-        "#4D826C",
+        { hex: "#FFDA29", mogotex: "010208" },
+        { hex: "#998978", mogotex: "040302" },
+        { hex: "#58423F", mogotex: "091001" },
+        { hex: "#8B4963", mogotex: "140905" },
+        { hex: "#BB4F72", mogotex: "150707" },
+        { hex: "#E982A0", mogotex: "151920" },
+        { hex: "#BE132D", mogotex: "181663" },
+        { hex: "#525A5B", mogotex: "195004" },
+        { hex: "#08589D", mogotex: "260706" },
+        { hex: "#8D8F8F", mogotex: "210602" },
+        { hex: "#2E2F36", mogotex: "261002" },
+        { hex: "#42ADD5", mogotex: "270605" },
+        { hex: "#81BBA1", mogotex: "380603" },
+        { hex: "#7CB7A3", mogotex: "360704" },
+        { hex: "#4D826C", mogotex: "380803" },
       ],
     },
     {
       id: 2,
-      vendorCode: "art.4c5",
+      vendorCode: "4c5",
       comp: "cot51/pes49",
       weight: "210 g/m²",
       colors: [
-        "#5B5149",
-        "#8A6F48",
-        "#FFAF12",
-        "#F9633B",
-        "#83CB53",
-        "#6A3331",
-        "#B92636",
-        "#686D6C",
-        "#9C90C4",
-        "#3D5E8C",
-        "#3C3F4A",
-        "#243F6C",
-        "#473951",
-        "#313D64",
-        "#2C313D",
-        "#6D8994",
-        "#12674A",
-        "#264A48",
-        "#726F70",
-        "#C0D725",
+        { hex: "#5B5149", mogotex: "020902" },
+        { hex: "#8A6F48", mogotex: "030704" },
+        { hex: "#FFAF12", mogotex: "040307" },
+        { hex: "#F9633B", mogotex: "090508" },
+        { hex: "#83CB53", mogotex: "160235" },
+        { hex: "#6A3331", mogotex: "171002" },
+        { hex: "#B92636", mogotex: "191663" },
+        { hex: "#686D6C", mogotex: "230601" },
+        { hex: "#9C90C4", mogotex: "230706" },
+        { hex: "#3D5E8C", mogotex: "240906" },
+        { hex: "#3C3F4A", mogotex: "250802" },
+        { hex: "#243F6C", mogotex: "250906" },
+        { hex: "#473951", mogotex: "251002" },
+        { hex: "#313D64", mogotex: "260903" },
+        { hex: "#2C313D", mogotex: "261005" },
+        { hex: "#6D8994", mogotex: "320602" },
+        { hex: "#12674A", mogotex: "390805" },
+        { hex: "#264A48", mogotex: "360802" },
+        { hex: "#726F70", mogotex: "184005" },
+        { hex: "#C0D725", mogotex: "460205" },
       ],
     },
     {
       id: 3,
-      vendorCode: "art.06c13",
+      vendorCode: "06c13",
       comp: "cot33/pes67",
       weight: "248 g/m²",
       colors: [
-        "#686D6C",
-        "#08589D",
-        "#2C313D",
-        "#FFDA29",
-        "#3C3F4A",
-        "#FF7420",
+        { hex: "#686D6C", mogotex: "230601" },
+        { hex: "#08589D", mogotex: "260706" },
+        { hex: "#2C313D", mogotex: "261005" },
+        { hex: "#FFDA29", mogotex: "010208" },
+        { hex: "#3C3F4A", mogotex: "250802" },
+        { hex: "#FF7420", mogotex: "16-1364" },
       ],
     },
     {
       id: 4,
-      vendorCode: "art.00c65",
+      vendorCode: "00c65",
       comp: "cot76/pes24",
       weight: "254 g/m²",
       colors: [
-        "#686D6C",
-        "#08589D",
-        "#2C313D",
-        "#473951",
-        "#313D64",
-        "#FF7420",
+        { hex: "#686D6C", mogotex: "230601" },
+        { hex: "#08589D", mogotex: "260706" },
+        { hex: "#2C313D", mogotex: "261005" },
+        { hex: "#473951", mogotex: "251002" },
+        { hex: "#313D64", mogotex: "260903" },
+        { hex: "#FF7420", mogotex: "16-1364" },
       ],
     },
     {
       id: 5,
-      vendorCode: "art.09c6",
+      vendorCode: "09c6+rip-stop",
       comp: "cot50/pes50",
       weight: "224 g/m²",
-      colors: ["#8A6F48", "#08589D", "#2C313D", "#473951"],
+      colors: [
+        { hex: "#8A6F48", mogotex: "030704" },
+        { hex: "#08589D", mogotex: "260706" },
+        { hex: "#2C313D", mogotex: "261005" },
+        { hex: "#473951", mogotex: "251002" },
+      ],
     },
     {
       id: 6,
-      vendorCode: "art.05c8",
+      vendorCode: "05c8",
       comp: "pes100",
       weight: "141 g/m²",
-      colors: ["#5B5149", "#D01C1F", "#2C313D", "#6A3331", "#363838"],
+      colors: [
+        { hex: "#5B5149", mogotex: "020902" },
+        { hex: "#D01C1F", mogotex: "16-1664" },
+        { hex: "#2C313D", mogotex: "261005" },
+        { hex: "#6A3331", mogotex: "171002" },
+        { hex: "#363838", mogotex: "19-4305" },
+      ],
     },
     {
       id: 7,
-      vendorCode: "art.8tc15",
+      vendorCode: "8tc15",
       comp: "pes100",
       weight: "133 g/m²",
-      colors: ["#5B5149", "#F9633B", "#2C313D", "#C0D725", "#998978"],
+      colors: [
+        { hex: "#5B5149", mogotex: "020902" },
+        { hex: "#F9633B", mogotex: "090508" },
+        { hex: "#2C313D", mogotex: "261005" },
+        { hex: "#C0D725", mogotex: "460205" },
+        { hex: "#998978", mogotex: "040302" },
+      ],
     },
     {
       id: 8,
-      vendorCode: "art.4c5+KMF",
+      vendorCode: "4c5+KMF",
       comp: "cot51/pes49",
       weight: "210 g/m²",
-      colors: ["orange", "lightblue", "pink"],
+      colors: [],
     },
   ];
 
@@ -168,19 +183,16 @@ function WorkClothes() {
   };
 
   const afterOpenModal = () => {
-    //  subtitle.style.color = "green";
-    //console.log(currentProduct.id);
     setColor(currentProduct.colors[0]);
   };
 
   const closeModal = () => {
     setIsOpen(false);
-    setColor(null);
+    // setColor(null);
   };
 
   const changeCardColor = (color) => {
     setColor(color);
-    //console.log(color);
   };
 
   return (
@@ -213,6 +225,7 @@ function WorkClothes() {
             <span>{product.vendorCode}</span>
             <span>{product.comp}</span>
             <span>{product.weight}</span>
+            {/* <span>{product.colors.length}</span> */}
             <span>
               <img alt="icon" src={colorIcon}></img>
             </span>
@@ -229,26 +242,39 @@ function WorkClothes() {
         currentProduct={currentProduct}
       >
         <div>
+          <div className="close">
+            <button
+              className="close-button"
+              onClick={() => {
+                closeModal();
+              }}
+            >
+              x
+            </button>
+          </div>
+          <div
+            className="CardColor"
+            style={{ backgroundColor: `${color.hex}` }}
+          ></div>
           <div className="CardInfo">
-            <div className="CardColor" style={{ backgroundColor: color }}>
-              {color}
-            </div>
             <div className="CardColorSelection">
-              {currentProduct.colors.map((color) => (
-                <button
-                  className="color-button"
-                  style={{ background: `${color}` }}
-                  onClick={() => {
-                    changeCardColor(color);
-                    console.log(`"${color}"`);
-                  }}
-                  key={uuidv4()}
-                >
-                  {color}
-                </button>
-              ))}
+              <div className="color-label">{color.mogotex}</div>
+              <div>
+                {currentProduct.colors.map((color) => (
+                  <button
+                    className="color-button"
+                    style={{ background: `${color.hex}` }}
+                    onClick={() => {
+                      changeCardColor(color);
+                    }}
+                    key={uuidv4()}
+                  >
+                    {color.mogotex}
+                  </button>
+                ))}
+              </div>
             </div>
-            <div className="CardColorText" style={{ color: `${color}` }}>
+            <div className="CardColorText">
               <h1>
                 <span>
                   <FormattedMessage id="vendor-code" />
@@ -261,7 +287,12 @@ function WorkClothes() {
                 </span>
                 : {currentProduct.weight}
               </h2>
-              <h2>comp: {currentProduct.comp}</h2>
+              <h2>
+                <span>
+                  <FormattedMessage id="Comp" />
+                </span>
+                : {currentProduct.comp}
+              </h2>
             </div>
           </div>
         </div>
