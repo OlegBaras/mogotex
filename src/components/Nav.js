@@ -30,16 +30,6 @@ function Nav() {
             <FormattedMessage id="nav-fabrics" />
           </li>
         </Link>
-        {/* <Link style={navStyle} to="/work-clothes">
-          <li>
-            <FormattedMessage id="nav-workClothes" />
-          </li>
-        </Link> */}
-        {/* <Link style={navStyle} to="/table-cloths">
-          <li>
-            <FormattedMessage id="nav-tableCloths" />
-          </li>
-        </Link> */}
         <Link style={navStyle} to="/contacts">
           <li>
             <FormattedMessage id="nav-contacts" />

@@ -10,7 +10,7 @@
   /* background: linear-gradient(
     90deg,
     rgba(255, 255, 255, 1) 21%,
-    rgba(184, 203, 122, 1) 100%,
+    rgb(150, 216, 161) 100%,
     rgba(255, 255, 255, 1) 100%
   ); */
   display: flex;
@@ -34,9 +34,7 @@
   justify-content: space-around;
   align-items: center;
 }
-p {
-  font-size: medium;
-}
+
 .title {
   font-weight: bold;
   color: rgb(140, 161, 140);
@@ -45,7 +43,6 @@ p {
 
 .product-button {
   display: flex;
-  /* justify-content: space-evenly; */
   justify-content: space-around;
   align-items: center;
   background-color: rgb(224, 242, 224);
@@ -64,28 +61,20 @@ button:focus {
 .product-button:hover {
   background-color: white;
 }
-span {
-  /* margin: 0.1rem; */
-}
+
 nav {
-  /* position: relative; */
   display: flex;
   justify-content: space-around;
   align-items: center;
   min-height: 10vh;
-  /* background: rgb(255, 255, 255); */
-  /* border-bottom-style: dotted; */
-  /* border-radius: 10px; */
+  border-bottom-style: dotted;
   width: 100%;
-  /* shaddow for nav */
-  /* box-shadow: 2px 2px 50px rgb(140, 161, 140); */
   border-bottom: 2px solid black;
 }
 
 .languageSelector {
   position: relative;
   display: flex;
-  /* justify-content: center; */
   align-self: flex-end;
   transform: translateX(-2rem);
   transform: translateY(-1.5rem);
@@ -100,7 +89,6 @@ nav {
 
 .languageSelector button:focus {
   outline: none;
-  /* box-shadow: none; */
 }
 
 .nav-links {
@@ -135,9 +123,7 @@ nav {
   font-family: "Times New Roman", Times, serif;
 }
 .home-links {
-  /* position: absolute; */
   width: 100%;
-  /* height: 90%; */
   padding-top: 10rem;
   width: 50%;
   display: flex;
@@ -198,7 +184,6 @@ nav {
   font-family: "Times New Roman", Times, serif;
 }
 .contacts {
-  /* background: white; */
   height: 80vh;
   font-family: "Times New Roman", Times, serif;
   display: flex;
@@ -325,12 +310,10 @@ nav {
   }
 
   nav {
-    /* position: relative; */
     display: flex;
     justify-content: left;
     align-items: center;
     min-height: 10vh;
-    /* background: rgb(255, 255, 255); */
     color: black;
     width: 100%;
   }
@@ -344,19 +327,6 @@ nav {
   .home-links {
     width: 90%;
   }
-
-  /* .CardColor {
-    height: 60%;
-  } */
-  /* .CardInfo {
-    height: 35vh;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    font-size: small;
-  } */
 
   .CardColorText {
     font-size: x-small;

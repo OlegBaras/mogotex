@@ -18,8 +18,9 @@ function WorkClothes() {
       borderRadius: "10px",
     },
     overlay: {
-      // backgroundColor: "#A9A9A9",
       backgroundColor: "white",
+      // backgroundColor: "#A9A9A9",
+      // backgroundColor: "pink",
     },
   };
 
@@ -170,9 +171,6 @@ function WorkClothes() {
     },
   ];
 
-  //let subtitle;
-  // let CardColor;
-
   const [modalIsOpen, setIsOpen] = useState(false);
   const [currentProduct, setCurrentProduct] = useState(products[0]);
   const [color, setColor] = useState("");
@@ -225,7 +223,6 @@ function WorkClothes() {
             <span>{product.vendorCode}</span>
             <span>{product.comp}</span>
             <span>{product.weight}</span>
-            {/* <span>{product.colors.length}</span> */}
             <span>
               <img alt="icon" src={colorIcon}></img>
             </span>
@@ -258,6 +255,7 @@ function WorkClothes() {
           ></div>
           <div className="CardInfo">
             <div className="CardColorSelection">
+              {/* {color ? '' : image ? '' : ''} */}
               <div className="color-label">{color.mogotex}</div>
               <div>
                 {currentProduct.colors.map((color) => (
