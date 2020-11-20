@@ -18,9 +18,8 @@ function WorkClothes() {
       borderRadius: "10px",
     },
     overlay: {
-      backgroundColor: "white",
       // backgroundColor: "#A9A9A9",
-      // backgroundColor: "pink",
+      backgroundColor: "white",
     },
   };
 
@@ -44,7 +43,7 @@ function WorkClothes() {
       ),
       weight: (
         <span>
-          <span>139</span>
+          <span>139 </span>
           <span>
             <FormattedMessage id="g/m²" />
           </span>
@@ -176,8 +175,9 @@ function WorkClothes() {
   const [color, setColor] = useState("");
 
   const openModal = (product) => {
-    setIsOpen(true);
     setCurrentProduct(product);
+    setIsOpen(true);
+    console.log("openModal");
   };
 
   const afterOpenModal = () => {
@@ -200,34 +200,40 @@ function WorkClothes() {
       </div>
 
       <div className="button-links">
-        <div className="button-links-tags">
-          <p>
-            <FormattedMessage id="vendor-code" />
-          </p>
-          <p>
-            <FormattedMessage id="Comp" />
-          </p>
-          <p>
-            <FormattedMessage id="Weight" />
-          </p>
-          <p>
-            <FormattedMessage id="Colors" />
-          </p>
-        </div>
-        {products.map((product) => (
-          <button
-            onClick={() => openModal(product)}
-            key={uuidv4()}
-            className="product-button"
-          >
-            <span>{product.vendorCode}</span>
-            <span>{product.comp}</span>
-            <span>{product.weight}</span>
-            <span>
-              <img alt="icon" src={colorIcon}></img>
-            </span>
-          </button>
-        ))}
+        <table className="table">
+          <thead>
+            <tr className="labels">
+              <th>
+                <FormattedMessage id="vendor-code" />
+              </th>
+              <th>
+                <FormattedMessage id="Comp" />
+              </th>
+              <th>
+                <FormattedMessage id="Weight" />
+              </th>
+              <th>
+                <FormattedMessage id="Colors" />
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            {products.map((product) => (
+              <tr
+                className="trRow"
+                onClick={() => openModal(product)}
+                key={uuidv4()}
+              >
+                <td>{product.vendorCode}</td>
+                <td>{product.comp}</td>
+                <td>{product.weight}</td>
+                <td>
+                  <img alt="icon" src={colorIcon}></img>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
       </div>
       <Modal
         className="active-modal"

@@ -1,5 +1,4 @@
-
-Click the link to check live on Netlify https://vibrant-tesla-f051d9.netlify.app
+Click the link to check live on Netlify https://mogotex.netlify.app/
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
