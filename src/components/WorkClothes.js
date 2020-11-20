@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Modal from "react-modal";
 import colorIcon from "../colorIcon.png";
+import camera from "../camera.png";
 import { v4 as uuidv4 } from "uuid";
 import { FormattedMessage } from "react-intl";
 
@@ -166,7 +167,7 @@ function WorkClothes() {
       vendorCode: "4c5+KMF",
       comp: "cot51/pes49",
       weight: "210 g/m²",
-      colors: [],
+      images: [{ path: "" }, { path: "" }, { path: "" }],
     },
   ];
 
@@ -219,6 +220,8 @@ function WorkClothes() {
           </thead>
           <tbody>
             {products.map((product) => (
+              // product.colors ? console.log("true") : console.log("false");
+
               <tr
                 className="trRow"
                 onClick={() => openModal(product)}
@@ -228,7 +231,11 @@ function WorkClothes() {
                 <td>{product.comp}</td>
                 <td>{product.weight}</td>
                 <td>
-                  <img alt="icon" src={colorIcon}></img>
+                  {product.colors ? (
+                    <img alt="icon" src={colorIcon} />
+                  ) : (
+                    <img alt="icon" src={camera} />
+                  )}
                 </td>
               </tr>
             ))}
