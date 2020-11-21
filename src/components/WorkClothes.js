@@ -339,7 +339,7 @@ function WorkClothes() {
             </div>
           </div>
         </div> */}
-        <div>MODAL TEST</div>
+        <div>MODAL</div>
       </Modal>
     </div>
   );
