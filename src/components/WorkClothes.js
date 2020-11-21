@@ -4,7 +4,7 @@ import colorIcon from "../colorIcon.png";
 import camera from "../camera.png";
 import { v4 as uuidv4 } from "uuid";
 import { FormattedMessage } from "react-intl";
-import './WorkClothes.css';
+import "./WorkClothes.css";
 
 function WorkClothes() {
   const customStyles = {
@@ -183,9 +183,8 @@ function WorkClothes() {
   };
 
   const afterOpenModal = () => {
-    // maybe do this at the rendering rows moment...
-    // setColor(currentProduct.colors[0]);
-    console.log(currentProduct.colors);
+    setColor(currentProduct.colors[0]);
+    console.log(products.images);
   };
 
   const closeModal = () => {
@@ -256,7 +255,7 @@ function WorkClothes() {
         contentLabel="Example Modal"
         currentProduct={currentProduct}
       >
-        <div>
+        {/* <div>
           <div className="close">
             <button
               className="close-button"
@@ -278,10 +277,6 @@ function WorkClothes() {
               style={{ backgroundColor: "pink" }}
             ></div>
           )}
-          {/* <div
-            className="CardColor"
-            style={{ backgroundColor: `${color.hex}` }}
-          ></div> */}
           <div className="CardInfo">
             {color ? (
               <div className="CardColorSelection">
@@ -304,20 +299,20 @@ function WorkClothes() {
             ) : (
               <div>
                 no colors, show images
-                {/* <div>
+                <div>
                   {currentProduct.images.map((image) => (
                     <button
                       className="color-button"
                       onClick={() => {
                         console.log(image);
-                        setImage(image);
+                        changeImageDisplay(image);
                       }}
                       key={uuidv4()}
                     >
-                      {image.path}
+                      a
                     </button>
                   ))}
-                </div> */}
+                </div>
                 <div></div>
               </div>
             )}
@@ -343,7 +338,8 @@ function WorkClothes() {
               </h2>
             </div>
           </div>
-        </div>
+        </div> */}
+        <div>MODAL TEST</div>
       </Modal>
     </div>
   );
