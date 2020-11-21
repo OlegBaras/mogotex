@@ -183,8 +183,9 @@ function WorkClothes() {
   };
 
   const afterOpenModal = () => {
-    setColor(currentProduct.colors[0]);
-    console.log(products.images);
+    currentProduct.colors
+      ? setColor(currentProduct.colors[0])
+      : setImage(currentProduct.images[0]);
   };
 
   const closeModal = () => {
@@ -255,91 +256,95 @@ function WorkClothes() {
         contentLabel="Example Modal"
         currentProduct={currentProduct}
       >
-        {/* <div>
-          <div className="close">
-            <button
-              className="close-button"
-              onClick={() => {
-                closeModal();
-              }}
-            >
-              x
-            </button>
-          </div>
-          {color ? (
-            <div
-              className="CardColor"
-              style={{ backgroundColor: `${color.hex}` }}
-            ></div>
-          ) : (
-            <div
-              className="CardColor"
-              style={{ backgroundColor: "pink" }}
-            ></div>
-          )}
-          <div className="CardInfo">
+        <div>MODAL</div>
+        {currentProduct.colors ? (
+          <div>
+            <div className="close">
+              <button
+                className="close-button"
+                onClick={() => {
+                  closeModal();
+                }}
+              >
+                x
+              </button>
+            </div>
             {color ? (
-              <div className="CardColorSelection">
-                <div className="color-label">{color.mogotex}</div>
-                <div>
-                  {currentProduct.colors.map((color) => (
-                    <button
-                      className="color-button"
-                      style={{ background: `${color.hex}` }}
-                      onClick={() => {
-                        changeCardColor(color);
-                      }}
-                      key={uuidv4()}
-                    >
-                      {color.mogotex}
-                    </button>
-                  ))}
-                </div>
-              </div>
+              <div
+                className="CardColor"
+                style={{ backgroundColor: `${color.hex}` }}
+              ></div>
             ) : (
-              <div>
-                no colors, show images
-                <div>
-                  {currentProduct.images.map((image) => (
-                    <button
-                      className="color-button"
-                      onClick={() => {
-                        console.log(image);
-                        changeImageDisplay(image);
-                      }}
-                      key={uuidv4()}
-                    >
-                      a
-                    </button>
-                  ))}
-                </div>
-                <div></div>
-              </div>
+              <div
+                className="CardColor"
+                style={{ backgroundColor: "pink" }}
+              ></div>
             )}
+            <div className="CardInfo">
+              {color ? (
+                <div className="CardColorSelection">
+                  <div className="color-label">{color.mogotex}</div>
+                  <div>
+                    {currentProduct.colors.map((color) => (
+                      <button
+                        className="color-button"
+                        style={{ background: `${color.hex}` }}
+                        onClick={() => {
+                          changeCardColor(color);
+                        }}
+                        key={uuidv4()}
+                      >
+                        {color.mogotex}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              ) : (
+                <div>
+                  no colors, show images
+                  {/* <div>
+                    {currentProduct.images.map((image) => (
+                      <button
+                        className="color-button"
+                        onClick={() => {
+                          console.log(image);
+                          changeImageDisplay(image);
+                        }}
+                        key={uuidv4()}
+                      >
+                        a
+                      </button>
+                    ))}
+                  </div> */}
+                  <div></div>
+                </div>
+              )}
 
-            <div className="CardColorText">
-              <h1>
-                <span>
-                  <FormattedMessage id="vendor-code" />
-                </span>
-                : {currentProduct.vendorCode}
-              </h1>
-              <h2>
-                <span>
-                  <FormattedMessage id="Weight" />
-                </span>
-                : {currentProduct.weight}
-              </h2>
-              <h2>
-                <span>
-                  <FormattedMessage id="Comp" />
-                </span>
-                : {currentProduct.comp}
-              </h2>
+              <div className="CardColorText">
+                <h1>
+                  <span>
+                    <FormattedMessage id="vendor-code" />
+                  </span>
+                  : {currentProduct.vendorCode}
+                </h1>
+                <h2>
+                  <span>
+                    <FormattedMessage id="Weight" />
+                  </span>
+                  : {currentProduct.weight}
+                </h2>
+                <h2>
+                  <span>
+                    <FormattedMessage id="Comp" />
+                  </span>
+                  : {currentProduct.comp}
+                </h2>
+              </div>
             </div>
           </div>
-        </div> */}
-        <div>MODAL</div>
+        ) : (
+          <div>images</div>
+        )}
       </Modal>
     </div>
   );
