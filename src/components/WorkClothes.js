@@ -174,15 +174,17 @@ function WorkClothes() {
   const [modalIsOpen, setIsOpen] = useState(false);
   const [currentProduct, setCurrentProduct] = useState(products[0]);
   const [color, setColor] = useState("");
+  const [image, setImage] = useState("");
 
   const openModal = (product) => {
     setCurrentProduct(product);
     setIsOpen(true);
-    console.log("openModal");
   };
 
   const afterOpenModal = () => {
-    setColor(currentProduct.colors[0]);
+    // maybe do this at the rendering rows moment...
+    // setColor(currentProduct.colors[0]);
+    console.log(currentProduct.colors);
   };
 
   const closeModal = () => {
@@ -192,6 +194,10 @@ function WorkClothes() {
 
   const changeCardColor = (color) => {
     setColor(color);
+  };
+
+  const changeImageDisplay = (image) => {
+    setImage(image);
   };
 
   return (
@@ -220,8 +226,6 @@ function WorkClothes() {
           </thead>
           <tbody>
             {products.map((product) => (
-              // product.colors ? console.log("true") : console.log("false");
-
               <tr
                 className="trRow"
                 onClick={() => openModal(product)}
@@ -262,29 +266,61 @@ function WorkClothes() {
               x
             </button>
           </div>
-          <div
+          {color ? (
+            <div
+              className="CardColor"
+              style={{ backgroundColor: `${color.hex}` }}
+            ></div>
+          ) : (
+            <div
+              className="CardColor"
+              style={{ backgroundColor: "pink" }}
+            ></div>
+          )}
+          {/* <div
             className="CardColor"
             style={{ backgroundColor: `${color.hex}` }}
-          ></div>
+          ></div> */}
           <div className="CardInfo">
-            <div className="CardColorSelection">
-              {/* {color ? '' : image ? '' : ''} */}
-              <div className="color-label">{color.mogotex}</div>
-              <div>
-                {currentProduct.colors.map((color) => (
-                  <button
-                    className="color-button"
-                    style={{ background: `${color.hex}` }}
-                    onClick={() => {
-                      changeCardColor(color);
-                    }}
-                    key={uuidv4()}
-                  >
-                    {color.mogotex}
-                  </button>
-                ))}
+            {color ? (
+              <div className="CardColorSelection">
+                <div className="color-label">{color.mogotex}</div>
+                <div>
+                  {currentProduct.colors.map((color) => (
+                    <button
+                      className="color-button"
+                      style={{ background: `${color.hex}` }}
+                      onClick={() => {
+                        changeCardColor(color);
+                      }}
+                      key={uuidv4()}
+                    >
+                      {color.mogotex}
+                    </button>
+                  ))}
+                </div>
               </div>
-            </div>
+            ) : (
+              <div>
+                no colors, show images
+                {/* <div>
+                  {currentProduct.images.map((image) => (
+                    <button
+                      className="color-button"
+                      onClick={() => {
+                        console.log(image);
+                        setImage(image);
+                      }}
+                      key={uuidv4()}
+                    >
+                      {image.path}
+                    </button>
+                  ))}
+                </div> */}
+                <div></div>
+              </div>
+            )}
+
             <div className="CardColorText">
               <h1>
                 <span>
