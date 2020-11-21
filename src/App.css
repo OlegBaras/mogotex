@@ -120,11 +120,9 @@ nav {
 }
 .labels {
   cursor: text;
-  /* border: none; */
 }
 
 tr {
-  border-bottom: 2px solid black;
   cursor: pointer;
   text-align: center;
   border-radius: 10px;
@@ -138,8 +136,6 @@ tr:hover {
 }
 td {
   padding: 8px;
-
-  /* border-bottom: 2px solid green; */
 }
 th {
   padding: 8px;

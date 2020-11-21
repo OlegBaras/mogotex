@@ -4,6 +4,7 @@ import colorIcon from "../colorIcon.png";
 import camera from "../camera.png";
 import { v4 as uuidv4 } from "uuid";
 import { FormattedMessage } from "react-intl";
+import './WorkClothes.css';
 
 function WorkClothes() {
   const customStyles = {
