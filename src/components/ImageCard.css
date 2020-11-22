@@ -1,0 +1,11 @@
+.ImageCard {
+  border: 2px solid red;
+  height: 50vh;
+  width: 100%;
+}
+
+.imageHolder {
+  height: 50%;
+  width: 50%;
+  border: 2px solid green;
+}

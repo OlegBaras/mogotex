@@ -5,6 +5,10 @@ import camera from "../camera.png";
 import { v4 as uuidv4 } from "uuid";
 import { FormattedMessage } from "react-intl";
 import "./WorkClothes.css";
+import "./ImageCard.css";
+import "../test1.png";
+import "../test2.png";
+import "../test3.png";
 
 function WorkClothes() {
   const customStyles = {
@@ -168,7 +172,11 @@ function WorkClothes() {
       vendorCode: "4c5+KMF",
       comp: "cot51/pes49",
       weight: "210 g/m²",
-      images: [{ path: "" }, { path: "" }, { path: "" }],
+      images: [
+        { path: "../test1.png", title: "linas1" },
+        { path: "../test2.png", title: "linas2" },
+        { path: "../test3.png", title: "linas3" },
+      ],
     },
   ];
 
@@ -190,15 +198,10 @@ function WorkClothes() {
 
   const closeModal = () => {
     setIsOpen(false);
-    // setColor(null);
   };
 
   const changeCardColor = (color) => {
     setColor(color);
-  };
-
-  const changeImageDisplay = (image) => {
-    setImage(image);
   };
 
   return (
@@ -257,6 +260,7 @@ function WorkClothes() {
         currentProduct={currentProduct}
       >
         <div>MODAL</div>
+        {/* COLORS MODAL */}
         {currentProduct.colors ? (
           <div>
             <div className="close">
@@ -269,57 +273,28 @@ function WorkClothes() {
                 x
               </button>
             </div>
-            {color ? (
-              <div
-                className="CardColor"
-                style={{ backgroundColor: `${color.hex}` }}
-              ></div>
-            ) : (
-              <div
-                className="CardColor"
-                style={{ backgroundColor: "pink" }}
-              ></div>
-            )}
+            <div
+              className="CardColor"
+              style={{ backgroundColor: `${color.hex}` }}
+            ></div>
             <div className="CardInfo">
-              {color ? (
-                <div className="CardColorSelection">
-                  <div className="color-label">{color.mogotex}</div>
-                  <div>
-                    {currentProduct.colors.map((color) => (
-                      <button
-                        className="color-button"
-                        style={{ background: `${color.hex}` }}
-                        onClick={() => {
-                          changeCardColor(color);
-                        }}
-                        key={uuidv4()}
-                      >
-                        {color.mogotex}
-                      </button>
-                    ))}
-                  </div>
-                </div>
-              ) : (
+              <div className="CardColorSelection">
+                <div className="color-label">{color.mogotex}</div>
                 <div>
-                  no colors, show images
-                  {/* <div>
-                    {currentProduct.images.map((image) => (
-                      <button
-                        className="color-button"
-                        onClick={() => {
-                          console.log(image);
-                          changeImageDisplay(image);
-                        }}
-                        key={uuidv4()}
-                      >
-                        a
-                      </button>
-                    ))}
-                  </div> */}
-                  <div></div>
+                  {currentProduct.colors.map((color) => (
+                    <button
+                      className="color-button"
+                      style={{ background: `${color.hex}` }}
+                      onClick={() => {
+                        changeCardColor(color);
+                      }}
+                      key={uuidv4()}
+                    >
+                      {color.mogotex}
+                    </button>
+                  ))}
                 </div>
-              )}
-
+              </div>
               <div className="CardColorText">
                 <h1>
                   <span>
@@ -343,7 +318,35 @@ function WorkClothes() {
             </div>
           </div>
         ) : (
-          <div>images</div>
+          // IMAGES MODAL
+          <div>
+            <div className="close">
+              <button
+                className="close-button"
+                onClick={() => {
+                  closeModal();
+                }}
+              >
+                x
+              </button>
+            </div>
+            <div className="ImageCard">
+              <div className="imageHolder">
+                <img src={image.path} />
+              </div>
+              <div>
+                {currentProduct.images.map((image) => (
+                  <div>
+                    <img src={image.path}></img>
+                    <p>{image.title}</p>
+                  </div>
+                ))}
+              </div>
+              <div>vendor code :{currentProduct.vendorCode}</div>
+              <div>comp :{currentProduct.comp}</div>
+              <div>weight :{currentProduct.weight}</div>
+            </div>
+          </div>
         )}
       </Modal>
     </div>
