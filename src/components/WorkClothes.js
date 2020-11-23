@@ -9,6 +9,7 @@ import "./ImageCard.css";
 import "../test1.png";
 import "../test2.png";
 import "../test3.png";
+import "../test4.png";
 
 function WorkClothes() {
   const customStyles = {
@@ -173,9 +174,10 @@ function WorkClothes() {
       comp: "cot51/pes49",
       weight: "210 g/m²",
       images: [
-        { path: "../test1.png", title: "linas1" },
-        { path: "../test2.png", title: "linas2" },
-        { path: "../test3.png", title: "linas3" },
+        { path: "/test1.png", title: "linas1" },
+        { path: "/test2.png", title: "linas2" },
+        { path: "/test3.png", title: "linas3" },
+        { path: "/test4.png", title: "linas4" },
       ],
     },
   ];
@@ -330,16 +332,22 @@ function WorkClothes() {
                 x
               </button>
             </div>
+            {/* Image Gallery */}
             <div className="ImageCard">
               <div className="imageHolder">
-                <img src={image.path} />
+                <img src={`images/fullsize${image.path}`} alt="fullimage" />
               </div>
-              <div>
+              <div className="thumbnailHolder">
                 {currentProduct.images.map((image) => (
-                  <div>
-                    <img src={image.path}></img>
-                    <p>{image.title}</p>
-                  </div>
+                  <img
+                    onClick={() => {
+                      setImage(image);
+                    }}
+                    // src={`images/${image.path}`}
+                    src={`images/thumbnail${image.path}`}
+                    alt="imagesample"
+                    key={image.title}
+                  />
                 ))}
               </div>
               <div>vendor code :{currentProduct.vendorCode}</div>
