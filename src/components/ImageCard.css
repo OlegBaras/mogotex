@@ -1,5 +1,5 @@
 .ImageCard {
-  border: 2px solid red;
+  /* border: 2px solid red; */
   height: 70vh;
   width: 100%;
   display: flex;
@@ -7,22 +7,34 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
+  /* overflow: hidden; */
+  border: 2px solid lightgrey;
+  border-radius: 10px;
 }
-
+.image-title {
+  height: 2rem;
+  display: flex;
+  align-items: center;
+}
 .imageHolder {
-  height: 40vh;
+  display: flex;
+  justify-content: center;
+  height: 60%;
   width: 100%;
-  border: 2px solid green;
+}
+.imageHolder img {
+  border-radius: 10px;
 }
 
 .thumbnailHolder {
+  margin-top: 1rem;
   width: 100%;
-  margin-top: 2rem;
-
   display: flex;
-  justify-content: space-around;
-  border: 2px solid green;
-  overflow: hidden;
+  justify-content: space-evenly;
   cursor: pointer;
+}
+
+.thumbnailHolder img {
+  height: 50px;
+  border-radius: 5px;
 }

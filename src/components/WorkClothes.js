@@ -132,7 +132,7 @@ function WorkClothes() {
     },
     {
       id: 5,
-      vendorCode: "09c6+rip-stop",
+      vendorCode: "09c6 rip-stop",
       comp: "cot50/pes50",
       weight: "224 g/m²",
       colors: [
@@ -174,10 +174,12 @@ function WorkClothes() {
       comp: "cot51/pes49",
       weight: "210 g/m²",
       images: [
-        { path: "/test1.png", title: "linas1" },
-        { path: "/test2.png", title: "linas2" },
-        { path: "/test3.png", title: "linas3" },
-        { path: "/test4.png", title: "linas4" },
+        { path: "/kmf3679-1.png", title: "kmf3679-1" },
+        { path: "/kmf3724-7.png", title: "kmf3724-7" },
+        { path: "/kmf3724-9.png", title: "kmf3724-9" },
+        { path: "/kmf4099-10.png", title: "kmf4099-10" },
+        { path: "/kmf4368-4.png", title: "kmf4368-4" },
+        { path: "/kmf4588-1.png", title: "kmf4588-1" },
       ],
     },
   ];
@@ -336,6 +338,7 @@ function WorkClothes() {
               <div className="imageHolder">
                 <img src={`images/fullsize${image.path}`} alt="fullimage" />
               </div>
+              <div className="image-title">title: {image.title}</div>
               <div className="thumbnailHolder">
                 {currentProduct.images.map((image) => (
                   <img
@@ -348,9 +351,11 @@ function WorkClothes() {
                   />
                 ))}
               </div>
-              <div>vendor code :{currentProduct.vendorCode}</div>
-              <div>comp :{currentProduct.comp}</div>
-              <div>weight :{currentProduct.weight}</div>
+              <div className="image-info">
+                <div>vendor code :{currentProduct.vendorCode}</div>
+                <div>comp :{currentProduct.comp}</div>
+                <div>weight :{currentProduct.weight}</div>
+              </div>
             </div>
           </div>
         )}
