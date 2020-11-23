@@ -261,7 +261,6 @@ function WorkClothes() {
         contentLabel="Example Modal"
         currentProduct={currentProduct}
       >
-        <div>MODAL</div>
         {/* COLORS MODAL */}
         {currentProduct.colors ? (
           <div>
@@ -343,7 +342,6 @@ function WorkClothes() {
                     onClick={() => {
                       setImage(image);
                     }}
-                    // src={`images/${image.path}`}
                     src={`images/thumbnail${image.path}`}
                     alt="imagesample"
                     key={image.title}
