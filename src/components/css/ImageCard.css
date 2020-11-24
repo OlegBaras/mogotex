@@ -39,15 +39,3 @@
   border-radius: 5px;
   margin: 5px;
 }
-.button-holder {
-  /* background-color: green; */
-  height: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-}
-
-p {
-  margin-bottom: 1.5rem;
-}
