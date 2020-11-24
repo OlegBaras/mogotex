@@ -4,12 +4,9 @@ import colorIcon from "../colorIcon.png";
 import camera from "../camera.png";
 import { v4 as uuidv4 } from "uuid";
 import { FormattedMessage } from "react-intl";
-import "./WorkClothes.css";
-import "./ImageCard.css";
-import "../test1.png";
-import "../test2.png";
-import "../test3.png";
-import "../test4.png";
+import "./css/WorkClothes.css";
+import "./css/ColorCard.css";
+import "./css/ImageCard.css";
 
 function WorkClothes() {
   const customStyles = {
@@ -21,15 +18,11 @@ function WorkClothes() {
       marginRight: "-50%",
       transform: "translate(-50%, -50%)",
       width: "60%",
-      // height: "70%",
+      // width: "auto",
       height: "auto",
       borderRadius: "10px",
-      // background: "red",
-      // overflow: "auto",
     },
     overlay: {
-      // backgroundColor: "#A9A9A9",
-      // backgroundColor: "grey",
       background: "rgba(0, 0, 0, 0.8)",
     },
   };
@@ -267,57 +260,33 @@ function WorkClothes() {
         contentLabel="Example Modal"
         currentProduct={currentProduct}
       >
+        {/* <div className="close-btn"> */}
+        <div>
+          <button
+            className="close-button"
+            onClick={() => {
+              closeModal();
+            }}
+          >
+            x
+          </button>
+        </div>
         {/* COLORS MODAL */}
         {currentProduct.colors ? (
-          <div>
-            <div className="close-btn">
-              <button
-                className="close-button"
-                onClick={() => {
-                  closeModal();
-                }}
-              >
-                x
-              </button>
-            </div>
-            <div className="CardInfo">
-              <div className="CardColorSelection">
-                {/* <div className="color-label">{color.mogotex}</div> */}
-                <div className="button-holder">
-                  {currentProduct.colors.map((color) => (
-                    <div className="actualButton" key={uuidv4()}>
-                      <div
-                        className="color-button"
-                        style={{ background: `${color.hex}` }}
-                        onClick={() => {
-                          changeCardColor(color);
-                        }}
-                      ></div>
-                      <p style={{ textAlign: "center" }}>{color.mogotex}</p>
-                    </div>
-                  ))}
+          <div className="holder">
+            <div className="color-holder">
+              {currentProduct.colors.map((color) => (
+                <div className="actualButton" key={uuidv4()}>
+                  <div
+                    className="color-button"
+                    style={{ background: `${color.hex}` }}
+                    onClick={() => {
+                      changeCardColor(color);
+                    }}
+                  ></div>
+                  <p>{color.mogotex}</p>
                 </div>
-              </div>
-              {/* <div className="CardColorText">
-                <h1>
-                  <span>
-                    <FormattedMessage id="vendor-code" />
-                  </span>
-                  : {currentProduct.vendorCode}
-                </h1>
-                <h2>
-                  <span>
-                    <FormattedMessage id="Weight" />
-                  </span>
-                  : {currentProduct.weight}
-                </h2>
-                <h2>
-                  <span>
-                    <FormattedMessage id="Comp" />
-                  </span>
-                  : {currentProduct.comp}
-                </h2>
-              </div> */}
+              ))}
             </div>
           </div>
         ) : (
