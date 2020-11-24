@@ -1,5 +1,4 @@
 .ImageCard {
-  /* border: 2px solid red; */
   height: 70vh;
   width: 100%;
   display: flex;
@@ -19,6 +18,7 @@
 .imageHolder {
   display: flex;
   justify-content: center;
+  align-items: center;
   height: 60%;
   width: 100%;
 }
@@ -37,4 +37,17 @@
 .thumbnailHolder img {
   height: 50px;
   border-radius: 5px;
+  margin: 5px;
+}
+.button-holder {
+  /* background-color: green; */
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+p {
+  margin-bottom: 1.5rem;
 }

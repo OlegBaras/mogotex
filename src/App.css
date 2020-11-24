@@ -253,11 +253,10 @@ th {
   align-items: center;
 }
 
-.close {
+.close-btn {
   width: 100%;
   display: flex;
   justify-content: flex-end;
-  border-radius: 10px;
 }
 .close-button {
   background: transparent;
@@ -266,11 +265,13 @@ th {
   font-weight: bold;
   font-size: x-large;
   cursor: pointer;
-  transform: translateX(10px);
+  transform: translateX(-10px);
+  /* color: white; */
 }
 .active-modal {
   position: absolute;
   background: white;
+  opacity: 1;
 }
 
 .active-modal:focus {
@@ -283,6 +284,7 @@ th {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  height: 90%;
 }
 
 .CardColor {
@@ -296,10 +298,13 @@ th {
   border-radius: 10px;
 }
 .CardColorSelection {
+  /* border: 2px solid red; */
+  height: 60%;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .CardColorText {
@@ -317,21 +322,22 @@ th {
   width: 100%;
 }
 .color-button {
-  /* color: rgb(0, 0, 0); */
   color: transparent;
-  cursor: pointer;
-  height: 2rem;
+  /* color: rgb(0, 0, 0); */
+  /* cursor: pointer; */
+  height: 8rem;
+  width: 8rem;
   border: none;
   border-radius: 10px;
-  margin-top: 0.5rem;
-  margin-left: 1rem;
+  margin: 5px;
+  /* margin-left: 1rem; */
 }
 .color-button:focus {
   outline-style: none;
 }
 .color-button:hover {
   /* height: 3rem; */
-  transform: scale(1.5);
+  /* transform: scale(1.5); */
 }
 
 @media screen and (max-width: 768px) {
