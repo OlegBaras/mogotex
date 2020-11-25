@@ -1,41 +1,25 @@
-.ImageCard {
-  height: 70vh;
-  width: 100%;
+.image-card {
   display: flex;
+  justify-content: center;
   flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.image-holder {
+  display: flex;
+  justify-content: center;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  /* overflow: hidden; */
-  border: 2px solid lightgrey;
-  border-radius: 10px;
-}
-.image-title {
-  height: 2rem;
-  display: flex;
-  align-items: center;
-}
-.imageHolder {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 60%;
-  width: 100%;
-}
-.imageHolder img {
-  border-radius: 10px;
+  grid-gap: 10px;
 }
 
-.thumbnailHolder {
+.image-holder img {
   margin-top: 1rem;
+  border-radius: 5px;
   width: 100%;
-  display: flex;
-  justify-content: space-evenly;
-  cursor: pointer;
 }
 
-.thumbnailHolder img {
-  height: 50px;
-  border-radius: 5px;
-  margin: 5px;
+.image-holder p {
+  text-align: center;
+  margin-bottom: 1rem;
 }
