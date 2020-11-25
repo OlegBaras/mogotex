@@ -260,7 +260,6 @@ function WorkClothes() {
         contentLabel="Example Modal"
         currentProduct={currentProduct}
       >
-        {/* <div className="close-btn"> */}
         <div>
           <button
             className="close-button"
@@ -273,7 +272,7 @@ function WorkClothes() {
         </div>
         {/* COLORS MODAL */}
         {currentProduct.colors ? (
-          <div className="holder">
+          <div className="color-card">
             <div className="color-holder">
               {currentProduct.colors.map((color) => (
                 <div className="actualButton" key={uuidv4()}>
@@ -292,38 +291,22 @@ function WorkClothes() {
         ) : (
           // IMAGES MODAL
           <div>
-            <div className="close-btn">
-              <button
-                className="close-button"
-                onClick={() => {
-                  closeModal();
-                }}
-              >
-                x
-              </button>
-            </div>
             {/* Image Gallery */}
-            <div className="ImageCard">
-              <div className="imageHolder">
-                <img src={`images/fullsize${image.path}`} alt="fullimage" />
-              </div>
-              <div className="image-title">title: {image.title}</div>
-              <div className="thumbnailHolder">
+            <div className="image-card">
+              <div className="image-holder">
                 {currentProduct.images.map((image) => (
-                  <img
-                    onClick={() => {
-                      setImage(image);
-                    }}
-                    src={`images/thumbnail${image.path}`}
-                    alt="imagesample"
-                    key={image.title}
-                  />
+                  <div>
+                    <img
+                      onClick={() => {
+                        setImage(image);
+                      }}
+                      src={`images/thumbnail${image.path}`}
+                      alt="imagesample"
+                      key={image.title}
+                    />
+                    <p>{image.title}</p>
+                  </div>
                 ))}
-              </div>
-              <div className="image-info">
-                <div>vendor code :{currentProduct.vendorCode}</div>
-                <div>comp :{currentProduct.comp}</div>
-                <div>weight :{currentProduct.weight}</div>
               </div>
             </div>
           </div>

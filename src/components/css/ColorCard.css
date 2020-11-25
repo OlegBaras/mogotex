@@ -1,6 +1,3 @@
-.close-btn {
-}
-
 .close-button {
   position: absolute;
   width: 100%;
@@ -16,9 +13,10 @@
   /* color: white; */
 }
 
-.holder {
+.color-card {
   display: flex;
   justify-content: center;
+  width: 100%;
 }
 .color-holder {
   margin-top: 1rem;
