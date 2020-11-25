@@ -65,7 +65,7 @@ function WorkClothes() {
         { hex: "#08589D", mogotex: "260706" },
         { hex: "#8D8F8F", mogotex: "210602" },
         { hex: "#2E2F36", mogotex: "261002" },
-        { hex: "#42ADD5", mogotex: "270605" },
+        { hex: "#718ef9", mogotex: "270605" },
         { hex: "#81BBA1", mogotex: "380603" },
         { hex: "#7CB7A3", mogotex: "360704" },
         { hex: "#4D826C", mogotex: "380803" },
@@ -295,7 +295,7 @@ function WorkClothes() {
             <div className="image-card">
               <div className="image-holder">
                 {currentProduct.images.map((image) => (
-                  <div>
+                  <div key={image.title}>
                     <img
                       onClick={() => {
                         setImage(image);
