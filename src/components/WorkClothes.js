@@ -167,6 +167,13 @@ function WorkClothes() {
     },
     {
       id: 8,
+      vendorCode: "8tc15",
+      comp: "pes100",
+      weight: "133 g/m²",
+      images: [{ path: "/8tc15-1.png" }, { path: "/8tc15-2.png" }],
+    },
+    {
+      id: 9,
       vendorCode: "4c5+KMF",
       comp: "cot51/pes49",
       weight: "210 g/m²",
@@ -177,6 +184,7 @@ function WorkClothes() {
         { path: "/4099-10.png", title: "4099-10" },
         { path: "/4368-4.png", title: "4368-4" },
         { path: "/4588-1.png", title: "4588-1" },
+        { path: "/4006-17.png", title: "4006-17" },
       ],
     },
   ];
@@ -260,15 +268,13 @@ function WorkClothes() {
         contentLabel="Example Modal"
         currentProduct={currentProduct}
       >
-        <div>
-          <button
-            className="close-button"
-            onClick={() => {
-              closeModal();
-            }}
-          >
-            x
-          </button>
+        <div
+          className="close-button"
+          onClick={() => {
+            closeModal();
+          }}
+        >
+          x
         </div>
         {/* COLORS MODAL */}
         {currentProduct.colors ? (
@@ -295,14 +301,14 @@ function WorkClothes() {
             <div className="image-card">
               <div className="image-holder">
                 {currentProduct.images.map((image) => (
-                  <div key={image.title}>
+                  <div key={uuidv4()}>
                     <img
                       onClick={() => {
                         setImage(image);
                       }}
                       src={`images/thumbnail${image.path}`}
                       alt="imagesample"
-                      key={image.title}
+                      key={uuidv4()}
                     />
                     <p>{image.title}</p>
                   </div>

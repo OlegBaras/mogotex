@@ -10,11 +10,9 @@
 .image-holder {
   overflow-y: scroll;
   max-height: 700px;
-  position: relative;
 
   display: flex;
   justify-content: center;
-
   flex-wrap: wrap;
   grid-gap: 10px;
 }
@@ -22,7 +20,6 @@
 .image-holder img {
   margin-top: 1rem;
   border-radius: 5px;
-  width: 100%;
 }
 
 .image-holder p {
