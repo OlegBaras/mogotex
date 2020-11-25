@@ -11,6 +11,7 @@
   cursor: pointer;
   transform: translateX(-5px) translateY(-7px);
   /* color: white; */
+  z-index: 10;
 }
 
 .color-card {
@@ -18,15 +19,16 @@
   justify-content: center;
   width: 100%;
   overflow: scroll;
+  padding: 1rem;
 }
 .color-holder {
   overflow-y: scroll;
   max-height: 700px;
-  /* position: relative; */
+  position: relative;
 
-  margin-top: 1rem;
+  /* margin-top: 1rem;
   margin-left: 1rem;
-  margin-right: 1rem;
+  margin-right: 1rem; */
   display: inline-flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -57,13 +59,19 @@ p {
 }
 
 *::-webkit-scrollbar {
-  width: 5px;
+  /* width: 20px; */
+  /* background-color: black; */
+  /* height: 90%; */
+  color: transparent;
 }
 *::-webkit-scrollbar-track {
-  background: transparent;
+  /* background: transparent; */
+  height: 70%;
+  border: transparent;
 }
 *::-webkit-scrollbar-thumb {
+  height: 90%;
   background-color: rgba(155, 155, 155, 0.5);
   border-radius: 20px;
-  border: transparent;
+  /* border: transparent; */
 }
