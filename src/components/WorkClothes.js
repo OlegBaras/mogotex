@@ -171,12 +171,12 @@ function WorkClothes() {
       comp: "cot51/pes49",
       weight: "210 g/m²",
       images: [
-        { path: "/kmf3679-1.png", title: "kmf3679-1" },
-        { path: "/kmf3724-7.png", title: "kmf3724-7" },
-        { path: "/kmf3724-9.png", title: "kmf3724-9" },
-        { path: "/kmf4099-10.png", title: "kmf4099-10" },
-        { path: "/kmf4368-4.png", title: "kmf4368-4" },
-        { path: "/kmf4588-1.png", title: "kmf4588-1" },
+        { path: "/3679-1.png", title: "3679-1" },
+        { path: "/3724-7.png", title: "3724-7" },
+        { path: "/3724-9.png", title: "3724-9" },
+        { path: "/4099-10.png", title: "4099-10" },
+        { path: "/4368-4.png", title: "4368-4" },
+        { path: "/4588-1.png", title: "4588-1" },
       ],
     },
   ];

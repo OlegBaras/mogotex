@@ -228,6 +228,7 @@ th {
   background: white;
   opacity: 1;
   display: flex;
+  overflow: scroll;
 }
 
 .active-modal:focus {
