@@ -28,7 +28,7 @@ function TableCloths() {
   const products = [
     {
       id: 1,
-      vendorCode: "art.04c47",
+      vendorCode: "04c47",
       comp: (
         <span>
           <span>
@@ -70,7 +70,7 @@ function TableCloths() {
     },
     {
       id: 2,
-      vendorCode: "art.06c26",
+      vendorCode: "06c26",
       comp: (
         <span>
           <span>
@@ -103,7 +103,7 @@ function TableCloths() {
     },
     {
       id: 3,
-      vendorCode: "art.08c6",
+      vendorCode: "08c6",
       comp: (
         <span>
           <span>
@@ -133,17 +133,17 @@ function TableCloths() {
         </span>
       ),
       colors: [
-        "#F0EDE2",
-        "#F5ECD0",
-        "#E4C49D",
-        "#5C4939",
-        "#9E1030",
-        "#C9D3DC",
+        { hex: "#F0EDE2", mogotex: "110701" },
+        { hex: "#F5ECD0", mogotex: "110510" },
+        { hex: "#E4C49D", mogotex: "14-1119" },
+        { hex: "#5C4939", mogotex: "191020" },
+        { hex: "#9E1030", mogotex: "191862" },
+        { hex: "#C9D3DC", mogotex: "260402" },
       ],
     },
     {
       id: 4,
-      vendorCode: "art.13c5",
+      vendorCode: "13c5",
       comp: (
         <span>
           <span>
