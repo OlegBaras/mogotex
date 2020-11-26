@@ -17,7 +17,7 @@ function WorkClothes() {
       bottom: "auto",
       marginRight: "-50%",
       transform: "translate(-50%, -50%)",
-      width: "60%",
+      width: "80%",
       height: "auto",
       borderRadius: "10px",
     },
@@ -169,7 +169,12 @@ function WorkClothes() {
       vendorCode: "8tc15",
       comp: "pes100",
       weight: "133 g/m²",
-      images: [{ path: "/8tc15-1.png" }, { path: "/8tc15-2.png" }],
+      images: [
+        { path: "/8tc15-3.png" },
+        { path: "/8tc15-1.png" },
+        { path: "/8tc15-2.png" },
+        { path: "/8tc15-4.png" },
+      ],
     },
     {
       id: 9,
