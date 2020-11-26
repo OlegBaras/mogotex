@@ -18,7 +18,6 @@ function WorkClothes() {
       marginRight: "-50%",
       transform: "translate(-50%, -50%)",
       width: "60%",
-      // width: "auto",
       height: "auto",
       borderRadius: "10px",
     },

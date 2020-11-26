@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Modal from "react-modal";
 import colorIcon from "../colorIcon.png";
+import camera from "../camera.png";
 import { v4 as uuidv4 } from "uuid";
 import { FormattedMessage } from "react-intl";
 
@@ -18,8 +19,7 @@ function TableCloths() {
       borderRadius: "10px",
     },
     overlay: {
-      // backgroundColor: "#A9A9A9",
-      backgroundColor: "white",
+      background: "rgba(0, 0, 0, 0.8)",
     },
   };
 
@@ -58,14 +58,14 @@ function TableCloths() {
         </span>
       ),
       colors: [
-        "#F0EDE2",
-        "#F5ECD0",
-        "#F4ECC2",
-        "#FDD19C",
-        "#E3BC8E",
-        "#C86656",
-        "#12674A",
-        "#363756",
+        { hex: "#F0EDE2", mogotex: "110701" },
+        { hex: "#F5ECD0", mogotex: "110510" },
+        { hex: "#F4ECC2", mogotex: "110617" },
+        { hex: "#FDD19C", mogotex: "050305" },
+        { hex: "#E3BC8E", mogotex: "050303" },
+        { hex: "#C86656", mogotex: "090605" },
+        { hex: "#12674A", mogotex: "361003" },
+        { hex: "#363756", mogotex: "251003" },
       ],
     },
     {
@@ -179,26 +179,25 @@ function TableCloths() {
   const [modalIsOpen, setIsOpen] = useState(false);
   const [currentProduct, setCurrentProduct] = useState(products[0]);
   const [color, setColor] = useState("");
+  const [image, setImage] = useState();
 
   const openModal = (product) => {
-    setIsOpen(true);
     setCurrentProduct(product);
+    setIsOpen(true);
   };
 
   const afterOpenModal = () => {
-    //  subtitle.style.color = "green";
-    //console.log(currentProduct.id);
-    setColor(currentProduct.colors[0]);
+    currentProduct.colors
+      ? setColor(currentProduct.colors[0])
+      : setImage(currentProduct.images[0]);
   };
 
   const closeModal = () => {
     setIsOpen(false);
-    setColor(null);
   };
 
   const changeCardColor = (color) => {
     setColor(color);
-    //console.log(color);
   };
 
   return (
@@ -207,38 +206,44 @@ function TableCloths() {
         <FormattedMessage id="tableCloths" />
       </div>
       <div className="button-links">
-        <div className="button-links-tags">
-          <p>
-            <FormattedMessage id="vendor-code" />
-          </p>
-          <p>
-            <FormattedMessage id="Comp" />
-          </p>
-          <p>
-            <FormattedMessage id="Weight" />
-          </p>
-          <p>
-            <FormattedMessage id="width" />
-          </p>
-          <p>
-            <FormattedMessage id="Colors" />
-          </p>
-        </div>
-        {products.map((product) => (
-          <button
-            onClick={() => openModal(product)}
-            key={uuidv4()}
-            className="product-button"
-          >
-            <span>{product.vendorCode}</span>
-            <span>{product.comp}</span>
-            <span>{product.weight}</span>
-            <span>{product.width}</span>
-            <span>
-              <img alt="icon" src={colorIcon}></img>
-            </span>
-          </button>
-        ))}
+        <table className="table">
+          <thead>
+            <tr className="labels">
+              <th>
+                <FormattedMessage id="vendor-code" />
+              </th>
+              <th>
+                <FormattedMessage id="Comp" />
+              </th>
+              <th>
+                <FormattedMessage id="Weight" />
+              </th>
+              <th>
+                <FormattedMessage id="Colors" />
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            {products.map((product) => (
+              <tr
+                className="trRow"
+                onClick={() => openModal(product)}
+                key={uuidv4()}
+              >
+                <td>{product.vendorCode}</td>
+                <td>{product.comp}</td>
+                <td>{product.weight}</td>
+                <td>
+                  {product.colors ? (
+                    <img alt="icon" src={colorIcon} />
+                  ) : (
+                    <img alt="icon" src={camera} />
+                  )}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
       </div>
       <Modal
         className="active-modal"
@@ -249,31 +254,55 @@ function TableCloths() {
         contentLabel="Example Modal"
         currentProduct={currentProduct}
       >
-        <div className="CardColor" style={{ backgroundColor: color }}>
-          {color}
+        <div
+          className="close-button"
+          onClick={() => {
+            closeModal();
+          }}
+        >
+          x
         </div>
-        <div className="CardInfo">
-          <div className="CardColorSelection">
-            {currentProduct.colors.map((color) => (
-              <button
-                className="color-button"
-                style={{ background: `${color}` }}
-                onClick={() => {
-                  changeCardColor(color);
-                  console.log(`"${color}"`);
-                }}
-                key={uuidv4()}
-              >
-                {color}
-              </button>
-            ))}
+        {/* COLORS MODAL */}
+        {currentProduct.colors ? (
+          <div className="color-card">
+            <div className="color-holder">
+              {currentProduct.colors.map((color) => (
+                <div className="actualButton" key={uuidv4()}>
+                  <div
+                    className="color-button"
+                    style={{ background: `${color.hex}` }}
+                    onClick={() => {
+                      changeCardColor(color);
+                    }}
+                  ></div>
+                  <p>{color.mogotex}</p>
+                </div>
+              ))}
+            </div>
           </div>
-          <div className="CardColorText" style={{ color: `${color}` }}>
-            <h1>Vendor Code: {currentProduct.vendorCode}</h1>
-            <h2>weight: {currentProduct.weight}</h2>
-            <h2>comp: {currentProduct.comp}</h2>
+        ) : (
+          // IMAGES MODAL
+          <div>
+            {/* Image Gallery */}
+            <div className="image-card">
+              <div className="image-holder">
+                {currentProduct.images.map((image) => (
+                  <div key={uuidv4()}>
+                    <img
+                      onClick={() => {
+                        setImage(image);
+                      }}
+                      src={`images/thumbnail${image.path}`}
+                      alt="imagesample"
+                      key={uuidv4()}
+                    />
+                    <p>{image.title}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
-        </div>
+        )}
       </Modal>
     </div>
   );
