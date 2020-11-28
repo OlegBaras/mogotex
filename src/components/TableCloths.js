@@ -215,7 +215,13 @@ function TableCloths() {
           </span>
         </span>
       ),
-      colors: ["#", "#", "#", "#"],
+      images: [
+        { path: "/13c5-1835.png", title: "1835" },
+        { path: "/13c5-2097.png", title: "2097" },
+        { path: "/13c5-2112.png", title: "2112" },
+        { path: "/13c5-2115.png", title: "2115" },
+        { path: "/13c5-2116.png", title: "2116" },
+      ],
     },
   ];
 
