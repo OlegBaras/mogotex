@@ -42,7 +42,7 @@
 }
 
 .product-button {
-  display: flex;
+  /* display: flex;
   justify-content: space-around;
   align-items: center;
   background-color: rgb(224, 242, 224);
@@ -53,7 +53,7 @@
   cursor: pointer;
   transition: all 0.5s ease;
   height: 3rem;
-  width: 30rem;
+  width: 30rem; */
 }
 button:focus {
   outline: 0;
@@ -69,7 +69,7 @@ nav {
   min-height: 10vh;
   border-bottom-style: dotted;
   width: 100%;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid #fcb611;
 }
 
 .languageSelector {
@@ -78,6 +78,7 @@ nav {
   align-self: flex-end;
   transform: translateX(-2rem);
   transform: translateY(-1.5rem);
+  color: #fcb611;
 }
 .languageSelector button {
   margin-right: 1rem;
@@ -85,6 +86,9 @@ nav {
   background-color: transparent;
   cursor: pointer;
   border-radius: 4px;
+}
+.languageSelector button:hover {
+  color: #fcb611;
 }
 
 .languageSelector button:focus {
@@ -106,7 +110,9 @@ nav {
   text-decoration: none;
 }
 .nav-links li:hover {
-  color: rgb(140, 161, 140);
+  border-bottom: 2px solid #fcb611;
+  /* color: #fcb611; */
+  /* color: rgb(140, 161, 140); */
 }
 
 .home {
@@ -117,6 +123,11 @@ nav {
   justify-content: flex-start;
   align-items: center;
 }
+
+.home span {
+  color: #fcb611;
+}
+
 .labels {
   cursor: text;
 }
@@ -124,13 +135,15 @@ nav {
 tr {
   cursor: pointer;
   text-align: center;
-  border-radius: 10px;
+  /* border-radius: 10px; */
+  border-spacing: 10px;
 }
 tr:hover {
   background-color: white;
 }
 .trRow {
-  background-color: rgb(224, 242, 224);
+  background-color: #fcb611;
+  /* background-color: rgb(224, 242, 224); */
   border-radius: 10px;
 }
 td {
@@ -142,8 +155,9 @@ th {
   text-align: left;
 }
 .table {
-  border-collapse: collapse;
+  border-collapse: separate;
   width: 100%;
+  border-spacing: 0 1rem;
 }
 
 .home-title {
@@ -193,33 +207,6 @@ th {
   color: black;
   font-family: "Times New Roman", Times, serif;
   margin-bottom: 2rem;
-}
-
-.workclothes {
-  font-family: "Times New Roman", Times, serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-items: flex-start;
-}
-
-.table-cloths {
-  font-family: "Times New Roman", Times, serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-}
-.contacts {
-  height: 80vh;
-  font-family: "Times New Roman", Times, serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-.contacts p {
-  margin-top: 2rem;
 }
 
 .active-modal {

@@ -5,7 +5,9 @@ import { Link } from "react-router-dom";
 function Home() {
   return (
     <div className="home">
-      <h1 className="home-title">UAB MOGOTEX BALTIC</h1>
+      <h1 className="home-title">
+        UAB MOGO<span>TEX</span> BALTIC
+      </h1>
       <ul className="home-links">
         <Link to="/about">
           <li>
