@@ -5,6 +5,8 @@ import camera from "../camera.png";
 import { v4 as uuidv4 } from "uuid";
 import { FormattedMessage } from "react-intl";
 import "./css/TableCloths.css";
+import "./css/ColorCard.css";
+import "./css/ImageCard.css";
 
 function TableCloths() {
   const customStyles = {
@@ -15,8 +17,8 @@ function TableCloths() {
       bottom: "auto",
       marginRight: "-50%",
       transform: "translate(-50%, -50%)",
-      width: "70%",
-      height: "70%",
+      width: "80%",
+      height: "auto",
       borderRadius: "10px",
     },
     overlay: {
