@@ -173,7 +173,7 @@ function WorkClothes() {
         { path: "/8tc15-3.png" },
         { path: "/8tc15-1.png" },
         { path: "/8tc15-2.png" },
-        { path: "/8tc15-4.png" },
+        // { path: "/8tc15-4.png" },
         { path: "/8tc15-5.png" },
       ],
     },
