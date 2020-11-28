@@ -141,8 +141,51 @@ function TableCloths() {
         { hex: "#C9D3DC", mogotex: "260402" },
       ],
     },
+
     {
       id: 4,
+      vendorCode: "08c6",
+      comp: (
+        <span>
+          <span>
+            <FormattedMessage id="cot" />
+          </span>
+          <span>47/</span>
+          <span>
+            <FormattedMessage id="pes" />
+          </span>
+          <span>53</span>
+        </span>
+      ),
+      weight: (
+        <span>
+          <span>238</span>
+          <span>
+            <FormattedMessage id="g/m²" />
+          </span>
+        </span>
+      ),
+      width: (
+        <span>
+          <span>305</span>
+          <span>
+            <FormattedMessage id="cm" />
+          </span>
+        </span>
+      ),
+      images: [
+        { path: "/08c6-191862.png", title: "191862" },
+        { path: "/08c6-010101.png", title: "010101" },
+        { path: "/08c6-110701.png", title: "110701" },
+        { path: "/08c6-14-1119.png", title: "14-1119" },
+        { path: "/08c6-191020.png", title: "191020" },
+        { path: "/08c6-260402.png", title: "260402" },
+        { path: "/08c6-110501.png", title: "110501" },
+      ],
+    },
+
+    {
+      id: 5,
       vendorCode: "13c5",
       comp: (
         <span>
