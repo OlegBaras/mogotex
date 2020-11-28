@@ -4,6 +4,7 @@ import colorIcon from "../colorIcon.png";
 import camera from "../camera.png";
 import { v4 as uuidv4 } from "uuid";
 import { FormattedMessage } from "react-intl";
+import "./css/TableCloths.css";
 
 function TableCloths() {
   const customStyles = {
@@ -99,7 +100,15 @@ function TableCloths() {
           </span>
         </span>
       ),
-      colors: ["#", "#", "#", "#"],
+      images: [
+        { path: "/06c26-1589-010101.png", title: "1589/010101" },
+        { path: "/06c26-1625-050303.png", title: "1625/050303" },
+        { path: "/06c26-1666-010101.png", title: "1666/010101" },
+        { path: "/06c26-1666-040403-440604.png", title: "1666/040403/440604" },
+        { path: "/06c26-1812-010101.png", title: "1812/010101" },
+        { path: "/06c26-1891.png", title: "1891" },
+        { path: "/06c26-2015.png", title: "2015" },
+      ],
     },
     {
       id: 3,
