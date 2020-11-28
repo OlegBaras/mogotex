@@ -201,15 +201,14 @@ th {
   flex-direction: column;
   align-items: center;
   justify-items: flex-start;
-  border-bottom: 20px solid transparent;
 }
 
 .table-cloths {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-direction: column;
   font-family: "Times New Roman", Times, serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
 }
 .contacts {
   height: 80vh;
