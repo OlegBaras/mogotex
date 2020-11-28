@@ -1,0 +1,29 @@
+.contacts {
+  font-family: "Times New Roman", Times, serif;
+  display: flex;
+}
+
+.text-holder {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contacts-header {
+  height: 20vh;
+  display: flex;
+  align-items: center;
+}
+
+.contacts-details {
+  height: 40vh;
+  /* border: 2px solid salmon; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.map-holder {
+  height: 80vh;
+  width: 50%;
+}
