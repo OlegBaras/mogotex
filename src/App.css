@@ -142,22 +142,26 @@ tr:hover {
   background-color: white;
 }
 .trRow {
-  background-color: #fcb611;
+  /* background-color: #fcb611; */
   /* background-color: rgb(224, 242, 224); */
   border-radius: 10px;
 }
+.trRow:hover {
+  background-color: #fcb611;
+}
+
 td {
   padding: 8px;
 }
 th {
   padding: 8px;
 
-  text-align: left;
+  text-align: center;
 }
 .table {
   border-collapse: separate;
   width: 100%;
-  border-spacing: 0 1rem;
+  border-spacing: 0 0.5rem;
 }
 
 .home-title {
