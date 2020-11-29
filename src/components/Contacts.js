@@ -17,7 +17,7 @@ function Contacts() {
         </div>
       </div>
       <div className="map-holder">
-        <div className="map"></div>
+        <div className="map">MAP</div>
       </div>
     </div>
   );
