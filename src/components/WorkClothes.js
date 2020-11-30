@@ -73,7 +73,18 @@ function WorkClothes() {
     {
       id: 2,
       vendorCode: "4c5",
-      comp: "cot51/pes49",
+      comp: (
+        <span>
+          <span>
+            <FormattedMessage id="cot" />
+          </span>
+          <span>51/</span>
+          <span>
+            <FormattedMessage id="pes" />
+          </span>
+          <span>49</span>
+        </span>
+      ),
       weight: "210 g/m²",
       colors: [
         { hex: "#5B5149", mogotex: "020902" },
@@ -101,7 +112,18 @@ function WorkClothes() {
     {
       id: 3,
       vendorCode: "06c13",
-      comp: "cot33/pes67",
+      comp: (
+        <span>
+          <span>
+            <FormattedMessage id="cot" />
+          </span>
+          <span>33/</span>
+          <span>
+            <FormattedMessage id="pes" />
+          </span>
+          <span>67</span>
+        </span>
+      ),
       weight: "248 g/m²",
       colors: [
         { hex: "#686D6C", mogotex: "230601" },
@@ -115,7 +137,18 @@ function WorkClothes() {
     {
       id: 4,
       vendorCode: "00c65",
-      comp: "cot76/pes24",
+      comp: (
+        <span>
+          <span>
+            <FormattedMessage id="cot" />
+          </span>
+          <span>76/</span>
+          <span>
+            <FormattedMessage id="pes" />
+          </span>
+          <span>24</span>
+        </span>
+      ),
       weight: "254 g/m²",
       colors: [
         { hex: "#686D6C", mogotex: "230601" },
@@ -129,7 +162,18 @@ function WorkClothes() {
     {
       id: 5,
       vendorCode: "09c6 rip-stop",
-      comp: "cot50/pes50",
+      comp: (
+        <span>
+          <span>
+            <FormattedMessage id="cot" />
+          </span>
+          <span>50/</span>
+          <span>
+            <FormattedMessage id="pes" />
+          </span>
+          <span>50</span>
+        </span>
+      ),
       weight: "224 g/m²",
       colors: [
         { hex: "#8A6F48", mogotex: "030704" },
@@ -141,7 +185,14 @@ function WorkClothes() {
     {
       id: 6,
       vendorCode: "05c8",
-      comp: "pes100",
+      comp: (
+        <span>
+          <span>
+            <FormattedMessage id="pes" />
+          </span>
+          <span>100</span>
+        </span>
+      ),
       weight: "141 g/m²",
       colors: [
         { hex: "#5B5149", mogotex: "020902" },
@@ -154,7 +205,14 @@ function WorkClothes() {
     {
       id: 7,
       vendorCode: "8tc15",
-      comp: "pes100",
+      comp: (
+        <span>
+          <span>
+            <FormattedMessage id="pes" />
+          </span>
+          <span>100</span>
+        </span>
+      ),
       weight: "133 g/m²",
       colors: [
         { hex: "#5B5149", mogotex: "020902" },
@@ -167,7 +225,14 @@ function WorkClothes() {
     {
       id: 8,
       vendorCode: "8tc15",
-      comp: "pes100",
+      comp: (
+        <span>
+          <span>
+            <FormattedMessage id="pes" />
+          </span>
+          <span>100</span>
+        </span>
+      ),
       weight: "133 g/m²",
       images: [
         { path: "/8tc15-3.png" },
@@ -180,7 +245,18 @@ function WorkClothes() {
     {
       id: 9,
       vendorCode: "4c5+KMF",
-      comp: "cot51/pes49",
+      comp: (
+        <span>
+          <span>
+            <FormattedMessage id="cot" />
+          </span>
+          <span>51/</span>
+          <span>
+            <FormattedMessage id="pes" />
+          </span>
+          <span>49</span>
+        </span>
+      ),
       weight: "210 g/m²",
       images: [
         { path: "/3679-1.png", title: "3679-1" },
