@@ -85,7 +85,14 @@ function WorkClothes() {
           <span>49</span>
         </span>
       ),
-      weight: "210 g/m²",
+      weight: (
+        <span>
+          <span>210 </span>
+          <span>
+            <FormattedMessage id="g/m²" />
+          </span>
+        </span>
+      ),
       colors: [
         { hex: "#5B5149", mogotex: "020902" },
         { hex: "#8A6F48", mogotex: "030704" },
@@ -124,7 +131,14 @@ function WorkClothes() {
           <span>67</span>
         </span>
       ),
-      weight: "248 g/m²",
+      weight: (
+        <span>
+          <span>248 </span>
+          <span>
+            <FormattedMessage id="g/m²" />
+          </span>
+        </span>
+      ),
       colors: [
         { hex: "#686D6C", mogotex: "230601" },
         { hex: "#08589D", mogotex: "260706" },
@@ -149,7 +163,14 @@ function WorkClothes() {
           <span>24</span>
         </span>
       ),
-      weight: "254 g/m²",
+      weight: (
+        <span>
+          <span>254 </span>
+          <span>
+            <FormattedMessage id="g/m²" />
+          </span>
+        </span>
+      ),
       colors: [
         { hex: "#686D6C", mogotex: "230601" },
         { hex: "#08589D", mogotex: "260706" },
@@ -174,7 +195,14 @@ function WorkClothes() {
           <span>50</span>
         </span>
       ),
-      weight: "224 g/m²",
+      weight: (
+        <span>
+          <span>224 </span>
+          <span>
+            <FormattedMessage id="g/m²" />
+          </span>
+        </span>
+      ),
       colors: [
         { hex: "#8A6F48", mogotex: "030704" },
         { hex: "#08589D", mogotex: "260706" },
@@ -193,7 +221,14 @@ function WorkClothes() {
           <span>100</span>
         </span>
       ),
-      weight: "141 g/m²",
+      weight: (
+        <span>
+          <span>141 </span>
+          <span>
+            <FormattedMessage id="g/m²" />
+          </span>
+        </span>
+      ),
       colors: [
         { hex: "#5B5149", mogotex: "020902" },
         { hex: "#D01C1F", mogotex: "16-1664" },
@@ -213,7 +248,14 @@ function WorkClothes() {
           <span>100</span>
         </span>
       ),
-      weight: "133 g/m²",
+      weight: (
+        <span>
+          <span>133 </span>
+          <span>
+            <FormattedMessage id="g/m²" />
+          </span>
+        </span>
+      ),
       colors: [
         { hex: "#5B5149", mogotex: "020902" },
         { hex: "#F9633B", mogotex: "090508" },
@@ -233,7 +275,14 @@ function WorkClothes() {
           <span>100</span>
         </span>
       ),
-      weight: "133 g/m²",
+      weight: (
+        <span>
+          <span>133 </span>
+          <span>
+            <FormattedMessage id="g/m²" />
+          </span>
+        </span>
+      ),
       images: [
         { path: "/8tc15-3.png" },
         { path: "/8tc15-1.png" },
@@ -257,7 +306,14 @@ function WorkClothes() {
           <span>49</span>
         </span>
       ),
-      weight: "210 g/m²",
+      weight: (
+        <span>
+          <span>210 </span>
+          <span>
+            <FormattedMessage id="g/m²" />
+          </span>
+        </span>
+      ),
       images: [
         { path: "/3679-1.png", title: "3679-1" },
         { path: "/3724-7.png", title: "3724-7" },

@@ -1,4 +1,5 @@
 import React from "react";
+import { FormattedMessage } from "react-intl";
 import "./css/Contacts.css";
 
 function Contacts() {
@@ -6,7 +7,7 @@ function Contacts() {
     <div className="contacts">
       <div className="text-holder">
         <div className="contacts-header">
-          <h1>Contacts</h1>
+          <FormattedMessage id="contacts" />
         </div>
         <div className="contacts-details">
           <p>Phone Number: +370 5 250 5405</p>
