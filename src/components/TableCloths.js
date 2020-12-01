@@ -46,7 +46,7 @@ function TableCloths() {
       ),
       weight: (
         <span>
-          <span>192</span>
+          <span>192 </span>
           <span>
             <FormattedMessage id="g/m²" />
           </span>
@@ -88,7 +88,7 @@ function TableCloths() {
       ),
       weight: (
         <span>
-          <span>224</span>
+          <span>224 </span>
           <span>
             <FormattedMessage id="g/m²" />
           </span>
@@ -129,7 +129,7 @@ function TableCloths() {
       ),
       weight: (
         <span>
-          <span>238</span>
+          <span>238 </span>
           <span>
             <FormattedMessage id="g/m²" />
           </span>
@@ -170,7 +170,7 @@ function TableCloths() {
       ),
       weight: (
         <span>
-          <span>238</span>
+          <span>238 </span>
           <span>
             <FormattedMessage id="g/m²" />
           </span>
@@ -212,7 +212,7 @@ function TableCloths() {
       ),
       weight: (
         <span>
-          <span>200</span>
+          <span>200 </span>
           <span>
             <FormattedMessage id="g/m²" />
           </span>
