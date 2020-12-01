@@ -1,8 +1,18 @@
 import React from "react";
 import { FormattedMessage } from "react-intl";
+import { GoogleMap, LoadScript } from "@react-google-maps/api";
 import "./css/Contacts.css";
 
 function Contacts() {
+  const containerStyle = {
+    width: "400px",
+    height: "400px",
+  };
+
+  const center = {
+    lat: -3.745,
+    lng: -38.523,
+  };
   return (
     <div className="contacts">
       <div className="text-holder">
@@ -18,10 +28,21 @@ function Contacts() {
         </div>
       </div>
       <div className="map-holder">
-        <div className="map">MAP</div>
+        <div className="map">
+          <LoadScript API_KEY="AIzaSyBMNuT9AKH7VZ2KlnrAIjr29G5kQChhnYQ">
+            <GoogleMap
+              mapContainerStyle={containerStyle}
+              center={center}
+              zoom={10}
+            >
+              {/* Child components, such as markers, info windows, etc. */}
+              <></>
+            </GoogleMap>
+          </LoadScript>
+        </div>
       </div>
     </div>
   );
 }
 
-export default Contacts;
+export default React.memo(Contacts);
