@@ -1,6 +1,6 @@
 import React from "react";
 import { FormattedMessage } from "react-intl";
-import { GoogleMap, LoadScript } from "@react-google-maps/api";
+import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
 import "./css/Contacts.css";
 
 function Contacts() {
@@ -10,8 +10,8 @@ function Contacts() {
   };
 
   const center = {
-    lat: -3.745,
-    lng: -38.523,
+    lat: 54.66853,
+    lng: 25.25308,
   };
   return (
     <div className="contacts">
@@ -33,7 +33,7 @@ function Contacts() {
             <GoogleMap
               mapContainerStyle={containerStyle}
               center={center}
-              zoom={10}
+              zoom={16}
             >
               {/* Child components, such as markers, info windows, etc. */}
               <></>
