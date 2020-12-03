@@ -5,8 +5,8 @@ import "./css/Contacts.css";
 
 function Contacts() {
   const containerStyle = {
-    width: "400px",
-    height: "400px",
+    width: "100%",
+    height: "80%",
   };
 
   const center = {
