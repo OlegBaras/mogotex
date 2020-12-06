@@ -33,7 +33,7 @@ function Contacts() {
       </div>
       <div className="map-holder">
         <div className="map">
-          <LoadScript API_KEY="{GOOGLE_API_KEY}">
+          <LoadScript API_KEY={GOOGLE_API_KEY}>
             <GoogleMap
               mapContainerStyle={containerStyle}
               center={center}
