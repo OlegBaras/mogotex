@@ -13,6 +13,10 @@ function Contacts() {
     lat: 54.66853,
     lng: 25.25308,
   };
+
+  const GOOGLE_API_KEY = process.env.REACT_APP_GOOGLE_MAPS_API_KEY;
+
+  console.log({ GOOGLE_API_KEY });
   return (
     <div className="contacts">
       <div className="text-holder">
@@ -29,7 +33,7 @@ function Contacts() {
       </div>
       <div className="map-holder">
         <div className="map">
-          <LoadScript API_KEY="{API_KEY}">
+          <LoadScript API_KEY="{GOOGLE_API_KEY}">
             <GoogleMap
               mapContainerStyle={containerStyle}
               center={center}
