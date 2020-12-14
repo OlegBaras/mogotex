@@ -23,5 +23,10 @@ export default {
     width: "Width",
     cm: "cm",
     lin: "lin",
+    PhoneNumber: "Phone number",
+    Mobile: "Mobile",
+    Email: "E-mail",
+    Fax: "Fax",
+    Wholesale: "WHOLESALE OF FABRICS",
   },
 };

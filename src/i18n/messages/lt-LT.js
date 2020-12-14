@@ -23,5 +23,10 @@ export default {
     width: "Plotis",
     cm: "cm",
     lin: "lin",
+    PhoneNumber: "Telefono numeris",
+    Mobile: "Mobilus",
+    Email: "Elektroninis paštas",
+    Fax: "Faksas",
+    Wholesale: "DIDMENINĖ PREKYBA AUDINIAIS",
   },
 };
