@@ -23,5 +23,10 @@ export default {
     width: "Ширина",
     cm: "см",
     lin: "лен",
+    PhoneNumber: "Номер телефона",
+    Mobile: "Мобильный",
+    Email: "Эл. почта",
+    Fax: "Факс",
+    Wholesale: "ТКАНИ ОПТОМ",
   },
 };
