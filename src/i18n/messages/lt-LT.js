@@ -28,5 +28,6 @@ export default {
     Email: "Elektroninis paštas",
     Fax: "Faksas",
     Wholesale: "DIDMENINĖ PREKYBA AUDINIAIS",
+    Message: "PLATESNIAM PASIRINKIMUI APLANKYKITE:   ",
   },
 };

@@ -20,11 +20,11 @@ function Nav() {
             <FormattedMessage id="nav-home" />
           </li>
         </Link>
-        <Link style={navStyle} to="/about">
+        {/* <Link style={navStyle} to="/about">
           <li>
             <FormattedMessage id="nav-about" />
           </li>
-        </Link>
+        </Link> */}
         <Link style={navStyle} to="/fabrics">
           <li>
             <FormattedMessage id="nav-fabrics" />

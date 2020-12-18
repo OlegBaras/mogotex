@@ -1,6 +1,7 @@
 import React from "react";
 import { FormattedMessage } from "react-intl";
 import { Link } from "react-router-dom";
+import About from "./About";
 
 function Home() {
   return (
@@ -9,11 +10,11 @@ function Home() {
         UAB MOGO<span>TEX</span> BALTIC
       </h1>
       <ul className="home-links">
-        <Link to="/about">
+        {/* <Link to="/about">
           <li>
             <FormattedMessage id="about" />
           </li>
-        </Link>
+        </Link> */}
         <Link to="/fabrics">
           <li>
             <FormattedMessage id="fabrics" />
@@ -25,6 +26,7 @@ function Home() {
           </li>
         </Link>
       </ul>
+      <About />
     </div>
   );
 }

@@ -28,5 +28,6 @@ export default {
     Email: "E-mail",
     Fax: "Fax",
     Wholesale: "WHOLESALE OF FABRICS",
+    Message: "FOR ADDITIONAL SELECTION PLEASE VISIT:   ",
   },
 };

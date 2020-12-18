@@ -26,9 +26,9 @@ function Contacts() {
   return (
     <div className="contacts">
       <div className="text-holder">
-        <div className="contacts-header">
+        {/* <div className="contacts-header">
           <FormattedMessage id="contacts" />
-        </div>
+        </div> */}
         <div className="contacts-details">
           <p>
             <FormattedMessage id="PhoneNumber" /> : +370 5 250 5405

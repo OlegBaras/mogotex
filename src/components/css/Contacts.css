@@ -2,6 +2,9 @@
   font-family: "Times New Roman", Times, serif;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
+  height: 80vh;
+  color: #add8e6;
 }
 
 .text-holder {
