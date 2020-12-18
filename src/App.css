@@ -7,6 +7,7 @@
 
 .App {
   background: rgb(255, 255, 255);
+
   /* background: linear-gradient(
     90deg,
     rgba(255, 255, 255, 1) 21%,
@@ -15,6 +16,7 @@
   ); */
   display: flex;
   flex-direction: column;
+
   position: relative;
   height: 100vh;
 }
@@ -70,7 +72,8 @@ nav {
   min-height: 10vh;
   border-bottom-style: dotted;
   width: 100%;
-  border-bottom: 2px solid #fcb611;
+  /* border-bottom: 2px solid #fcb611; */
+  border-bottom: 1px solid #add8e6;
 }
 
 .languageSelector {
@@ -79,16 +82,16 @@ nav {
   align-self: flex-end;
   transform: translateX(-2rem);
   transform: translateY(-1.5rem);
-  color: #fcb611;
 }
 .languageSelector button {
   margin-right: 1rem;
   border: none;
   background-color: transparent;
   cursor: pointer;
+  color: #add8e6;
 }
 .languageSelector button:hover {
-  color: #fcb611;
+  color: #add8e6;
 }
 
 .languageSelector button:focus {
@@ -105,22 +108,20 @@ nav {
 .nav-links li {
   font-family: "Times New Roman", Times, serif;
   font-weight: bold;
-  color: black;
+  color: #add8e6;
   display: inline-block;
   text-decoration: none;
 }
 .nav-links li:hover {
-  border-bottom: 2px solid #fcb611;
-  /* color: #fcb611; */
-  /* color: rgb(140, 161, 140); */
+  border-bottom: 1px solid #add8e6;
 }
 
 .home {
-  height: 80vh;
-
+  height: 60vh;
+  /* border: 2px solid red; */
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -130,6 +131,12 @@ nav {
 
 .labels {
   cursor: text;
+}
+.message {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  height: 10vh;
 }
 
 tr {
@@ -147,7 +154,7 @@ tr:hover {
   border-radius: 10px;
 }
 .trRow:hover {
-  background-color: #fcb611;
+  background-color: #add8e6;
 }
 
 td {
@@ -165,38 +172,38 @@ th {
 }
 
 .home-title {
-  margin-top: 5%;
+  /* margin-top: 5%; */
   /* font-family: "Times New Roman", Times, serif; */
 }
 .home-links {
+  /* border: 2px solid red; */
   width: 100%;
-  padding-top: 10rem;
+  padding-top: 5rem;
   width: 50%;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-around;
   list-style: none;
   text-decoration: none;
-  /* font-family: "Times New Roman", Times, serif; */
 }
 .home-links li {
   display: inline-block;
-  color: black;
+  color: #add8e6;
   text-decoration: none;
 }
 
 .about {
-  height: 80vh;
-  width: 70%;
+  /* height: 80vh; */
+  /* border: 2px solid green; */
+  /* width: 70%; */
   display: flex;
   justify-content: center;
-  align-items: center;
   align-self: center;
 }
 
 .about-text {
   margin: 10px;
   width: 600px;
+  color: black;
   /* font-family: "Times New Roman", Times, serif; */
 }
 
@@ -242,9 +249,7 @@ th {
   }
 
   .nav-links {
-    position: absolute;
-    right: 15px;
-    width: 60%;
+    /* position: absolute; */
   }
 
   .home-links {
