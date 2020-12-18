@@ -118,6 +118,39 @@ function WorkClothes() {
     },
     {
       id: 3,
+      vendorCode: "4c5+KMF",
+      comp: (
+        <span>
+          <span>
+            <FormattedMessage id="cot" />
+          </span>
+          <span>51/</span>
+          <span>
+            <FormattedMessage id="pes" />
+          </span>
+          <span>49</span>
+        </span>
+      ),
+      weight: (
+        <span>
+          <span>210 </span>
+          <span>
+            <FormattedMessage id="g/m²" />
+          </span>
+        </span>
+      ),
+      images: [
+        { path: "/3679-1.png", title: "3679-1" },
+        { path: "/3724-7.png", title: "3724-7" },
+        { path: "/3724-9.png", title: "3724-9" },
+        { path: "/4099-10.png", title: "4099-10" },
+        { path: "/4368-4.png", title: "4368-4" },
+        { path: "/4588-1.png", title: "4588-1" },
+        { path: "/4006-17.png", title: "4006-17" },
+      ],
+    },
+    {
+      id: 4,
       vendorCode: "06c13",
       comp: (
         <span>
@@ -149,7 +182,7 @@ function WorkClothes() {
       ],
     },
     {
-      id: 4,
+      id: 5,
       vendorCode: "00c65",
       comp: (
         <span>
@@ -181,7 +214,7 @@ function WorkClothes() {
       ],
     },
     {
-      id: 5,
+      id: 6,
       vendorCode: "09c6 rip-stop",
       comp: (
         <span>
@@ -211,7 +244,37 @@ function WorkClothes() {
       ],
     },
     {
-      id: 6,
+      id: 7,
+      vendorCode: "09c6 rip-stop+KMF",
+      comp: (
+        <span>
+          <span>
+            <FormattedMessage id="cot" />
+          </span>
+          <span>50/</span>
+          <span>
+            <FormattedMessage id="pes" />
+          </span>
+          <span>50</span>
+        </span>
+      ),
+      weight: (
+        <span>
+          <span>224 </span>
+          <span>
+            <FormattedMessage id="g/m²" />
+          </span>
+        </span>
+      ),
+      images: [
+        { path: "/3679-1.png", title: "3679-1" },
+        { path: "/3724-9.png", title: "3724-9" },
+        { path: "/4368-4.png", title: "4368-4" },
+        { path: "/4588-1.png", title: "4588-1" },
+      ],
+    },
+    {
+      id: 8,
       vendorCode: "05c8",
       comp: (
         <span>
@@ -238,7 +301,7 @@ function WorkClothes() {
       ],
     },
     {
-      id: 7,
+      id: 9,
       vendorCode: "8tc15",
       comp: (
         <span>
@@ -265,7 +328,7 @@ function WorkClothes() {
       ],
     },
     {
-      id: 8,
+      id: 10,
       vendorCode: "8tc15",
       comp: (
         <span>
@@ -289,39 +352,6 @@ function WorkClothes() {
         { path: "/8tc15-2.png" },
         // { path: "/8tc15-4.png" },
         { path: "/8tc15-5.png" },
-      ],
-    },
-    {
-      id: 9,
-      vendorCode: "4c5+KMF",
-      comp: (
-        <span>
-          <span>
-            <FormattedMessage id="cot" />
-          </span>
-          <span>51/</span>
-          <span>
-            <FormattedMessage id="pes" />
-          </span>
-          <span>49</span>
-        </span>
-      ),
-      weight: (
-        <span>
-          <span>210 </span>
-          <span>
-            <FormattedMessage id="g/m²" />
-          </span>
-        </span>
-      ),
-      images: [
-        { path: "/3679-1.png", title: "3679-1" },
-        { path: "/3724-7.png", title: "3724-7" },
-        { path: "/3724-9.png", title: "3724-9" },
-        { path: "/4099-10.png", title: "4099-10" },
-        { path: "/4368-4.png", title: "4368-4" },
-        { path: "/4588-1.png", title: "4588-1" },
-        { path: "/4006-17.png", title: "4006-17" },
       ],
     },
   ];
