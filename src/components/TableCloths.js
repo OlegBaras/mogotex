@@ -73,6 +73,44 @@ function TableCloths() {
     },
     {
       id: 2,
+      vendorCode: "04c47",
+      comp: (
+        <span>
+          <span>
+            <FormattedMessage id="cot" />
+          </span>
+          <span>14/</span>
+          <span>
+            <FormattedMessage id="pes" />
+          </span>
+          <span>86</span>
+        </span>
+      ),
+      weight: (
+        <span>
+          <span>192 </span>
+          <span>
+            <FormattedMessage id="g/m²" />
+          </span>
+        </span>
+      ),
+      width: (
+        <span>
+          <span>155</span>
+          <span>
+            <FormattedMessage id="cm" />
+          </span>
+        </span>
+      ),
+      images: [
+        { path: "/04c47-1.png", title: "1" },
+        { path: "/04c47-4.png", title: "4" },
+        { path: "/04c47-1472.png", title: "1472" },
+        { path: "/04c47-1664.png", title: "1664" },
+      ],
+    },
+    {
+      id: 3,
       vendorCode: "06c26",
       comp: (
         <span>
@@ -113,7 +151,7 @@ function TableCloths() {
       ],
     },
     {
-      id: 3,
+      id: 4,
       vendorCode: "08c6",
       comp: (
         <span>
@@ -154,7 +192,7 @@ function TableCloths() {
     },
 
     {
-      id: 4,
+      id: 5,
       vendorCode: "08c6",
       comp: (
         <span>
@@ -196,7 +234,7 @@ function TableCloths() {
     },
 
     {
-      id: 5,
+      id: 6,
       vendorCode: "13c5",
       comp: (
         <span>
