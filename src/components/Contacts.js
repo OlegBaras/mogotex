@@ -3,25 +3,27 @@ import { FormattedMessage } from "react-intl";
 import { GoogleMap, useLoadScript, Marker } from "@react-google-maps/api";
 import "./css/Contacts.css";
 
+const containerStyle = {
+  width: "100%",
+  height: "80%",
+};
+
+const center = {
+  lat: 54.66853,
+  lng: 25.25308,
+};
+
 function Contacts() {
-  const containerStyle = {
-    width: "100%",
-    height: "80%",
-  };
-
-  const center = {
-    lat: 54.66853,
-    lng: 25.25308,
-  };
-
   const { isLoaded, loadError } = useLoadScript({
-    API_KEY: process.env.REACT_APP_GOOGLE_MAPS_API_KEY,
+    googleMapsApiKey: process.env.REACT_APP_GOOGLE_MAPS_API_KEY,
   });
 
   if (loadError) return "Error laoding maps";
   if (!isLoaded) return "Loading Maps";
-  // const GOOGLE_API_KEY = `${process.env.REACT_APP_GOOGLE_MAPS_API_KEY}`;
-  // console.log({ GOOGLE_API_KEY });
+  const GOOGLE_API_KEY = `${process.env.REACT_APP_GOOGLE_MAPS_API_KEY}`;
+  const API_KEY = process.env.REACT_APP_GOOGLE_MAPS_API_KEY;
+  console.log({ GOOGLE_API_KEY });
+  console.log({ API_KEY });
 
   return (
     <div className="contacts">

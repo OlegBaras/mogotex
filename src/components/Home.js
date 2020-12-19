@@ -6,27 +6,30 @@ import About from "./About";
 function Home() {
   return (
     <div className="home">
-      <h1 className="home-title">
-        UAB MOGO<span>TEX</span> BALTIC
-      </h1>
-      <ul className="home-links">
-        {/* <Link to="/about">
+      <div className="home-description">
+        <h1 className="home-title">
+          UAB MOGO<span>TEX</span> BALTIC
+        </h1>
+        <ul className="home-links">
+          {/* <Link to="/about">
           <li>
             <FormattedMessage id="about" />
           </li>
         </Link> */}
-        <Link to="/fabrics">
-          <li>
-            <FormattedMessage id="fabrics" />
-          </li>
-        </Link>
-        <Link to="/contacts">
-          <li>
-            <FormattedMessage id="contacts" />
-          </li>
-        </Link>
-      </ul>
-      <About />
+          <Link to="/fabrics">
+            <li>
+              <FormattedMessage id="fabrics" />
+            </li>
+          </Link>
+          <Link to="/contacts">
+            <li>
+              <FormattedMessage id="contacts" />
+            </li>
+          </Link>
+        </ul>
+        <About />
+      </div>
+      <div className="home-image">IMAGE</div>
     </div>
   );
 }
