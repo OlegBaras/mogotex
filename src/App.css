@@ -99,7 +99,7 @@ nav {
 }
 
 .nav-links {
-  width: 40%;
+  width: 20%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -117,12 +117,25 @@ nav {
 }
 
 .home {
-  height: 60vh;
+  display: flex;
+  justify-content: space-around;
+}
+.home-description {
+  width: 50%;
+  height: 85vh;
   /* border: 2px solid red; */
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+}
+.home-image {
+  width: 50%;
+  height: 100%;
+  background-image: url("/images/background.png");
+  background-repeat: no-repeat;
+  display: flex;
+  border: 2px solid red;
 }
 
 .home span {
