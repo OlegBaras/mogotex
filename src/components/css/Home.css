@@ -1,0 +1,37 @@
+.home {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  color: #7b7b7b;
+}
+.home-description {
+  width: 50%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.home span {
+  color: #fcb611;
+}
+.home-title {
+  /* margin-top: 5%; */
+  /* font-family: "Times New Roman", Times, serif; */
+}
+.home-links {
+  /* border: 2px solid red; */
+  width: 100%;
+  padding-top: 5rem;
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  text-decoration: none;
+}
+.home-links li {
+  display: inline-block;
+  color: #7b7b7b;
+  text-decoration: none;
+}

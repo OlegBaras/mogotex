@@ -22,30 +22,31 @@ function App() {
               className="languageButton"
               onClick={() => setLocale(LOCALES.LITHUANIAN)}
             >
-              <span role="img" aria-label="LT">
+              {/* <span role="img" aria-label="LT">
                 🇱🇹
-              </span>
+              </span> */}
               LT
             </button>
             <button
               className="languageButton"
               onClick={() => setLocale(LOCALES.ENGLISH)}
             >
-              <span role="img" aria-label="GB">
+              {/* <span role="img" aria-label="GB">
                 🇬🇧
-              </span>{" "}
+              </span> */}
               EN
             </button>
             <button
               className="languageButton"
               onClick={() => setLocale(LOCALES.RUSSIAN)}
             >
-              <span role="img" aria-label="RU">
+              {/* <span role="img" aria-label="RU">
                 🇷🇺
-              </span>{" "}
+              </span> */}
               RU
             </button>
           </div>
+
           <Switch>
             <Route path="/" exact component={Home} />
             <Route path="/about" component={About} />

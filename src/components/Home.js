@@ -2,6 +2,7 @@ import React from "react";
 import { FormattedMessage } from "react-intl";
 import { Link } from "react-router-dom";
 import About from "./About";
+import "./css/Home.css";
 
 function Home() {
   return (
@@ -10,12 +11,8 @@ function Home() {
         <h1 className="home-title">
           UAB MOGO<span>TEX</span> BALTIC
         </h1>
+        <About />
         <ul className="home-links">
-          {/* <Link to="/about">
-          <li>
-            <FormattedMessage id="about" />
-          </li>
-        </Link> */}
           <Link to="/fabrics">
             <li>
               <FormattedMessage id="fabrics" />
@@ -27,9 +24,7 @@ function Home() {
             </li>
           </Link>
         </ul>
-        <About />
       </div>
-      <div className="home-image">IMAGE</div>
     </div>
   );
 }
