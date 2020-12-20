@@ -13,7 +13,6 @@ function Nav() {
       <Link style={navStyle} to="/">
         <img src={logo} alt="" />
       </Link>
-
       <ul className="nav-links">
         <Link style={navStyle} to="/">
           <li>

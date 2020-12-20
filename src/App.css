@@ -44,27 +44,6 @@
   font-size: large;
 }
 
-.product-button {
-  /* display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background-color: rgb(224, 242, 224);
-  border-radius: 10px;
-  border: none;
-  border-style: none;
-  border-bottom: 2px solid rgb(109, 109, 109);
-  cursor: pointer;
-  transition: all 0.5s ease;
-  height: 3rem;
-  width: 30rem; */
-}
-button:focus {
-  outline: 0;
-}
-.product-button:hover {
-  background-color: white;
-}
-
 nav {
   display: flex;
   justify-content: space-around;
@@ -116,32 +95,6 @@ nav {
   border-bottom: 1px solid #7b7b7b;
 }
 
-.home {
-  display: flex;
-  justify-content: space-around;
-}
-.home-description {
-  width: 50%;
-  height: 85vh;
-  /* border: 2px solid red; */
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-}
-.home-image {
-  width: 50%;
-  height: 100%;
-  background-image: url("/images/background.png");
-  background-repeat: no-repeat;
-  display: flex;
-  border: 2px solid red;
-}
-
-.home span {
-  color: #fcb611;
-}
-
 .labels {
   cursor: text;
 }
@@ -150,8 +103,11 @@ nav {
   justify-content: center;
   gap: 1rem;
   height: 10vh;
+  color: #7b7b7b;
 }
-
+.message a {
+  color: #7b7b7b;
+}
 tr {
   cursor: pointer;
   text-align: center;
@@ -167,7 +123,7 @@ tr:hover {
   border-radius: 10px;
 }
 .trRow:hover {
-  background-color: #7b7b7b;
+  background-color: lightgrey;
 }
 
 td {
@@ -184,26 +140,6 @@ th {
   border-spacing: 0 0.5rem;
 }
 
-.home-title {
-  /* margin-top: 5%; */
-  /* font-family: "Times New Roman", Times, serif; */
-}
-.home-links {
-  /* border: 2px solid red; */
-  width: 100%;
-  padding-top: 5rem;
-  width: 50%;
-  display: flex;
-  justify-content: space-around;
-  list-style: none;
-  text-decoration: none;
-}
-.home-links li {
-  display: inline-block;
-  color: #7b7b7b;
-  text-decoration: none;
-}
-
 .about {
   /* height: 80vh; */
   /* border: 2px solid green; */
@@ -216,7 +152,7 @@ th {
 .about-text {
   margin: 10px;
   width: 600px;
-  color: black;
+  color: #7b7b7b;
   /* font-family: "Times New Roman", Times, serif; */
 }
 

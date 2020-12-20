@@ -5,6 +5,7 @@
   display: flex;
   justify-content: space-around;
   color: #7b7b7b;
+  flex-wrap: wrap;
 }
 
 .text-holder {
