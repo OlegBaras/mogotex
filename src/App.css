@@ -73,7 +73,7 @@ nav {
   border-bottom-style: dotted;
   width: 100%;
   /* border-bottom: 2px solid #fcb611; */
-  border-bottom: 1px solid #add8e6;
+  border-bottom: 1px solid #7b7b7b;
 }
 
 .languageSelector {
@@ -88,10 +88,10 @@ nav {
   border: none;
   background-color: transparent;
   cursor: pointer;
-  color: #add8e6;
+  color: #7b7b7b;
 }
 .languageSelector button:hover {
-  color: #add8e6;
+  color: #7b7b7b;
 }
 
 .languageSelector button:focus {
@@ -108,12 +108,12 @@ nav {
 .nav-links li {
   font-family: "Times New Roman", Times, serif;
   font-weight: bold;
-  color: #add8e6;
+  color: #7b7b7b;
   display: inline-block;
   text-decoration: none;
 }
 .nav-links li:hover {
-  border-bottom: 1px solid #add8e6;
+  border-bottom: 1px solid #7b7b7b;
 }
 
 .home {
@@ -167,7 +167,7 @@ tr:hover {
   border-radius: 10px;
 }
 .trRow:hover {
-  background-color: #add8e6;
+  background-color: #7b7b7b;
 }
 
 td {
@@ -200,7 +200,7 @@ th {
 }
 .home-links li {
   display: inline-block;
-  color: #add8e6;
+  color: #7b7b7b;
   text-decoration: none;
 }
 
