@@ -2,6 +2,7 @@ import React from "react";
 import { FormattedMessage } from "react-intl";
 import { GoogleMap, useLoadScript, Marker } from "@react-google-maps/api";
 import "./css/Contacts.css";
+import mapStyles from "./mapStyles";
 
 const containerStyle = {
   width: "100%",
@@ -12,6 +13,11 @@ const center = {
   lat: 54.66853,
   lng: 25.25308,
 };
+const options = {
+  styles: mapStyles,
+  disableDefaultUI: true,
+  zoomControl: true,
+};
 
 function Contacts() {
   const { isLoaded, loadError } = useLoadScript({
@@ -20,17 +26,10 @@ function Contacts() {
 
   if (loadError) return "Error laoding maps";
   if (!isLoaded) return "Loading Maps";
-  const GOOGLE_API_KEY = `${process.env.REACT_APP_GOOGLE_MAPS_API_KEY}`;
-  const API_KEY = process.env.REACT_APP_GOOGLE_MAPS_API_KEY;
-  console.log({ GOOGLE_API_KEY });
-  console.log({ API_KEY });
 
   return (
     <div className="contacts">
       <div className="text-holder">
-        {/* <div className="contacts-header">
-          <FormattedMessage id="contacts" />
-        </div> */}
         <div className="contacts-details">
           <p>
             <FormattedMessage id="PhoneNumber" /> : +370 5 250 5405
@@ -51,19 +50,17 @@ function Contacts() {
       </div>
       <div className="map-holder">
         <div className="map">
-          {/* <LoadScript API_KEY="{GOOGLE_API_KEY}"> */}
           <GoogleMap
             mapContainerStyle={containerStyle}
+            zoom={13}
             center={center}
-            zoom={16}
+            options={options}
           >
-            {/* Child components, such as markers, info windows, etc. */}
             <Marker
               position={{ lat: 54.66853, lng: 25.25308 }}
               label={"Mogotex Baltic"}
             />
           </GoogleMap>
-          {/* </LoadScript> */}
         </div>
       </div>
     </div>
