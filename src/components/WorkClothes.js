@@ -60,8 +60,7 @@ function WorkClothes() {
       <div className="title">
         <FormattedMessage id="workClothes" />
       </div>
-
-      <div className="button-links">
+      <div>
         <table className="table">
           <thead>
             <tr className="labels">

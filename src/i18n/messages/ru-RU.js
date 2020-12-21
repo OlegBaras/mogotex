@@ -29,5 +29,8 @@ export default {
     Fax: "Факс",
     Wholesale: "ТКАНИ ОПТОМ",
     Message: "ДЛЯ ДОПОЛНИТЕЛЬНОГО ВЫБОРА ПОСЕТИТЕ:   ",
+    Filtering: "Фильтровальные",
+    Address: "Адрес: ",
+    AddressLine: "Skroblu 19, LT-03141, Вильнюс, Литва",
   },
 };

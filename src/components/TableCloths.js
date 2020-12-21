@@ -8,8 +8,10 @@ import "./css/TableCloths.css";
 import "./css/ColorCard.css";
 import "./css/ImageCard.css";
 import TableClothsList from "./TableClothsList";
+import FilterList from "./FilterList";
 
 const products = TableClothsList;
+const filterProducts = FilterList;
 
 function TableCloths() {
   const customStyles = {
@@ -93,6 +95,49 @@ function TableCloths() {
                     <img alt="icon" src={colorIcon} />
                   ) : (
                     <img alt="icon" src={camera} />
+                  )}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <div className="title">
+        <FormattedMessage id="Filtering" />
+      </div>
+      <div className="button-links">
+        <table className="table">
+          <thead>
+            {/* <tr className="labels">
+              <th>
+                <FormattedMessage id="vendor-code" />
+              </th>
+              <th>
+                <FormattedMessage id="Comp" />
+              </th>
+              <th>
+                <FormattedMessage id="Weight" />
+              </th>
+              <th>
+                <FormattedMessage id="Colors" />
+              </th>
+            </tr> */}
+          </thead>
+          <tbody>
+            {filterProducts.map((product) => (
+              <tr
+                className="trRow"
+                // onClick={() => openModal(product)}
+                key={uuidv4()}
+              >
+                <td>{product.vendorCode}</td>
+                <td>{product.comp}</td>
+                <td>{product.weight}</td>
+                <td>
+                  {product.colors ? (
+                    <img alt="icon" src={colorIcon} />
+                  ) : (
+                    <div></div>
                   )}
                 </td>
               </tr>

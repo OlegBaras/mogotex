@@ -6,28 +6,23 @@
 }
 
 .App {
-  background: rgb(255, 255, 255);
-
-  /* background: linear-gradient(
-    90deg,
-    rgba(255, 255, 255, 1) 21%,
-    rgb(150, 216, 161) 100%,
-    rgba(255, 255, 255, 1) 100%
-  ); */
+  /* background: rgb(255, 255, 255); */
+  background-image: url("/images/background.png");
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
-
   position: relative;
   height: 100vh;
+  width: 100vw;
 }
 
-.button-links {
+/* .button-links {
   display: flex;
   flex-direction: column;
   border-radius: 20px;
   width: 450px;
-}
-
+} */
+/* 
 .button-links-tags {
   font-weight: bold;
   color: rgb(140, 161, 140);
@@ -36,15 +31,10 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-}
-
-.title {
-  font-weight: bold;
-  /* color: rgb(140, 161, 140); */
-  font-size: large;
-}
+} */
 
 nav {
+  /* border: 2px solid green; */
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -131,7 +121,6 @@ td {
 }
 th {
   padding: 8px;
-
   text-align: center;
 }
 .table {
