@@ -29,5 +29,8 @@ export default {
     Fax: "Fax",
     Wholesale: "WHOLESALE OF FABRICS",
     Message: "FOR ADDITIONAL SELECTION PLEASE VISIT:   ",
+    Filtering: "Filtering",
+    Address: "Address: ",
+    AddressLine: "Skroblu St.19, LT-03141, Vilnius, Lithuania",
   },
 };

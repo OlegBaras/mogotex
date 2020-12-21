@@ -44,6 +44,10 @@ function Contacts() {
             <FormattedMessage id="Email" />: mogotexbaltic@mogotexbaltic.lt
           </p>
           <p>
+            <FormattedMessage id="Address" />
+            <FormattedMessage id="AddressLine" />
+          </p>
+          <p>
             <FormattedMessage id="Wholesale" />
           </p>
         </div>

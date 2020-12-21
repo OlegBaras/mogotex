@@ -29,5 +29,8 @@ export default {
     Fax: "Faksas",
     Wholesale: "DIDMENINĖ PREKYBA AUDINIAIS",
     Message: "PLATESNIAM PASIRINKIMUI APLANKYKITE:   ",
+    Filtering: "Filtrams",
+    Address: "Adresas: ",
+    AddressLine: "Skroblų g.19, LT-03141, Vilnius, Lietuva",
   },
 };
