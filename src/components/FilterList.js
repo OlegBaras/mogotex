@@ -15,7 +15,7 @@ export default [
     ),
     weight: (
       <span>
-        <span>100</span>
+        <span>71</span>
         <span>
           <FormattedMessage id="g/m²" />
         </span>
