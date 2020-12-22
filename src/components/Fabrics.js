@@ -12,9 +12,15 @@ function Fabrics() {
       <div className="message">
         <FormattedMessage id="Message" />
         <span>
-          <a href="http://www.mogotex.com">www.mogotex.com</a>
+          <a href="http://www.mogotex.com"> www.mogotex.com</a>
         </span>
       </div>
+      {/* <div className="message">
+        <FormattedMessage id="Message" />
+        <span>
+          <a href="http://www.mogotex.com">www.mogotex.com</a>
+        </span>
+      </div> */}
     </div>
   );
 }

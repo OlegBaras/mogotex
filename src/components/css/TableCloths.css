@@ -2,9 +2,8 @@
   font-family: "Times New Roman", Times, serif;
   display: flex;
   flex-direction: column;
-
-  justify-content: flex-start;
-  gap: 2rem;
+  /* justify-content: flex-start; */
+  gap: 1rem;
 }
 
 tbody tr {
@@ -27,9 +26,4 @@ tr td:last-child {
   -webkit-border-bottom-right-radius: 10px;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
-}
-.title {
-  display: flex;
-  align-self: center;
-  font-weight: bold;
 }
