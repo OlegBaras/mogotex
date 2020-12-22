@@ -35,6 +35,9 @@ function Contacts() {
             <FormattedMessage id="PhoneNumber" /> : +370 5 250 5405
           </p>
           <p>
+            <span>☏</span> : +370 5 250 5405
+          </p>
+          <p>
             <FormattedMessage id="Fax" /> : +370 5 249 7087
           </p>
           <p>

@@ -46,7 +46,6 @@ function App() {
               RU
             </button>
           </div>
-
           <Switch>
             <Route path="/" exact component={Home} />
             <Route path="/about" component={About} />

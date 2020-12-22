@@ -17,21 +17,25 @@
   color: #fcb611;
 }
 .home-title {
-  /* margin-top: 5%; */
-  /* font-family: "Times New Roman", Times, serif; */
+  color: #5f5e5e;
 }
+
 .home-links {
-  /* border: 2px solid red; */
-  width: 100%;
-  padding-top: 5rem;
   width: 50%;
   display: flex;
   justify-content: space-around;
-  list-style: none;
-  text-decoration: none;
 }
 .home-links li {
+  width: 150px;
   display: inline-block;
-  color: #7b7b7b;
-  text-decoration: none;
+  text-align: center;
+  color: #5f5e5e;
+  background-color: #fcb611;
+  border-radius: 5px;
+  padding: 5px;
+}
+.home-links li:hover {
+  color: white;
+  transform: scale(1.5);
+  transition: all 0.3s;
 }
