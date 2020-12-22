@@ -5,6 +5,7 @@
   align-items: center;
   justify-items: flex-start;
   gap: 2rem;
+  /* color: #5f5e5e; */
 }
 tbody tr {
   box-shadow: 0px 3px 10px #000;
@@ -26,4 +27,14 @@ tr td:last-child {
   -webkit-border-bottom-right-radius: 10px;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
+}
+
+.title {
+  color: #5f5e5e;
+  font-size: large;
+}
+
+.labels {
+  cursor: text;
+  color: #5f5e5e;
 }

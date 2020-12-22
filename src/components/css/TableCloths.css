@@ -29,11 +29,7 @@ tr td:last-child {
   border-bottom-right-radius: 10px;
 }
 .title {
-  color: #7b7b7b;
   display: flex;
   align-self: center;
   font-weight: bold;
-}
-.labels {
-  color: #7b7b7b;
 }
