@@ -1,9 +1,8 @@
 .workclothes {
-  font-family: "Times New Roman", Times, serif;
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  color: #5f5e5e;
+  color: black;
 }
 tbody tr {
   box-shadow: 0px 3px 10px #000;
@@ -28,15 +27,13 @@ tr td:last-child {
 }
 
 .title {
-  color: #5f5e5e;
+  color: black;
   font-size: large;
-  font-weight: bold;
   align-self: center;
-  /* border: 2px solid green; */
   padding-top: 0.5rem;
 }
 
 .labels {
   cursor: text;
-  color: #5f5e5e;
+  color: black;
 }

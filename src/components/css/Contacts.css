@@ -1,10 +1,9 @@
 .contacts {
+  font-family: "Poppins", sans-serif;
   height: 100%;
   width: 100%;
-  font-family: "Times New Roman", Times, serif;
   display: flex;
   justify-content: space-around;
-  color: #7b7b7b;
   flex-wrap: wrap;
 }
 
@@ -23,9 +22,6 @@
   flex-direction: column;
   justify-content: space-evenly;
   align-items: flex-start;
-}
-.contacts-details p {
-  font-weight: bold;
 }
 
 .map-holder {

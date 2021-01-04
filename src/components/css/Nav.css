@@ -1,0 +1,32 @@
+nav {
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 10vh;
+  width: 100vw;
+  border-bottom: 2px solid #fcb611;
+  /* border-bottom: 1px solid #7b7b7b; */
+}
+
+.nav-links {
+  /* border: 2px solid red; */
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+.nav-links li {
+  font-family: "Poppins", sans-serif;
+  color: black;
+  display: inline-block;
+  text-decoration: none;
+}
+.nav-links li:hover {
+  border-bottom: 1px solid black;
+}
+
+.logo {
+  display: flex;
+}
