@@ -28,12 +28,17 @@ tr td:last-child {
 
 .title {
   color: black;
-  font-size: large;
+  /* font-weight: bold; */
+  /* font-size: large; */
   align-self: center;
   padding-top: 0.5rem;
+  text-transform: uppercase;
 }
 
 .labels {
   cursor: text;
   color: black;
+}
+.labels th {
+  font-weight: normal;
 }
