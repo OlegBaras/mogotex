@@ -1,11 +1,17 @@
 .home {
   display: flex;
   justify-content: space-around;
-  flex-wrap: wrap;
-  color: #7b7b7b;
+  width: 100vw;
+}
+.home span {
+  color: #fcb611;
+}
+.home-title {
+  color: black;
+  align-self: center;
 }
 .home-description {
-  width: 50%;
+  width: 100%;
   height: 80vh;
   display: flex;
   flex-direction: column;
@@ -13,15 +19,8 @@
   align-items: center;
 }
 
-.home span {
-  color: #fcb611;
-}
-.home-title {
-  color: #5f5e5e;
-}
-
 .home-links {
-  width: 100%;
+  width: 50vw;
   display: flex;
   justify-content: space-around;
 }
@@ -29,13 +28,15 @@
   width: 150px;
   display: inline-block;
   text-align: center;
-  color: #5f5e5e;
-  background-color: #fcb611;
+  color: black;
+  background-color: transparent;
+  border: 2px solid #fcb611;
   border-radius: 5px;
   padding: 5px;
+  font-weight: bold;
 }
 .home-links li:hover {
+  background-color: #fcb611;
+  font-weight: bold;
   color: white;
-  transform: scale(1.5);
-  transition: all 0.3s;
 }

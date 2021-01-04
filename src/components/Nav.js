@@ -3,6 +3,8 @@ import { FormattedMessage } from "react-intl";
 import { Link } from "react-router-dom";
 import logo from "../logo.jpg";
 // import logo from "../logo1.svg";
+import "./css/Nav.css";
+
 function Nav() {
   const navStyle = {
     // color: "white",
@@ -10,8 +12,10 @@ function Nav() {
 
   return (
     <nav>
-      <Link style={navStyle} to="/">
-        <img src={logo} alt="" />
+      <Link to="/">
+        <div className="logo">
+          <img src={logo} alt="" />
+        </div>
       </Link>
       <ul className="nav-links">
         <Link style={navStyle} to="/">
