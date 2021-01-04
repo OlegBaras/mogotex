@@ -3,6 +3,11 @@ import { FormattedMessage } from "react-intl";
 import { GoogleMap, useLoadScript, Marker } from "@react-google-maps/api";
 import "./css/Contacts.css";
 import mapStyles from "./mapStyles";
+import Pin from "./icons/pin.svg";
+import Fax from "./icons/fax-machine.svg";
+import Phone from "./icons/phone.svg";
+import MobilePhone from "./icons/mobile-phone.svg";
+import Email from "./icons/email.svg";
 
 const containerStyle = {
   width: "100%",
@@ -34,25 +39,27 @@ function Contacts() {
           {/* <p>
             <FormattedMessage id="PhoneNumber" /> : +370 5 250 5405
           </p> */}
-          <p>
-            <span>☏</span> : +370 5 250 5405
-          </p>
-          <p>
-            <FormattedMessage id="Fax" />: +370 5 249 7087
-          </p>
-          <p>
-            <FormattedMessage id="Mobile" /> : +370 685 59789
-          </p>
-          <p>
-            <FormattedMessage id="Email" />: mogotexbaltic@mogotexbaltic.lt
-          </p>
-          <p>
-            <FormattedMessage id="Address" />
+          <div className="contact-items">
+            <img src={Phone} alt="Phone" role="img" />
+            +370 5 250 5405
+          </div>
+          <div className="contact-items">
+            <img src={Fax} alt="Fax Machine" /> +370 5 249 7087
+          </div>
+          <div className="contact-items">
+            <img src={MobilePhone} alt="Mobile Phone" /> +370 685 59789
+          </div>
+          <div className="contact-items">
+            <img src={Email} alt="Email address" />
+            mogotexbaltic@mogotexbaltic.lt
+          </div>
+          <div className="contact-items">
+            <img src={Pin} alt="Location Pin" />
             <FormattedMessage id="AddressLine" />
-          </p>
-          <p>
+          </div>
+          <div>
             <FormattedMessage id="Wholesale" />
-          </p>
+          </div>
         </div>
       </div>
       <div className="map-holder">
