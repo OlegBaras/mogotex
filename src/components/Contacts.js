@@ -112,7 +112,11 @@ function Contacts() {
           >
             <Marker
               position={{ lat: 54.66853, lng: 25.25308 }}
-              label={"Mogotex Baltic"}
+              // label={"Mogotex Baltic"}
+              label={{
+                text: "Mogotex Baltic",
+                fontSize: "14px",
+              }}
             />
           </GoogleMap>
         </div>
