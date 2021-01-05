@@ -32,9 +32,17 @@ function Contacts() {
   const makeCall = () => {
     window.open("tel: +37052505405");
   };
+  const makeMobileCall = () => {
+    window.open("tel: +37068559789");
+  };
   const sendFax = () => {
     console.log("fax");
     window.open("fax: 123123123");
+  };
+  const openMap = () => {
+    window.open(
+      "https://www.google.com/maps/place/Mogotex+Baltic/@54.668603,25.2509543,17z/data=!3m1!4b1!4m5!3m4!1s0x46dd947ba96e28ff:0x19efc1bb2b069850!8m2!3d54.668603!4d25.253143"
+    );
   };
   const { isLoaded, loadError } = useLoadScript({
     googleMapsApiKey: process.env.REACT_APP_GOOGLE_MAPS_API_KEY,
@@ -68,7 +76,12 @@ function Contacts() {
             <img src={Fax} alt="Fax Machine" />
             +370 5 249 7087
           </div>
-          <div className="contact-items">
+          <div
+            className="contact-items"
+            onClick={() => {
+              makeMobileCall();
+            }}
+          >
             <img src={MobilePhone} alt="Mobile Phone" /> +370 685 59789
           </div>
           <div
@@ -80,7 +93,7 @@ function Contacts() {
             <img src={Email} alt="Email address" />
             mogotexbaltic@mogotexbaltic.lt
           </div>
-          <div className="contact-items">
+          <div className="contact-items" onClick={() => openMap()}>
             <img src={Pin} alt="Location Pin" />
             <FormattedMessage id="AddressLine" />
           </div>
