@@ -25,6 +25,17 @@ const options = {
 };
 
 function Contacts() {
+  const sendEmail = () => {
+    window.location = "mailto:mogotexbaltic@mogotexbaltic.lt";
+  };
+
+  const makeCall = () => {
+    window.open("tel: +37052505405");
+  };
+  const sendFax = () => {
+    console.log("fax");
+    window.open("fax: 123123123");
+  };
   const { isLoaded, loadError } = useLoadScript({
     googleMapsApiKey: process.env.REACT_APP_GOOGLE_MAPS_API_KEY,
   });
@@ -39,17 +50,33 @@ function Contacts() {
           {/* <p>
             <FormattedMessage id="PhoneNumber" /> : +370 5 250 5405
           </p> */}
-          <div className="contact-items">
-            <img src={Phone} alt="Phone" role="img" />
+          <div
+            className="contact-items"
+            onClick={() => {
+              makeCall();
+            }}
+          >
+            <img src={Phone} alt="Phone" />
             +370 5 250 5405
           </div>
-          <div className="contact-items">
-            <img src={Fax} alt="Fax Machine" /> +370 5 249 7087
+          <div
+            className="contact-items"
+            onClick={() => {
+              sendFax();
+            }}
+          >
+            <img src={Fax} alt="Fax Machine" />
+            +370 5 249 7087
           </div>
           <div className="contact-items">
             <img src={MobilePhone} alt="Mobile Phone" /> +370 685 59789
           </div>
-          <div className="contact-items">
+          <div
+            className="contact-items"
+            onClick={() => {
+              sendEmail();
+            }}
+          >
             <img src={Email} alt="Email address" />
             mogotexbaltic@mogotexbaltic.lt
           </div>
@@ -57,9 +84,9 @@ function Contacts() {
             <img src={Pin} alt="Location Pin" />
             <FormattedMessage id="AddressLine" />
           </div>
-          <div>
+          {/* <div>
             <FormattedMessage id="Wholesale" />
-          </div>
+          </div> */}
         </div>
       </div>
       <div className="map-holder">
