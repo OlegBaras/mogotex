@@ -8,6 +8,7 @@ import "./css/WorkClothes.css";
 import "./css/ColorCard.css";
 import "./css/ImageCard.css";
 import WorkClothesList from "./WorkClothesList";
+import CloseButton from "./icons/close.svg";
 
 const products = WorkClothesList;
 
@@ -109,14 +110,14 @@ function WorkClothes() {
         contentLabel="Example Modal"
         currentProduct={currentProduct}
       >
-        <div
+        <span
           className="close-button"
           onClick={() => {
             closeModal();
           }}
         >
-          x
-        </div>
+          <img src={CloseButton} alt="close modal" />
+        </span>
         {/* COLORS MODAL */}
         {currentProduct.colors ? (
           <div className="color-card">

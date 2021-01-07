@@ -42,3 +42,24 @@ tr td:last-child {
 .labels th {
   font-weight: normal;
 }
+
+.close-button {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  top: 0.2rem;
+  left: 0.3rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  justify-self: flex-end;
+
+  /* border: none; */
+  outline-style: none;
+  cursor: pointer;
+  z-index: 99;
+}
+.close-button image {
+  height: 50px;
+  width: 50px;
+}

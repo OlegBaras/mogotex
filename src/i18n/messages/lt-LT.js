@@ -28,7 +28,7 @@ export default {
     Email: "Elektroninis paštas",
     Fax: "Faksas",
     Wholesale: "DIDMENINĖ PREKYBA AUDINIAIS",
-    Message: "PLATESNIAM PASIRINKIMUI APLANKYKITE: ",
+    Message: "PLATESNIAM PASIRINKIMUI APLANKYKITE : www.mogotex.com ",
     Filtering: "Filtrams",
     Address: "Adresas: ",
     AddressLine: "Skroblų g.19, LT-03141, Vilnius, Lietuva",
