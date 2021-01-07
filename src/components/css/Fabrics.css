@@ -1,0 +1,66 @@
+.fabrics {
+  min-height: 80vh;
+  width: 100vw;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.message {
+  width: 100%;
+  height: 5vh;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  align-items: center;
+  cursor: pointer;
+}
+.message-info {
+  color: black;
+  border: 2px solid #fcb611;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.message-info:hover {
+  background-color: #fcb611;
+  color: white;
+}
+
+tr {
+  cursor: pointer;
+  text-align: center;
+}
+
+.trRow {
+  border-radius: 10px;
+}
+.trRow:hover {
+  background-color: lightgrey;
+}
+
+td {
+  padding: 8px;
+}
+th {
+  padding: 10px;
+}
+.table {
+  border-collapse: separate;
+  width: 100%;
+  border-spacing: 0 0.5rem;
+}
+
+.active-modal {
+  position: absolute;
+  background: white;
+  opacity: 1;
+  display: flex;
+  justify-content: center;
+  overflow: scroll;
+}
+
+.active-modal:focus {
+  border-style: none;
+  outline: none;
+}

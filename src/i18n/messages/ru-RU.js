@@ -28,7 +28,7 @@ export default {
     Email: "Эл. почта",
     Fax: "Факс",
     Wholesale: "ТКАНИ ОПТОМ",
-    Message: "ДЛЯ ДОПОЛНИТЕЛЬНОГО ВЫБОРА ПОСЕТИТЕ:   ",
+    Message: "ДЛЯ ДОПОЛНИТЕЛЬНОГО ВЫБОРА ПОСЕТИТЕ : www.mogotex.com",
     Filtering: "Фильтровальные",
     Address: "Адрес: ",
     AddressLine: "Skroblu 19, LT-03141, Вильнюс, Литва",
