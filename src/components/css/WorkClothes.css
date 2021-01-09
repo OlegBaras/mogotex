@@ -1,8 +1,9 @@
 .workclothes {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
   color: black;
+  /* padding-top: 1rem; */
+  /* gap: 1rem; */
 }
 tbody tr {
   box-shadow: 0px 3px 10px #000;
@@ -28,11 +29,10 @@ tr td:last-child {
 
 .title {
   color: black;
-  /* font-weight: bold; */
-  /* font-size: large; */
   align-self: center;
-  padding-top: 0.5rem;
+  /* padding-top: 0.5rem; */
   text-transform: uppercase;
+  font-size: 18px;
 }
 
 .labels {
@@ -44,8 +44,8 @@ tr td:last-child {
 }
 
 .close-button {
-  height: 2rem;
-  width: 2rem;
+  height: 1.5rem;
+  width: 1.5rem;
   border-radius: 50%;
   top: 2px;
   right: 0;
@@ -53,13 +53,8 @@ tr td:last-child {
   display: flex;
   justify-content: center;
   justify-self: flex-end;
-
   /* border: none; */
   outline-style: none;
   cursor: pointer;
   z-index: 99;
-}
-.close-button image {
-  height: 50px;
-  width: 50px;
 }

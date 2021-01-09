@@ -54,10 +54,10 @@ function Contacts() {
   return (
     <div className="contacts">
       <div className="text-holder">
+        {/* <div className="contacts-title">
+          <FormattedMessage id="Wholesale" />
+        </div> */}
         <div className="contacts-details">
-          {/* <p>
-            <FormattedMessage id="PhoneNumber" /> : +370 5 250 5405
-          </p> */}
           <div
             className="contact-items"
             onClick={() => {
@@ -97,9 +97,6 @@ function Contacts() {
             <img src={Pin} alt="Location Pin" />
             <FormattedMessage id="AddressLine" />
           </div>
-          {/* <div>
-            <FormattedMessage id="Wholesale" />
-          </div> */}
         </div>
       </div>
       <div className="map-holder">
