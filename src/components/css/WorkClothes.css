@@ -47,9 +47,9 @@ tr td:last-child {
   height: 2rem;
   width: 2rem;
   border-radius: 50%;
-  top: 0.2rem;
-  left: 0.3rem;
-  position: relative;
+  top: 2px;
+  right: 0;
+  position: absolute;
   display: flex;
   justify-content: center;
   justify-self: flex-end;

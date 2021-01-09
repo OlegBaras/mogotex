@@ -10,11 +10,12 @@
 .image-holder {
   overflow-y: scroll;
   max-height: 700px;
-
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   grid-gap: 10px;
+  padding-right: 2rem;
+  padding-left: 2rem;
 }
 
 .image-holder img {

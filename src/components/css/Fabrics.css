@@ -18,12 +18,13 @@
 .message-info {
   color: black;
   border: 2px solid #fcb611;
-  padding: 5px;
+  padding: 10px;
   border-radius: 5px;
 }
 
 .message-info:hover {
   background-color: #fcb611;
+  font-weight: bold;
   color: white;
 }
 
