@@ -4,6 +4,7 @@
   width: 100%;
   overflow: scroll;
   padding: 1rem;
+  position: relative;
 }
 .color-holder {
   overflow-y: scroll;
