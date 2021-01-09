@@ -9,6 +9,7 @@ import "./css/ColorCard.css";
 import "./css/ImageCard.css";
 import TableClothsList from "./TableClothsList";
 import FilterList from "./FilterList";
+import CloseButton from "./icons/close.svg";
 
 const products = TableClothsList;
 const filterProducts = FilterList;
@@ -154,14 +155,14 @@ function TableCloths() {
         contentLabel="Example Modal"
         currentProduct={currentProduct}
       >
-        <div
+        <span
           className="close-button"
           onClick={() => {
             closeModal();
           }}
         >
-          x
-        </div>
+          <img src={CloseButton} alt="close modal" />
+        </span>
         {/* COLORS MODAL */}
         {currentProduct.colors ? (
           <div className="color-card">
