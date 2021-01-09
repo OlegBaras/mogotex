@@ -1,10 +1,10 @@
 .fabrics {
+  /* border: 2px solid green; */
   min-height: 80vh;
   width: 100vw;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  gap: 1rem;
 }
 .message {
   width: 100%;
@@ -18,7 +18,7 @@
 .message-info {
   color: black;
   border: 2px solid #fcb611;
-  padding: 10px;
+  padding: 5px;
   border-radius: 5px;
 }
 
