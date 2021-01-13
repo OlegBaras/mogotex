@@ -1,5 +1,4 @@
 nav {
-  /* border: 2px solid red; */
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -7,11 +6,9 @@ nav {
   width: 100vw;
   border-bottom: 2px solid #fcb611;
   position: relative;
-  /* border-bottom: 1px solid #7b7b7b; */
 }
 
 .nav-links {
-  /* border: 2px solid red; */
   width: 30%;
   display: flex;
   justify-content: space-around;
@@ -48,7 +45,4 @@ nav {
   transform: scaleX(1);
   -webkit-transform-origin: left;
   transform-origin: left;
-}
-
-.logo {
 }

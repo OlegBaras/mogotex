@@ -1,18 +1,15 @@
 import React, { useState } from "react";
 import Modal from "react-modal";
+import { FormattedMessage } from "react-intl";
+import { v4 as uuidv4 } from "uuid";
 import colorIcon from "../colorIcon.png";
 import camera from "../camera.png";
-import { v4 as uuidv4 } from "uuid";
-import { FormattedMessage } from "react-intl";
-import "./css/WorkClothes.css";
-import "./css/ColorCard.css";
-import "./css/ImageCard.css";
-import WorkClothesList from "./WorkClothesList";
-import CloseButton from "./icons/close.svg";
+import CloseButton from "../components/icons/close.svg";
+import "../components/css/ProductTable.css";
+import "../components/css/ColorCard.css";
+import "../components/css/ImageCard.css";
 
-const products = WorkClothesList;
-
-function WorkClothes() {
+export default function ProductTable({ products, type }) {
   const customStyles = {
     content: {
       top: "50%",
@@ -34,33 +31,22 @@ function WorkClothes() {
 
   const [modalIsOpen, setIsOpen] = useState(false);
   const [currentProduct, setCurrentProduct] = useState(products[0]);
-  const [color, setColor] = useState("");
-  const [image, setImage] = useState("");
+  const isFilter = type === "Filtering";
 
   const openModal = (product) => {
     setCurrentProduct(product);
     setIsOpen(true);
   };
 
-  const afterOpenModal = () => {
-    currentProduct.colors
-      ? setColor(currentProduct.colors[0])
-      : setImage(currentProduct.images[0]);
-  };
-
   const closeModal = () => {
     setIsOpen(false);
   };
-
-  const changeCardColor = (color) => {
-    setColor(color);
-  };
-
   return (
     <div className="workclothes">
       <div className="title">
-        <FormattedMessage id="workClothes" />
+        <FormattedMessage id={type} />
       </div>
+
       <div>
         <table className="table">
           <thead>
@@ -74,16 +60,14 @@ function WorkClothes() {
               <th>
                 <FormattedMessage id="Weight" />
               </th>
-              <th>
-                <FormattedMessage id="Colors" />
-              </th>
+              <th>{isFilter ? null : <FormattedMessage id="Colors" />}</th>
             </tr>
           </thead>
           <tbody>
             {products.map((product) => (
               <tr
                 className="trRow"
-                onClick={() => openModal(product)}
+                onClick={() => (!isFilter ? openModal(product) : undefined)}
                 key={uuidv4()}
               >
                 <td>{product.vendorCode}</td>
@@ -92,22 +76,22 @@ function WorkClothes() {
                 <td>
                   {product.colors ? (
                     <img alt="icon" src={colorIcon} />
-                  ) : (
+                  ) : product.images ? (
                     <img alt="icon" src={camera} />
-                  )}
+                  ) : null}
                 </td>
               </tr>
             ))}
           </tbody>
         </table>
       </div>
+
       <Modal
         className="active-modal"
         isOpen={modalIsOpen}
-        onAfterOpen={afterOpenModal}
         onRequestClose={closeModal}
         style={customStyles}
-        contentLabel="Example Modal"
+        contentLabel="Work Clothes Modal"
         currentProduct={currentProduct}
       >
         <span
@@ -118,6 +102,7 @@ function WorkClothes() {
         >
           <img src={CloseButton} alt="close modal" />
         </span>
+
         {/* COLORS MODAL */}
         {currentProduct.colors ? (
           <div className="color-card">
@@ -127,9 +112,6 @@ function WorkClothes() {
                   <div
                     className="color-button"
                     style={{ background: `${color.hex}` }}
-                    onClick={() => {
-                      changeCardColor(color);
-                    }}
                   ></div>
                   <p>{color.mogotex}</p>
                 </div>
@@ -141,19 +123,17 @@ function WorkClothes() {
             {/* IMAGES MODAL */}
             <div className="image-card">
               <div className="image-holder">
-                {currentProduct.images.map((image) => (
-                  <div key={uuidv4()}>
-                    <img
-                      onClick={() => {
-                        setImage(image);
-                      }}
-                      src={`images/thumbnail${image.path}`}
-                      alt="imagesample"
-                      key={uuidv4()}
-                    />
-                    <p>{image.title}</p>
-                  </div>
-                ))}
+                {currentProduct.images &&
+                  currentProduct.images.map((image) => (
+                    <div key={uuidv4()}>
+                      <img
+                        src={`images/thumbnail${image.path}`}
+                        alt="imagesample"
+                        key={uuidv4()}
+                      />
+                      <p>{image.title}</p>
+                    </div>
+                  ))}
               </div>
             </div>
           </div>
@@ -162,5 +142,3 @@ function WorkClothes() {
     </div>
   );
 }
-
-export default WorkClothes;

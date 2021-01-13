@@ -1,0 +1,22 @@
+.languageSelector {
+  display: flex;
+  align-self: flex-end;
+  justify-content: flex-end;
+  transform: translateY(-1.5rem);
+}
+.languageSelector button {
+  margin-right: 1rem;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.languageSelector button:hover {
+  font-weight: bold;
+}
+
+.languageSelector button:focus {
+  outline: none;
+}
+.languageButton {
+  font-size: 13px;
+}

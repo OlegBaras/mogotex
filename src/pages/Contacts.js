@@ -1,13 +1,13 @@
 import React from "react";
 import { FormattedMessage } from "react-intl";
 import { GoogleMap, useLoadScript, Marker } from "@react-google-maps/api";
-import "./css/Contacts.css";
-import mapStyles from "./mapStyles";
-import Pin from "./icons/pin.svg";
-import Fax from "./icons/fax-machine.svg";
-import Phone from "./icons/phone.svg";
-import MobilePhone from "./icons/mobile-phone.svg";
-import Email from "./icons/email.svg";
+import "../components/css/Contacts.css";
+import mapStyles from "../components/mapStyles";
+import Pin from "../components/icons/pin.svg";
+import Fax from "../components/icons/fax-machine.svg";
+import Phone from "../components/icons/phone.svg";
+import MobilePhone from "../components/icons/mobile-phone.svg";
+import Email from "../components/icons/email.svg";
 
 const containerStyle = {
   width: "100%",
@@ -36,7 +36,6 @@ function Contacts() {
     window.open("tel: +37068559789");
   };
   const sendFax = () => {
-    console.log("fax");
     window.open("fax: 123123123");
   };
   const openMap = () => {
@@ -109,7 +108,6 @@ function Contacts() {
           >
             <Marker
               position={{ lat: 54.66853, lng: 25.25308 }}
-              // label={"Mogotex Baltic"}
               label={{
                 text: "Mogotex Baltic",
                 fontSize: "14px",

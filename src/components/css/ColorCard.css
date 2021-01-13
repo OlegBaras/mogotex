@@ -39,13 +39,9 @@ p {
 }
 
 *::-webkit-scrollbar {
-  /* width: 20px; */
-  /* background-color: black; */
-  /* height: 90%; */
   color: transparent;
 }
 *::-webkit-scrollbar-track {
-  /* background: transparent; */
   height: 70%;
   border: transparent;
 }
@@ -53,5 +49,4 @@ p {
   height: 90%;
   background-color: rgba(155, 155, 155, 0.5);
   border-radius: 20px;
-  /* border: transparent; */
 }
