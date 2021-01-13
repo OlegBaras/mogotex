@@ -1,8 +1,8 @@
 import React from "react";
-import WorkClothes from "./WorkClothes";
-import TableCloths from "./TableCloths";
 import { FormattedMessage } from "react-intl";
-import "./css/Fabrics.css";
+import WorkClothes from "../components/WorkClothes";
+import TableCloths from "../components/TableCloths";
+import "../components/css/Fabrics.css";
 
 function Fabrics() {
   const messageClickHandler = () => {
@@ -24,12 +24,6 @@ function Fabrics() {
           <FormattedMessage id="Message" />
         </div>
       </div>
-      {/* <div className="message">
-        <FormattedMessage id="Message" />
-        <span>
-          <a href="http://www.mogotex.com">www.mogotex.com</a>
-        </span>
-      </div> */}
     </div>
   );
 }
