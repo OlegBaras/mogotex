@@ -39,17 +39,3 @@ function Home() {
 }
 
 export default Home;
-
-// old <About /> css
-/*
-.about {
-    display: flex;
-    justify-content: center;
-    align-self: center;
-    width: 40%;
-  }
-  
-  .about-text {
-    line-height: 3rem;
-  }
-*/

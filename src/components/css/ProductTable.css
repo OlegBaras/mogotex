@@ -1,9 +1,45 @@
+tr {
+  cursor: pointer;
+  text-align: center;
+}
+
+.trRow {
+  border-radius: 10px;
+}
+.trRow:hover {
+  background-color: lightgrey;
+}
+
+td {
+  padding: 8px;
+}
+th {
+  padding: 10px;
+}
+.table {
+  border-collapse: separate;
+  width: 100%;
+  border-spacing: 0 0.5rem;
+}
+
+.active-modal {
+  position: absolute;
+  background: white;
+  opacity: 1;
+  display: flex;
+  justify-content: center;
+  overflow: scroll;
+}
+
+.active-modal:focus {
+  border-style: none;
+  outline: none;
+}
+
 .workclothes {
   display: flex;
   flex-direction: column;
   color: black;
-  /* padding-top: 1rem; */
-  /* gap: 1rem; */
 }
 tbody tr {
   box-shadow: 0px 3px 10px #000;
@@ -30,7 +66,6 @@ tr td:last-child {
 .title {
   color: black;
   align-self: center;
-  /* padding-top: 0.5rem; */
   text-transform: uppercase;
   font-size: 18px;
 }
@@ -53,7 +88,6 @@ tr td:last-child {
   display: flex;
   justify-content: center;
   justify-self: flex-end;
-  /* border: none; */
   outline-style: none;
   cursor: pointer;
   z-index: 99;

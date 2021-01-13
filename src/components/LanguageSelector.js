@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { LOCALES } from "../i18n";
+import "../components/css/LanguageSelector.css";
 
 function LanguageSelector() {
   // TO DO: export locale, setLocale into context API

@@ -1,5 +1,4 @@
 .fabrics {
-  /* border: 2px solid green; */
   min-height: 80vh;
   width: 100vw;
   display: flex;
@@ -26,42 +25,4 @@
   background-color: #fcb611;
   font-weight: bold;
   color: white;
-}
-
-tr {
-  cursor: pointer;
-  text-align: center;
-}
-
-.trRow {
-  border-radius: 10px;
-}
-.trRow:hover {
-  background-color: lightgrey;
-}
-
-td {
-  padding: 8px;
-}
-th {
-  padding: 10px;
-}
-.table {
-  border-collapse: separate;
-  width: 100%;
-  border-spacing: 0 0.5rem;
-}
-
-.active-modal {
-  position: absolute;
-  background: white;
-  opacity: 1;
-  display: flex;
-  justify-content: center;
-  overflow: scroll;
-}
-
-.active-modal:focus {
-  border-style: none;
-  outline: none;
 }
