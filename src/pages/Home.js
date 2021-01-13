@@ -1,7 +1,6 @@
 import React from "react";
 import { FormattedMessage } from "react-intl";
 import { Link } from "react-router-dom";
-import About from "../components/About";
 import "../components/css/Home.css";
 
 function Home() {
@@ -11,7 +10,17 @@ function Home() {
         <h1 className="home-title">
           UAB MOGO<span>TEX</span> BALTIC
         </h1>
-        <About />
+        <FormattedMessage id="about-message" />
+
+        {/* <div className="home-cta-container">
+          <button>
+            <FormattedMessage id="fabrics" />
+          </button>
+          <button>
+            <FormattedMessage id="contacts" />
+          </button>
+        </div> */}
+
         <ul className="home-links">
           <Link to="/fabrics">
             <li>
@@ -30,3 +39,17 @@ function Home() {
 }
 
 export default Home;
+
+// old <About /> css
+/*
+.about {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    width: 40%;
+  }
+  
+  .about-text {
+    line-height: 3rem;
+  }
+*/

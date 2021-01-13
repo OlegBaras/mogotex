@@ -36,7 +36,6 @@ function Contacts() {
     window.open("tel: +37068559789");
   };
   const sendFax = () => {
-    console.log("fax");
     window.open("fax: 123123123");
   };
   const openMap = () => {

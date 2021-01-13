@@ -5,9 +5,6 @@ import TableCloths from "../components/TableCloths";
 import "../components/css/Fabrics.css";
 
 function Fabrics() {
-  const messageClickHandler = () => {
-    window.open("http://www.mogotex.com");
-  };
   return (
     <div>
       <div className="fabrics">
@@ -16,9 +13,7 @@ function Fabrics() {
       </div>
       <div
         className="message"
-        onClick={() => {
-          messageClickHandler();
-        }}
+        onClick={() => window.open("http://www.mogotex.com")}
       >
         <div className="message-info">
           <FormattedMessage id="Message" />
