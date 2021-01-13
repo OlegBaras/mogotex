@@ -1,28 +1,25 @@
-import React, { useState } from "react";
+import React from "react";
 import { LOCALES } from "../i18n";
 import "../components/css/LanguageSelector.css";
 
-function LanguageSelector() {
-  // TO DO: export locale, setLocale into context API
-  const [locale, setLocale] = useState(LOCALES.LITHUANIAN);
-
+function LanguageSelector({ onLanguageClick }) {
   return (
     <div className="languageSelector">
       <button
         className="languageButton"
-        onClick={() => setLocale(LOCALES.LITHUANIAN)}
+        onClick={() => onLanguageClick(LOCALES.LITHUANIAN)}
       >
         LT
       </button>
       <button
         className="languageButton"
-        onClick={() => setLocale(LOCALES.ENGLISH)}
+        onClick={() => onLanguageClick(LOCALES.ENGLISH)}
       >
         EN
       </button>
       <button
         className="languageButton"
-        onClick={() => setLocale(LOCALES.RUSSIAN)}
+        onClick={() => onLanguageClick(LOCALES.RUSSIAN)}
       >
         RU
       </button>

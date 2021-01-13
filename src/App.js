@@ -1,16 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import { I18nProvider, LOCALES } from "./i18n";
 import { BrowserRouter as Router } from "react-router-dom";
-import Header from "./components/Header";
+import Nav from "./components/Nav";
+import LanguageSelector from "./components/LanguageSelector";
 import Routes from "./Routes";
 import "./App.css";
 
 function App() {
+  const [locale, setLocale] = useState(LOCALES.LITHUANIAN);
+
   return (
-    // TODO: use React context API for locale
-    <I18nProvider locale={LOCALES.LITHUANIAN}>
+    <I18nProvider locale={locale}>
       <Router>
-        <Header />
+        <Nav />
+        <LanguageSelector onLanguageClick={(e) => setLocale(e)} />
         <Routes />
       </Router>
     </I18nProvider>
