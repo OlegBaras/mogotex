@@ -1,7 +1,7 @@
 .languageSelector {
-  max-height: 0;
   display: flex;
   align-self: flex-end;
+  justify-content: flex-end;
   transform: translateY(-1.5rem);
 }
 .languageSelector button {
