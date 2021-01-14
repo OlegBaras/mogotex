@@ -2,7 +2,7 @@
   display: flex;
   align-self: flex-end;
   justify-content: flex-end;
-  transform: translateY(-1.5rem);
+  transform: translateY(-2rem) translateX(-2rem);
 }
 .languageSelector button {
   margin-right: 1rem;

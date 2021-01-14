@@ -1,6 +1,7 @@
 tr {
   cursor: pointer;
   text-align: center;
+  font-size: 14px;
 }
 
 .trRow {
