@@ -6,33 +6,24 @@ import "../components/css/Home.css";
 function Home() {
   return (
     <div className="home">
-      <div className="home-description">
-        <h1 className="home-title">
-          UAB MOGO<span>TEX</span> BALTIC
-        </h1>
+      <h1 className="home-title">
+        UAB MOGO<span>TEX</span> BALTIC
+      </h1>
+      <div className="home-text">
         <FormattedMessage id="about-message" />
+      </div>
 
-        {/* <div className="home-cta-container">
-          <button>
+      <div className="home-cta-container">
+        <Link to="/fabrics">
+          <button className="home-cta-button">
             <FormattedMessage id="fabrics" />
           </button>
-          <button>
+        </Link>
+        <Link to="/contacts">
+          <button className="home-cta-button">
             <FormattedMessage id="contacts" />
           </button>
-        </div> */}
-
-        <ul className="home-links">
-          <Link to="/fabrics">
-            <li>
-              <FormattedMessage id="fabrics" />
-            </li>
-          </Link>
-          <Link to="/contacts">
-            <li>
-              <FormattedMessage id="contacts" />
-            </li>
-          </Link>
-        </ul>
+        </Link>
       </div>
     </div>
   );
