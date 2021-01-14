@@ -11,7 +11,7 @@ import Email from "../components/icons/email.svg";
 
 const containerStyle = {
   width: "100%",
-  height: "80%",
+  height: "100%",
 };
 
 const center = {
@@ -52,7 +52,7 @@ function Contacts() {
 
   return (
     <div className="contacts">
-      <div className="text-holder">
+      <div className="contacts-details-holder">
         {/* <div className="contacts-title">
           <FormattedMessage id="Wholesale" />
         </div> */}
