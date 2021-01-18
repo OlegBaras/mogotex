@@ -5,6 +5,7 @@
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
+  background-color: #fcb611;
 }
 
 .contacts-details-holder {
@@ -28,8 +29,8 @@
   align-items: center;
 }
 .map {
-  width: 80%;
-  height: 80%;
+  width: 99%;
+  height: 99%;
   overflow: hidden;
   border-radius: 5px;
   display: flex;
@@ -47,11 +48,21 @@
   gap: 2rem;
 }
 .contact-items:hover {
-  background-color: lightgrey;
+  background-color: white;
   border-radius: 10px;
-  color: white;
+  /* color: white; */
 }
 .contacts img {
   height: 25px;
   width: 25px;
+}
+
+.contacts-message {
+  width: 100%;
+  min-height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  letter-spacing: 1rem;
 }
