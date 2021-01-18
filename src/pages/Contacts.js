@@ -51,70 +51,73 @@ function Contacts() {
   if (!isLoaded) return "Loading Maps";
 
   return (
-    <div className="contacts">
-      <div className="contacts-details-holder">
-        {/* <div className="contacts-title">
-          <FormattedMessage id="Wholesale" />
-        </div> */}
-        <div className="contacts-details">
-          <div
-            className="contact-items"
-            onClick={() => {
-              makeCall();
-            }}
-          >
-            <img src={Phone} alt="Phone" />
-            +370 5 250 5405
+    <div>
+      <div className="contacts">
+        <div className="contacts-details-holder">
+          <div className="contacts-details">
+            <div
+              className="contact-items"
+              onClick={() => {
+                makeCall();
+              }}
+            >
+              <img src={Phone} alt="Phone" />
+              +370 5 250 5405
+            </div>
+            <div
+              className="contact-items"
+              onClick={() => {
+                sendFax();
+              }}
+            >
+              <img src={Fax} alt="Fax Machine" />
+              +370 5 249 7087
+            </div>
+            <div
+              className="contact-items"
+              onClick={() => {
+                makeMobileCall();
+              }}
+            >
+              <img src={MobilePhone} alt="Mobile Phone" /> +370 685 59789
+            </div>
+            <div
+              className="contact-items"
+              onClick={() => {
+                sendEmail();
+              }}
+            >
+              <img src={Email} alt="Email address" />
+              mogotexbaltic@mogotexbaltic.lt
+            </div>
+            <div className="contact-items" onClick={() => openMap()}>
+              <img src={Pin} alt="Location Pin" />
+              <FormattedMessage id="AddressLine" />
+            </div>
           </div>
-          <div
-            className="contact-items"
-            onClick={() => {
-              sendFax();
-            }}
-          >
-            <img src={Fax} alt="Fax Machine" />
-            +370 5 249 7087
-          </div>
-          <div
-            className="contact-items"
-            onClick={() => {
-              makeMobileCall();
-            }}
-          >
-            <img src={MobilePhone} alt="Mobile Phone" /> +370 685 59789
-          </div>
-          <div
-            className="contact-items"
-            onClick={() => {
-              sendEmail();
-            }}
-          >
-            <img src={Email} alt="Email address" />
-            mogotexbaltic@mogotexbaltic.lt
-          </div>
-          <div className="contact-items" onClick={() => openMap()}>
-            <img src={Pin} alt="Location Pin" />
-            <FormattedMessage id="AddressLine" />
+        </div>
+        <div className="map-holder">
+          <div className="map">
+            <GoogleMap
+              mapContainerStyle={containerStyle}
+              zoom={13}
+              center={center}
+              options={options}
+            >
+              <Marker
+                position={{ lat: 54.66853, lng: 25.25308 }}
+                label={{
+                  text: "Mogotex Baltic",
+                  fontSize: "14px",
+                }}
+              />
+            </GoogleMap>
           </div>
         </div>
       </div>
-      <div className="map-holder">
-        <div className="map">
-          <GoogleMap
-            mapContainerStyle={containerStyle}
-            zoom={13}
-            center={center}
-            options={options}
-          >
-            <Marker
-              position={{ lat: 54.66853, lng: 25.25308 }}
-              label={{
-                text: "Mogotex Baltic",
-                fontSize: "14px",
-              }}
-            />
-          </GoogleMap>
-        </div>
+
+      <div className="contacts-message">
+        <FormattedMessage id="Wholesale" />
       </div>
     </div>
   );

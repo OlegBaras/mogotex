@@ -7,11 +7,6 @@ import "./css/Nav.css";
 function Nav() {
   return (
     <nav>
-      <Link to="/">
-        <div className="logo">
-          <img src={logo} alt="mogotex logo" />
-        </div>
-      </Link>
       <ul className="nav-links">
         <Link to="/">
           <li>
@@ -29,6 +24,11 @@ function Nav() {
           </li>
         </Link>
       </ul>
+      <Link to="/">
+        <div className="logo">
+          <img src={logo} alt="mogotex logo" />
+        </div>
+      </Link>
     </nav>
   );
 }

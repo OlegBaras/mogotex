@@ -22,11 +22,11 @@ function Fabrics() {
           <ProductTable products={filterProducts} type="Filtering" />
         </div>
       </div>
-      <div
-        className="message"
-        onClick={() => window.open("http://www.mogotex.com")}
-      >
-        <div className="message-info">
+      <div className="message">
+        <div
+          className="message-info"
+          onClick={() => window.open("http://www.mogotex.com")}
+        >
           <FormattedMessage id="Message" />
         </div>
       </div>
