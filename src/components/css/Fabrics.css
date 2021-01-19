@@ -18,7 +18,6 @@
 .message-info {
   color: black;
   border: 2px solid black;
-  /* border: 2px solid #fcb611; */
   padding: 5px;
   border-radius: 5px;
   cursor: pointer;
@@ -27,5 +26,5 @@
 .message-info:hover {
   background-color: black;
   font-weight: bold;
-  color: white;
+  color: #fcb611;
 }

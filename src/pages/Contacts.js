@@ -48,7 +48,7 @@ function Contacts() {
   });
 
   if (loadError) return "Error laoding maps";
-  if (!isLoaded) return "Loading Maps";
+  if (!isLoaded) return "";
 
   return (
     <div>
