@@ -1,7 +1,7 @@
 tr {
   cursor: pointer;
   text-align: center;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .trRow {
@@ -70,7 +70,8 @@ tr td:last-child {
   color: black;
   align-self: center;
   text-transform: uppercase;
-  font-size: 18px;
+  font-size: 20px;
+  border-bottom: 2px solid black;
 }
 
 .labels {

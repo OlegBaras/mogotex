@@ -50,7 +50,7 @@
 .contact-items:hover {
   background-color: white;
   border-radius: 10px;
-  /* color: white; */
+  color: black;
 }
 .contacts img {
   height: 25px;
