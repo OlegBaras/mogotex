@@ -2,7 +2,7 @@
   display: flex;
   align-self: flex-end;
   justify-content: flex-end;
-  transform: translateY(-2.8rem) translateX(-1rem);
+  transform: translateY(-4.7vh) translateX(-1rem);
 }
 .languageSelector button {
   margin-right: 1rem;
@@ -20,4 +20,17 @@
 .languageButton {
   font-size: 16px;
   line-height: 0;
+}
+@media all and (max-width: 375px) {
+  .languageSelector {
+    width: 0;
+    display: flex;
+    flex-direction: column;
+    transform: translateY(-4.5rem) translateX(1rem);
+    gap: 1rem;
+  }
+  .languageButton {
+    font-size: 12px;
+    line-height: 1rem;
+  }
 }

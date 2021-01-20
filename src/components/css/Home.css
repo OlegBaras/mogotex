@@ -6,6 +6,7 @@
   justify-content: center;
   align-items: center;
   background-color: #fcb611;
+  position: relative;
 }
 .home span {
   color: white;
@@ -49,4 +50,29 @@
   background-color: black;
   font-weight: bold;
   color: #fcb611;
+}
+
+@media all and (max-width: 375px) {
+  .home {
+    width: 100vw;
+    position: absolute;
+    top: 6rem;
+    overflow: hidden;
+  }
+  .home-title {
+    font-size: 30px;
+    position: absolute;
+    top: 4rem;
+    text-align: center;
+  }
+  .home-text {
+    position: absolute;
+    top: 10rem;
+    width: 90vw;
+    font-size: 14px;
+  }
+  .home-cta-container {
+    position: absolute;
+    bottom: 5rem;
+  }
 }
