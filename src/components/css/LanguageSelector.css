@@ -25,9 +25,9 @@
   .languageSelector {
     width: 0;
     display: flex;
-    flex-direction: column;
-    transform: translateY(-4.5rem) translateX(1rem);
-    gap: 1rem;
+    /* flex-direction: column; */
+    transform: translateY(-1rem) translateX(24rem);
+    gap: 0.5rem;
   }
   .languageButton {
     font-size: 12px;

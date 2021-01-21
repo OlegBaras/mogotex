@@ -28,3 +28,10 @@
   font-weight: bold;
   color: #fcb611;
 }
+
+@media all and (max-width: 375px) {
+  .fabrics {
+    position: absolute;
+    top: 5rem;
+  }
+}
