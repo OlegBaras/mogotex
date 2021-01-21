@@ -34,3 +34,8 @@
     /* width: 90%; */
   }
 }
+@media all and (max-width: 375px) {
+  .App {
+    height: 20vh;
+  }
+}

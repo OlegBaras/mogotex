@@ -54,9 +54,10 @@
 
 @media all and (max-width: 375px) {
   .home {
+    height: 90vh;
     width: 100vw;
     position: absolute;
-    top: 6rem;
+    top: 5rem;
     overflow: hidden;
   }
   .home-title {

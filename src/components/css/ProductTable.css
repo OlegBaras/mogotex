@@ -96,3 +96,9 @@ tr td:last-child {
   cursor: pointer;
   z-index: 99;
 }
+
+@media all and (max-width: 375px) {
+  tr {
+    font-size: 12px;
+  }
+}
