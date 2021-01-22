@@ -6,7 +6,6 @@
   justify-content: center;
   align-items: center;
   background-color: #fcb611;
-  position: relative;
 }
 .home span {
   color: white;
@@ -51,14 +50,14 @@
   font-weight: bold;
   color: #fcb611;
 }
-
-@media all and (max-width: 375px) {
+/* Mobile */
+@media all and (min-width: 375px) and (max-width: 768px) {
   .home {
     height: 90vh;
     width: 100vw;
     position: absolute;
     top: 5rem;
-    overflow: hidden;
+    left: 0rem;
   }
   .home-title {
     font-size: 30px;
