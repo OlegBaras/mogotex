@@ -2,11 +2,10 @@ import React from "react";
 import { FormattedMessage } from "react-intl";
 import { Link } from "react-router-dom";
 import logo from "../logo.jpg";
-import "./css/Nav.css";
 
-function Nav() {
+function NavLinks() {
   return (
-    <nav>
+    <>
       <ul className="nav-links">
         <Link to="/">
           <li>
@@ -24,13 +23,8 @@ function Nav() {
           </li>
         </Link>
       </ul>
-      <Link to="/">
-        <div className="logo">
-          <img src={logo} alt="mogotex logo" />
-        </div>
-      </Link>
-    </nav>
+    </>
   );
 }
 
-export default Nav;
+export default NavLinks;
