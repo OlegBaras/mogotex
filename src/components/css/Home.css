@@ -50,7 +50,8 @@
   color: #fcb611;
 }
 /* Mobile */
-@media only screen and (min-device-width: 375px) and (min-device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
+@media all and (max-width: 480px) {
+  /* @media only screen and (min-device-width: 375px) and (min-device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) { */
   /* @media all and (min-width: 375px) and (max-width: 768px) { */
   /* .home {
     height: 90vh;
