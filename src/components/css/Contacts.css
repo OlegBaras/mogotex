@@ -39,7 +39,7 @@
 
 .contact-items {
   font-size: small;
-  padding: 2rem;
+  padding: 2rem 2rem 2rem 0rem;
   width: 100%;
   display: flex;
   justify-content: flex-start;
@@ -74,14 +74,12 @@
     height: 80vh;
   }
   .map-holder {
-    /* width: 0; */
     display: none;
   }
-  .contacts-details {
-    position: absolute;
-    left: 0;
-    top: 0;
+  .contacts-details-holder {
     width: 100vw;
+  }
+  .contacts-details {
     height: 80vh;
     display: flex;
     justify-content: center;
@@ -89,6 +87,7 @@
   }
   .contact-items {
     width: 90%;
+    font-size: 18px;
   }
   .contacts-message {
     position: absolute;
