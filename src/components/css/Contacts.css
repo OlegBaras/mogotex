@@ -67,7 +67,8 @@
   letter-spacing: 1rem;
 }
 
-@media all and (min-width: 375px) and (max-width: 768px) {
+@media only screen and (min-device-width: 375px) and (min-device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
+  /* @media all and (min-width: 375px) and (max-width: 768px) { */
   .contacts {
     position: absolute;
     height: 70vh;
@@ -80,12 +81,13 @@
     height: 70vh;
   }
   .contacts-details {
+    width: 100%;
     display: flex;
     align-items: center;
   }
   .contact-items {
     width: 90%;
-    font-size: 18px;
+    font-size: 17px;
   }
   .contacts-message {
     position: absolute;
