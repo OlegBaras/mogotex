@@ -3,12 +3,12 @@
   align-self: flex-end;
   justify-content: flex-end;
   height: 100%;
-  gap: 1rem;
 }
 .languageSelector button {
   border: none;
   background-color: transparent;
   cursor: pointer;
+  padding-right: 1rem;
 }
 .languageSelector button:hover {
   font-weight: bold;
