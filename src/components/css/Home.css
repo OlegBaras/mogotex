@@ -77,30 +77,24 @@
   } */
 
   .home {
-    /* border: 2px solid red; */
     height: 85vh;
     width: 100vw;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-around;
+    /* align-items: center; */
   }
   .home-title {
-    /* border: 2px solid red; */
     font-size: 40px;
     color: black;
     letter-spacing: 0;
     text-align: center;
   }
   .home-text {
-    /* border: 2px solid red; */
     width: 90vw;
     line-height: 25pt;
     text-align: center;
   }
   .home-cta-container {
-    /* border: 2px solid red; */
-    padding-top: 6rem;
     display: flex;
     justify-content: space-between;
     gap: 1rem;
