@@ -2,19 +2,14 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* min-height: 10vh; */
-  height: 10vh;
-  width: 55vw;
-  position: relative;
+  height: 5rem;
 }
 
 .nav-links {
-  padding-left: 2rem;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
   list-style: none;
   gap: 1rem;
+  flex-grow: 1;
 }
 .nav-links li {
   font-family: "Poppins", sans-serif;
@@ -47,8 +42,9 @@ nav {
   transform-origin: left;
 }
 
-.logo {
-  /* border: 2px solid red; */
+.NavLogo {
+  position: absolute;
+  left: 45%;
 }
 
 /* Media Queries */
@@ -56,28 +52,22 @@ nav {
 /* Mobile to... */
 @media all and (min-width: 375px) and (max-width: 768px) {
   nav {
-    width: 100vw;
-    /* min-height: 10vh; */
-    height: 5rem;
-    /* border: 2px solid red; */
     display: flex;
-    flex-direction: column-reverse;
-    gap: 3rem;
+    flex-direction: column;
+    align-items: center;
+    height: 5rem;
     position: relative;
   }
 
   .nav-links {
-    /* position: absolute;
-    left: 0;
-    bottom: 1rem; */
     width: 100vw;
-    /* border: 2px solid green; */
-    font-size: 20px;
-    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
   }
 
   .nav-links li {
-    font-size: 16px;
+    font-size: 18px;
   }
 
   .nav-links li::after {
@@ -85,10 +75,10 @@ nav {
     /* or display: none - what is the difference */
   }
 
-  .logo {
+  .NavLogo {
     position: absolute;
-    top: 1rem;
-    left: 33.33%;
+    top: 0;
+    left: 0;
   }
 }
 
