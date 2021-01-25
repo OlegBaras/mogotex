@@ -39,7 +39,6 @@
   }
   .message-info {
     color: black;
-    /* box-shadow: 0px 2px 2px 0px black; */
   }
   .message-info:hover {
     color: white;
