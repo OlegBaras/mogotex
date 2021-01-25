@@ -72,6 +72,7 @@ nav {
 
   .nav-links li {
     font-size: 18px;
+    margin-bottom: 1rem;
   }
 
   .nav-links li::after {
