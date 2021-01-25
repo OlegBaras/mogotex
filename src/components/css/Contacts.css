@@ -45,7 +45,7 @@
   justify-content: flex-start;
   align-items: center;
   cursor: pointer;
-  gap: 2rem;
+  gap: 1rem;
 }
 .contact-items:hover {
   background-color: white;
@@ -88,12 +88,13 @@
   }
   .contact-items {
     width: 90%;
-    font-size: 17px;
+    font-size: 15px;
+    border: 2px solid green;
   }
   .contacts-message {
     position: absolute;
     bottom: 0;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: bold;
     text-align: center;
     height: 15vh;
