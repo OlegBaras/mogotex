@@ -97,8 +97,12 @@ tr td:last-child {
   z-index: 99;
 }
 
-@media all and (max-width: 375px) {
+@media all and (max-width: 480px) {
+  .title {
+    font-size: 18px;
+  }
+
   tr {
-    font-size: 12px;
+    font-size: 10px;
   }
 }
