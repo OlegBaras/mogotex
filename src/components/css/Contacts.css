@@ -6,11 +6,12 @@
   justify-content: flex-start;
   flex-wrap: wrap;
   background-color: #fcb611;
+  position: relative;
 }
 
 .contacts-details-holder {
   width: 50%;
-  height: 80vh;
+  /* height: 55vh; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,6 +20,9 @@
 .contacts-details {
   display: flex;
   flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .map-holder {
@@ -39,7 +43,7 @@
 
 .contact-items {
   font-size: small;
-  padding: 2rem 2rem 2rem 0rem;
+  padding: 1rem 1rem 1rem 0rem;
   width: 100%;
   display: flex;
   justify-content: flex-start;
@@ -79,17 +83,17 @@
   }
   .contacts-details-holder {
     width: 100vw;
-    height: 70vh;
+    /* height: 70vh; */
   }
   .contacts-details {
     width: 100%;
     display: flex;
     align-items: center;
+    justify-content: flex-start;
   }
   .contact-items {
     width: 90%;
     font-size: 15px;
-    border: 2px solid green;
   }
   .contacts-message {
     position: absolute;
