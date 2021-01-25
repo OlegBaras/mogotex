@@ -3,10 +3,9 @@
   align-self: flex-end;
   justify-content: flex-end;
   height: 100%;
-  padding-right: 2rem;
+  gap: 1rem;
 }
 .languageSelector button {
-  margin-right: 1rem;
   border: none;
   background-color: transparent;
   cursor: pointer;
@@ -24,10 +23,10 @@
 }
 @media all and (min-width: 375px) and (max-width: 768px) {
   .languageSelector {
-    position: absolute;
+    height: 1rem;
+    position: relative;
     top: 0;
-    right: 0;
-    transform: translateY(-2rem) translateX(0.3rem);
+    right: -2rem;
   }
   .languageButton {
     font-size: 14px;
