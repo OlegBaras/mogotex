@@ -9,7 +9,6 @@
 }
 .home span {
   color: white;
-  /* color: #fcb611; */
 }
 .home-title {
   font-size: 70px;
@@ -52,7 +51,7 @@
 }
 /* Mobile */
 @media all and (min-width: 375px) and (max-width: 768px) {
-  .home {
+  /* .home {
     height: 90vh;
     width: 100vw;
     position: absolute;
@@ -74,5 +73,32 @@
   .home-cta-container {
     position: absolute;
     bottom: 5rem;
+  } */
+
+  .home {
+    height: 85vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .home-title {
+    font-size: 40px;
+    color: black;
+    letter-spacing: 0.2rem;
+    text-align: center;
+  }
+  .home-text {
+    width: 90vw;
+    padding-top: 2rem;
+    line-height: 29pt;
+    text-align: center;
+  }
+  .home-cta-container {
+    padding-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
   }
 }

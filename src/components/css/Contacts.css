@@ -67,22 +67,20 @@
   letter-spacing: 1rem;
 }
 
-@media all and (max-width: 375px) {
+@media all and (min-width: 375px) and (max-width: 768px) {
   .contacts {
     position: absolute;
-    top: 5rem;
-    height: 80vh;
+    height: 70vh;
   }
   .map-holder {
     display: none;
   }
   .contacts-details-holder {
     width: 100vw;
+    height: 70vh;
   }
   .contacts-details {
-    height: 80vh;
     display: flex;
-    justify-content: center;
     align-items: center;
   }
   .contact-items {
@@ -95,6 +93,6 @@
     font-size: 15px;
     font-weight: bold;
     text-align: center;
-    height: 5rem;
+    height: 15vh;
   }
 }

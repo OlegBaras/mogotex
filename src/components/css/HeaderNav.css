@@ -56,7 +56,7 @@ nav {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
-    height: 5rem;
+    height: 15vh;
     position: relative;
   }
 
@@ -78,8 +78,7 @@ nav {
 
   .NavLogo {
     position: absolute;
-    top: 0.5rem;
+    top: 1.5rem;
     left: 31%;
-    border: 2px solid red;
   }
 }
