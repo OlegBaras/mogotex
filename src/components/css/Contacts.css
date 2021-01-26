@@ -74,7 +74,7 @@
   /* @media only screen and (min-device-width: 375px) and (min-device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) { */
   /* @media all and (min-width: 375px) and (max-width: 768px) { */
   .contacts {
-    height: 70vh;
+    height: 60vh;
   }
   .map-holder {
     display: none;
@@ -82,7 +82,7 @@
   .contacts-details-holder {
     display: flex;
     width: 100vw;
-    height: 70vh;
+    height: 60vh;
   }
   .contacts-details {
     height: 100%;
@@ -96,8 +96,8 @@
     align-self: center;
   }
   .contacts-message {
-    position: absolute;
-    bottom: 0;
+    /* position: absolute; */
+    /* bottom: 0; */
     font-size: 16px;
     font-weight: bold;
     text-align: center;
