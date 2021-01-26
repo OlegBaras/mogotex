@@ -94,6 +94,7 @@
     font-size: 15px;
     /* border: 2px solid red; */
     align-self: center;
+    text-align: center;
   }
   .contacts-message {
     /* position: absolute; */
