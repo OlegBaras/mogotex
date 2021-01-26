@@ -79,7 +79,7 @@
   } */
 
   .home {
-    height: 85vh;
+    height: 75vh;
     width: 100vw;
     display: flex;
     justify-content: flex-start;
@@ -97,8 +97,5 @@
     text-align: center;
   }
   .home-cta-container {
-    display: flex;
-    justify-content: space-between;
-    gap: 1rem;
   }
 }
