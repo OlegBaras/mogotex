@@ -1,6 +1,6 @@
 .home {
   width: 100%;
-  height: 85vh;
+  height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -26,6 +26,7 @@
   display: flex;
   justify-content: space-between;
   gap: 1rem;
+  padding-top: 2rem;
 }
 
 .home-cta-button {
@@ -38,6 +39,7 @@
   padding: 5px;
   font-weight: bold;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .home-cta-button:focus {
@@ -51,32 +53,6 @@
 }
 /* Mobile */
 @media all and (max-width: 480px) {
-  /* @media only screen and (min-device-width: 375px) and (min-device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) { */
-  /* @media all and (min-width: 375px) and (max-width: 768px) { */
-  /* .home {
-    height: 90vh;
-    width: 100vw;
-    position: absolute;
-    top: 5rem;
-    left: 0rem;
-  }
-  .home-title {
-    font-size: 30px;
-    position: absolute;
-    top: 4rem;
-    text-align: center;
-  }
-  .home-text {
-    position: absolute;
-    top: 10rem;
-    width: 90vw;
-    font-size: 14px;
-  }
-  .home-cta-container {
-    position: absolute;
-    bottom: 5rem;
-  } */
-
   .home {
     height: 70vh;
     width: 100vw;
@@ -96,8 +72,8 @@
     text-align: center;
   }
   .home-cta-container {
-    /* border: 2px solid green; */
     display: flex;
     justify-content: space-between;
+    padding-top: 0rem;
   }
 }

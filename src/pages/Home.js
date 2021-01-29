@@ -14,15 +14,11 @@ function Home() {
       </div>
 
       <div className="home-cta-container">
-        <Link to="/fabrics">
-          <button className="home-cta-button">
-            <FormattedMessage id="fabrics" />
-          </button>
+        <Link to="/fabrics" className="home-cta-button">
+          <FormattedMessage id="fabrics" />
         </Link>
-        <Link to="/contacts">
-          <button className="home-cta-button">
-            <FormattedMessage id="contacts" />
-          </button>
+        <Link to="/contacts" className="home-cta-button">
+          <FormattedMessage id="contacts" />
         </Link>
       </div>
     </div>
