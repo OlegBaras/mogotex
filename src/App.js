@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { I18nProvider, LOCALES } from "./i18n";
 import { BrowserRouter as Router } from "react-router-dom";
 import NavLinks from "./components/NavLinks";
@@ -10,6 +10,9 @@ import NavLogo from "./components/NavLogo";
 
 function App() {
   const [locale, setLocale] = useState(LOCALES.LITHUANIAN);
+  // useEffect(() => {
+  //   window.localStorage.setItem("language", locale);
+  // }, [locale]);
 
   return (
     <I18nProvider locale={locale}>

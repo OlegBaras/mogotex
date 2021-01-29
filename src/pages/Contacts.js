@@ -8,6 +8,7 @@ import Fax from "../components/icons/fax-machine.svg";
 import Phone from "../components/icons/phone.svg";
 import MobilePhone from "../components/icons/mobile-phone.svg";
 import Email from "../components/icons/email.svg";
+import { Helmet } from "react-helmet";
 
 const containerStyle = {
   width: "100%",
@@ -52,6 +53,13 @@ function Contacts() {
 
   return (
     <div>
+      <Helmet>
+        <title>UAB Mogotex Baltic - Contacts</title>
+        <meta
+          name="description"
+          content="Audiniai darbo rūbams, Staltiesiniai audiniai, Mišriapluoščiai audiniai, Kamufliažiniai audiniai, Vilnius"
+        />
+      </Helmet>
       <div className="contacts">
         <div className="contacts-details-holder">
           <div className="contacts-details">
