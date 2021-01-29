@@ -20,6 +20,7 @@
   padding: 5px;
   border-radius: 5px;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .message-info:hover {
@@ -28,7 +29,6 @@
   color: #fcb611;
 }
 @media all and (max-width: 480px) {
-  /* @media all and (min-width: 375px) and (max-width: 768px) { */
   .message {
     text-align: center;
     border: none;

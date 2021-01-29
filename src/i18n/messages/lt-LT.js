@@ -3,7 +3,7 @@ import { LOCALES } from "../locales";
 export default {
   [LOCALES.LITHUANIAN]: {
     about: "APIE MUS",
-    fabrics: " AUDINIAI",
+    fabrics: "AUDINIAI",
     contacts: "KONTAKTAI",
     "nav-home": "Titulinis",
     "nav-about": "Apie Mus",

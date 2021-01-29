@@ -23,12 +23,20 @@ function Fabrics() {
         </div>
       </div>
       <div className="message">
-        <div
+        <a
+          href="http://www.mogotex.com"
+          target="_blank"
+          className="message-info"
+          // onClick={() => window.open("http://www.mogotex.com")}
+        >
+          <FormattedMessage id="Message" />
+        </a>
+        {/* <div
           className="message-info"
           onClick={() => window.open("http://www.mogotex.com")}
         >
           <FormattedMessage id="Message" />
-        </div>
+        </div> */}
       </div>
     </div>
   );
