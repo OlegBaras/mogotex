@@ -6,6 +6,8 @@
 }
 
 .image-holder {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   overflow-y: scroll;
   max-height: 700px;
   display: flex;

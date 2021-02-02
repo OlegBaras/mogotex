@@ -10,9 +10,6 @@ import NavLogo from "./components/NavLogo";
 
 function App() {
   const [locale, setLocale] = useState(LOCALES.LITHUANIAN);
-  // useEffect(() => {
-  //   window.localStorage.setItem("language", locale);
-  // }, [locale]);
 
   return (
     <I18nProvider locale={locale}>
