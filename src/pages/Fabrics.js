@@ -6,24 +6,11 @@ import "../components/css/Fabrics.css";
 import FilterList from "../components/FilterList";
 import TableClothsList from "../components/TableClothsList";
 import { Helmet } from "react-helmet";
-// import { LOCALES } from "../i18n/locales.js";
 
 function Fabrics() {
-  // const [language, setLanguage] = useState(LOCALES.LITHUANIAN);
   const workClothesProducts = WorkClothesList;
   const tableClothsProducts = TableClothsList;
   const filterProducts = FilterList;
-  // const titleTest = language;
-
-  // const setPageTitle = (language) => {
-  //   console.log(language + "ciaiciaic");
-  // };
-
-  // useEffect(() => {
-  //   setLanguage(window.localStorage.getItem("language"));
-  //   console.log("effectas");
-  //   setPageTitle(language);
-  // }, [language]);
 
   return (
     <div>
