@@ -75,7 +75,7 @@
   letter-spacing: 1rem;
 }
 
-@media all and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 480px) {
   .contacts {
     height: 55vh;
   }
@@ -85,6 +85,38 @@
   .contacts-details-holder {
     display: flex;
     width: 100vw;
+    height: 55vh;
+  }
+  .contacts-details {
+    height: 100%;
+    width: 90%;
+  }
+  .contact-items {
+    justify-content: center;
+    padding: 0rem 0rem 0rem 0rem;
+    font-size: 15px;
+    align-self: center;
+    text-align: center;
+  }
+  .contacts-message {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    height: 15vh;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 810px) {
+  .contacts {
+    height: 55vh;
+  }
+  .map-holder {
+    width: 50vw;
+    height: 55vh;
+  }
+  .contacts-details-holder {
+    display: flex;
+    width: 50vw;
     height: 55vh;
   }
   .contacts-details {
