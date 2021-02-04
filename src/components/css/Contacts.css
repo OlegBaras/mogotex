@@ -108,16 +108,16 @@
 
 @media (min-width: 481px) and (max-width: 810px) {
   .contacts {
-    height: 70vh;
+    height: 65vh;
   }
   .map-holder {
     width: 50vw;
-    height: 70vh;
+    height: 65vh;
   }
   .contacts-details-holder {
     display: flex;
     width: 50vw;
-    height: 70vh;
+    height: 65vh;
   }
   .contacts-details {
     height: 100%;
