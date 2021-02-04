@@ -21,17 +21,22 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  align-content: space-around;
+  justify-content: space-evenly;
+  /* border: 2px solid black; */
 }
 
 .contact-items {
-  padding: 2rem 2rem 2rem 0rem;
-  width: 100%;
-  height: 100%;
+  /* border: 2px solid green; */
+  padding: 1rem 1rem 1rem 1rem;
+  width: auto;
+  font-size: 16px;
+  /* width: 100%; */
+  /* height: 100%; */
   display: flex;
   justify-content: flex-start;
   align-items: center;
   cursor: pointer;
+  text-align: center;
   gap: 1rem;
 }
 .contact-items:hover {

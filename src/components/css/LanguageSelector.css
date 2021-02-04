@@ -21,7 +21,18 @@
   font-size: 16px;
   line-height: 0;
 }
-@media all and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 480px) {
+  .languageSelector {
+    height: 1rem;
+    position: relative;
+    top: 0.5rem;
+    right: -2rem;
+  }
+  .languageButton {
+    font-size: 14px;
+  }
+}
+@media (min-width: 481px) and (max-width: 810px) {
   .languageSelector {
     height: 1rem;
     position: relative;

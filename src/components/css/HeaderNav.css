@@ -51,7 +51,7 @@ nav {
 /* Media Queries */
 
 /* Mobile to... */
-@media all and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 480px) {
   nav {
     display: flex;
     flex-direction: column-reverse;
@@ -83,5 +83,39 @@ nav {
     position: absolute;
     top: 1.5rem;
     left: 31%;
+  }
+}
+@media (min-width: 481px) and (max-width: 810px) {
+  nav {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 100vw;
+    height: 15vh;
+    position: relative;
+  }
+
+  .nav-links {
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+  }
+
+  .nav-links li {
+    font-size: 18px;
+    margin-bottom: 0.5rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-links li::after {
+    content: none;
+  }
+
+  .NavLogo {
+    position: absolute;
+    top: 1.5rem;
+    left: 40%;
   }
 }
