@@ -16,7 +16,6 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  /* gap: 12px; */
 }
 .color-holder p {
   height: 1.5rem;
@@ -28,6 +27,7 @@
   width: 8rem;
   border-radius: 10px;
   margin-right: 1rem;
+  margin-left: 1rem;
 }
 .color-button:focus {
   outline-style: none;

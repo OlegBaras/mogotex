@@ -8,10 +8,13 @@ function Home() {
   return (
     <div className="home">
       <Helmet>
-        <title>UAB Mogotex Baltic - About</title>
+        <title>
+          UAB Mogotex Baltic - Audiniai darbo rūbams, Staltiesiniai audiniai,
+          Mišriapluoščiai audiniai, Kamufliažiniai audiniai, Vilnius.
+        </title>
         <meta
           name="description"
-          content="Audiniai darbo rūbams, Staltiesiniai audiniai, Mišriapluoščiai audiniai, Kamufliažiniai audiniai, Vilnius"
+          content="Audiniai darbo rūbams, Staltiesiniai audiniai, Mišriapluoščiai audiniai, Kamufliažiniai audiniai, Vilnius. UAB „Mogotex Baltic“ buvo įkurta 2000 m. Bendrovė yra didžiausio Baltarusijos tekstilės gamintojo „Mogotex“ atstovė Baltijos šalyse. Siūlomų produktų asortimente yra didelis audinių, skirtų įvairioms pramonės šakoms, statyboms, medicinai, poilsiui ir jėgos struktūroms, darbo drabužiams pasirinkimas. Taip pat siūlome namų tekstilės audinius ir kt."
         />
       </Helmet>
       <h1 className="home-title">
