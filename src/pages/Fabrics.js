@@ -38,6 +38,7 @@ function Fabrics() {
           href="http://www.mogotex.com"
           target="_blank"
           className="message-info"
+          rel="noopener noreferrer"
         >
           <FormattedMessage id="Message" />
         </a>

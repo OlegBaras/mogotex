@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { I18nProvider, LOCALES } from "./i18n";
 import { BrowserRouter as Router } from "react-router-dom";
 import NavLinks from "./components/NavLinks";
